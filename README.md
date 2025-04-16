@@ -1,5 +1,6 @@
 # TournVal
 
+I wanted a way to easily see upcoming Valorant matches and see who'd most likely win.
 A Valorant Esports Tournament Bracket Predictor that leverages historical data and statistical models to forecast match outcomes and generate tournament brackets. This project is designed for esports enthusiasts and developers interested in analytics and competitive gaming.
 
 ## Table of Contents
