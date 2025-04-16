@@ -11,6 +11,7 @@ env/
 
 # Environment variables file
 .env
+backend/.env
 
 # Distribution / packaging
 build/
