@@ -73,6 +73,23 @@ A Valorant Esports Tournament Bracket Predictor that leverages historical data a
    ```bash
    python3 app.py
    ```
+3. **Frontend Setup:**
+
+   Create a react template using TypeScript.
+   ```bash
+   npx create-react-app frontend --template typescript
+   ```
+
+   Install frontend dependencies.
+   ```bash
+   cd frontend
+   pip install -r requirements.txt
+   ```
+
+   Run the server:
+   ```bash
+   npm start
+   ```
 
 ## Project Structure
 ```bash
