@@ -1,4 +1,4 @@
-# ValeSportsModel
+# TournVal
 
 A Valorant Esports Tournament Bracket Predictor that leverages historical data and statistical models to forecast match outcomes and generate tournament brackets. This project is designed for esports enthusiasts and developers interested in analytics and competitive gaming.
 
@@ -15,7 +15,7 @@ A Valorant Esports Tournament Bracket Predictor that leverages historical data a
 
 ## Overview
 
-**ValeSportsModel** is a side project aimed at providing predictions for Valorant esports tournaments. The project involves data collection, statistical analysis, and building an interactive frontend to display dynamic tournament brackets. Whether you're a fan looking to gauge likely outcomes or a developer keen on sports analytics, this project will give you insights into predictive modeling and API development.
+**TournVal** is a side project aimed at providing predictions for Valorant esports tournaments. The project involves data collection, statistical analysis, and building an interactive frontend to display dynamic tournament brackets. Whether you're a fan looking to gauge likely outcomes or a developer keen on sports analytics, this project will give you insights into predictive modeling and API development.
 
 ## Features
 
