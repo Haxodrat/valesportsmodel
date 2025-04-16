@@ -1,35 +1,29 @@
-# imports
-import os
-from flask import Blueprint, jsonify
+# import statements
 import requests
-from dotenv import load_dotenv
+from flask import Blueprint, jsonify
 
-# Load environment variables from .env
-load_dotenv()
-
-# Create a blueprint for our API endpoints
+# blueprint for the API
 api_bp = Blueprint('api_bp', __name__)
 
-@api_bp.route('/valorant-data', methods=['GET'])
-def get_valorant_data():
-    # Retrieve the API key from environment variables
-    api_key = os.getenv('PANDASCORE_API_KEY')
-    if not api_key:
-        return jsonify({'error': 'PandaScore API key not set'}), 500
-
-    # endpoint URL for fetching Valorant matches without query parameter in url
-    external_url = "https://api.pandascore.co/valorant/matches"
+@api_bp.route('/valorant-current', methods=['GET'])
+def get_valorant_current():
+    """
+    This endpoint fetches current (live score) Valorant esports match data
+    from the unofficial vlr.gg API (vlrggapi).
+    """
+    # query param upcoming to fetch upcoming matches
+    external_url = "https://vlrggapi.vercel.app/match?q=upcoming"
     
-    # bearer token auth
-    headers = {
-        "Authorization": f"Bearer {api_key}"
-    }
-
     try:
-        response = requests.get(external_url, headers=headers)
-        # Raises an error for non-2XX responses
+        # send a GET request to the vlrggapi endpoint
+        response = requests.get(external_url)
+        # Raise an exception for non-2xx status codes
         response.raise_for_status()
+
+        # Parse the JSON data from the external API
         data = response.json()
         return jsonify(data)
+    
     except requests.exceptions.RequestException as e:
-        return jsonify({'error': str(e)}), 500
+        # Return an error message as JSON if any issues occur
+        return jsonify({"error": str(e)}), 500
