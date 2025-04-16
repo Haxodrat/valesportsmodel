@@ -91,7 +91,7 @@ valesportsmodel/
 │   ├── src/               # React source code
 │   ├── package.json       # Frontend dependencies
 │   └── README.md          # Frontend-specific documentation
-|   └── matches.html       # HTML Page
+│   └── matches.html       # HTML Page
 │
 ├── docs/                  # Documentation, planning, and design documents
 ├── .gitignore
