@@ -70,7 +70,7 @@ A Valorant Esports Tournament Bracket Predictor that leverages historical data a
 
    Run the Flask/FastAPI application:
    ```bash
-   python app.py
+   python3 app.py
    ```
 
 ## Project Structure
@@ -98,4 +98,4 @@ valesportsmodel/
 ```
 
 ## Contact
-
+#### Linkedin: https://www.linkedin.com/in/ckim259/
