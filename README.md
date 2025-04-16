@@ -52,3 +52,41 @@ A Valorant Esports Tournament Bracket Predictor that leverages historical data a
    ```bash
    git clone https://github.com/yourusername/valesportsmodel.git
    cd valesportsmodel
+
+2. **Backend Setup:**
+
+   Create and activate a Python virtual environment.
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+   Install backend dependencies.
+   ```bash
+   pip install -r requirements.txt
+
+   Create a .env file for configuration (e.g., API keys, database connection settings).
+
+   Run the Flask/FastAPI application:
+   ```bash
+   python app.py
+
+## Project Structure
+```bash
+valesportsmodel/
+│
+├── backend/
+│   ├── app.py             # Main API server file
+│   ├── models.py          # Data models and prediction logic
+│   ├── utils.py           # Helper functions (data collection, processing)
+│   ├── requirements.txt   # Python dependencies
+│   └── .env               # Environment variables (not committed)
+│
+├── frontend/
+│   ├── public/            # Static files
+│   ├── src/               # React source code
+│   ├── package.json       # Frontend dependencies
+│   └── README.md          # Frontend-specific documentation
+│
+├── docs/                  # Documentation, planning, and design documents
+├── .gitignore
+└── README.md              # This file
