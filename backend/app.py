@@ -1,12 +1,14 @@
 # imports
 from flask import Flask, jsonify, render_template
+from flask_cors import CORS
 from dotenv import load_dotenv
 from api import api_bp, get_upcoming_matches_data
 
 # Load environment variables
 load_dotenv()
 
-app = Flask(__name__, template_folder='../frontend')
+app = Flask(__name__, template_folder='../front')
+CORS(app)
 
 # home page
 @app.route('/')
