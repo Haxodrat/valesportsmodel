@@ -1,16 +1,21 @@
+# imports
+import os
 from flask import Flask, jsonify
+from dotenv import load_dotenv
+from api import api_bp
+
+# Load environment variables
+load_dotenv()
 
 app = Flask(__name__)
 
+# home page
 @app.route('/')
 def home():
-    return jsonify({'message': 'Chris is working'})
+    return jsonify(message="Backend is up and running!")
 
-# A dummy /predict endpoint
-@app.route('/predict')
-def predict():
-    # In the future, you'll replace these static values with prediction logic.
-    return jsonify(teamA_win_probability=0.65, teamB_win_probability=0.35)
+# register the API blueprint
+app.register_blueprint(api_bp, url_prefix='/api')
 
 if __name__ == '__main__':
     app.run(debug=True)
