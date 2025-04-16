@@ -1,30 +1,37 @@
-// src/App.js
+// imports
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import { Match } from './types';
 import './App.css';
 
+// the url to pull data from
+const BACKEND_URL = process.env.REACT_APP_API_URL || 'http://localhost:8000';
+
 function App() {
-  // vars
-  const [matches, setMatches] = useState([]);
+  // states, vars
+  const [matches, setMatches] = useState<Match[]>([]);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState('');
+  const [error, setError] = useState<string>('');
 
   useEffect(() => {
-    // get backend data
-    axios.get('http://localhost:8000/api/upcoming-matches')
+    axios
+      .get<{ data: Match[] }>(`${BACKEND_URL}/api/upcoming-matches`)
       .then(res => {
-        // expect the data from the backend to be in { data: [match, ...] }
         setMatches(res.data.data);
-        setLoading(false);
       })
+      // failed to get matches
       .catch(err => {
-        setError(err.message || "Error fetching matches");
+        setError(err.message || 'Error fetching matches');
+      })
+      .finally(() => {
         setLoading(false);
       });
   }, []);
 
-  if (loading) return <div className="loading">Loading upcoming matches...</div>;
-  if (error) return <div className="error">Error: {error}</div>;
+  // loading state
+  if (loading) return <div className="loading">Loading upcoming matches…</div>;
+  // error state
+  if (error)   return <div className="error">Error: {error}</div>;
 
   return (
     <div className="App">
@@ -44,17 +51,17 @@ function App() {
               </tr>
             </thead>
             <tbody>
-              {matches.map((match, idx) => (
-                <tr key={idx}>
+              {matches.map((m, i) => (
+                <tr key={i}>
                   <td>
-                    <a href={match.match_page} target="_blank" rel="noopener noreferrer">
-                      {match.match_event}
+                    <a href={m.match_page} target="_blank" rel="noopener noreferrer">
+                      {m.match_event}
                     </a>
                   </td>
-                  <td>{match.match_series}</td>
-                  <td>{match.teams[0]} vs {match.teams[1]}</td>
-                  <td>{match.time_until_match}</td>
-                  <td>{match.predicted_winner}</td>
+                  <td>{m.match_series}</td>
+                  <td>{m.teams[0]} vs {m.teams[1]}</td>
+                  <td>{m.time_until_match}</td>
+                  <td>{m.predicted_winner}</td>
                 </tr>
               ))}
             </tbody>
