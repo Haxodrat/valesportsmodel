@@ -59,16 +59,19 @@ A Valorant Esports Tournament Bracket Predictor that leverages historical data a
    ```bash
    python -m venv venv
    source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
 
    Install backend dependencies.
    ```bash
    pip install -r requirements.txt
+   ```
 
    Create a .env file for configuration (e.g., API keys, database connection settings).
 
    Run the Flask/FastAPI application:
    ```bash
    python app.py
+   ```
 
 ## Project Structure
 ```bash
