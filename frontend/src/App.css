@@ -1,4 +1,4 @@
-/* src/App.css */
+/* Global Styles */
 .App {
   text-align: center;
   padding: 2rem;
@@ -9,50 +9,115 @@
 
 header h1 {
   font-size: 2.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
-.matches-table {
+/* Navigation */
+.nav {
+  margin-bottom: 1.5rem;
+}
+.nav-button {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.nav-button:hover {
+  background: rgba(255,255,255,0.2);
+}
+.nav-button.active {
+  background: #fff;
+  color: #B22222;
+}
+
+/* Table Styles */
+.data-table {
   width: 90%;
-  margin: 0 auto;
+  margin: auto;
   border-collapse: collapse;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
-  background-color: #fff;
+  background: #fff;
   color: #333;
-  border-radius: 10px;
+  border-radius: 8px;
   overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
-
-.matches-table th,
-.matches-table td {
-  padding: 1rem;
-  border: 1px solid #ccc;
+.data-table th, .data-table td {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
 }
-
-.matches-table thead {
-  background-color: #B22222;
+.data-table thead {
+  background: #B22222;
   color: #fff;
 }
-
-.matches-table tbody tr:nth-child(even) {
-  background-color: #FDEDEC;
+.data-table tbody tr:nth-child(even) {
+  background: #f8f0f0;
+}
+.data-table tbody tr:hover {
+  background: #fdecec;
 }
 
-.matches-table tbody tr:hover {
-  background-color: #FADBD8;
+/* News List */
+.news-list {
+  width: 90%;
+  margin: auto;
+  text-align: left;
+}
+.news-item {
+  background: #fff;
+  color: #333;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+}
+.news-item h3 {
+  margin: 0;
+}
+.news-item .meta {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0.5rem 0;
 }
 
-.matches-table a {
-  color: blueviolet;
-  text-decoration: none;
-}
-
-.matches-table a:hover {
-  text-decoration: underline;
-}
-
+/* Loading & Error */
 .loading, .error {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-top: 2rem;
+}
+
+/* Matches grouped by event */
+.matches-by-event section {
+  margin-bottom: 2rem;
+}
+.event-title {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+  color: #FFDAB9;
+}
+
+/* click for viewing matches data organized by event */
+.event-title {
+  cursor: pointer;
+  position: relative;
+  padding-left: 1.5rem;
+  transition: color 0.2s;
+}
+.event-title::before {
+  content: '▶';
+  position: absolute;
+  left: 0;
+  top: 0.1rem;
+  transition: transform 0.2s;
+}
+.event-title.expanded::before {
+  transform: rotate(90deg);
+}
+.event-title.expanded {
+  color: #FFDAB9;
 }

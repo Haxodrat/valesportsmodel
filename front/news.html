@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Valorant Esports News</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 2rem; background-color: #f9f9f9; color: #333; }
+        h1 { text-align: center; }
+        .news-list { list-style: none; padding: 0; max-width: 800px; margin: auto; }
+        .news-item { background: #fff; margin: 1rem 0; padding: 1rem; border-radius: 5px; box-shadow: 0 0 5px rgba(0,0,0,0.1); }
+        .news-item h2 { margin: 0 0 0.5rem; }
+        .news-item .meta { font-size: 0.9rem; color: #666; margin-bottom: 0.5rem; }
+        a { color: #007bff; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <h1>Latest Valorant Esports News</h1>
+    {% if news %}
+    <ul class="news-list">
+        {% for item in news %}
+        <li class="news-item">
+            <h2><a href="{{ item.url_path }}" target="_blank">{{ item.title }}</a></h2>
+            <p class="meta">{{ item.date }} • by {{ item.author }}</p>
+            <p>{{ item.description }}</p>
+        </li>
+        {% endfor %}
+    </ul>
+    {% else %}
+        <p>No news available at this time.</p>
+    {% endif %}

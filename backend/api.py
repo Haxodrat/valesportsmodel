@@ -2,10 +2,91 @@
 import requests
 import random
 import cloudscraper
-from flask import Blueprint, jsonify
+from flask import Blueprint, jsonify, request
 
 # blueprint for the API
 api_bp = Blueprint('api_bp', __name__)
+
+# getting news
+def fetch_news_data() -> list:
+    """
+    Fetches the latest Valorant esports news articles.
+    Returns a list of news segments.
+    """
+    url = "https://vlrggapi.vercel.app/news"
+    scraper = cloudscraper.create_scraper()
+    resp = scraper.get(url)
+    resp.raise_for_status()
+    data = resp.json()
+    # structure: { "data": { "status": 200, "segments": [...] } }
+    return data.get("data", {}).get("segments", [])
+
+@api_bp.route('/news', methods=['GET'])
+def news():
+    """API endpoint to return the latest news as JSON."""
+    try:
+        segments = fetch_news_data()
+        return jsonify({"data": segments})
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+# getting stats
+def fetch_stats_data(region: str = "na", timespan: str = "all") -> list:
+    """
+    Fetches player statistics for a given region and timespan.
+    Returns a list of stat segments.
+    """
+    url = f"https://vlrggapi.vercel.app/stats?region={region}&timespan={timespan}"
+    scraper = cloudscraper.create_scraper()
+    resp = scraper.get(url)
+    resp.raise_for_status()
+    data = resp.json()
+    # structure: { "data": { "status": 200, "segments": [...] } }
+    return data.get("data", {}).get("segments", [])
+
+@api_bp.route('/stats', methods=['GET'])
+def stats():
+    """
+    API endpoint to return player stats.
+    Query params:
+      - region: e.g. 'na', 'eu', etc. (default 'na')
+      - timespan: days (e.g. '30') or 'all' (default '30')
+    """
+    try:
+        region = request.args.get("region", "na")
+        timespan = request.args.get("timespan", "30")
+        segments = fetch_stats_data(region, timespan)
+        return jsonify({"data": segments})
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+# getting the rankings data
+def fetch_rankings_data(region: str = "na") -> list:
+    """
+    Fetches team rankings for a given region.
+    Returns a list of ranking entries.
+    """
+    url = f"https://vlrggapi.vercel.app/rankings?region={region}"
+    scraper = cloudscraper.create_scraper()
+    resp = scraper.get(url)
+    resp.raise_for_status()
+    data = resp.json()
+    # structure: { "status": 200, "data": [...] }
+    return data.get("data", [])
+
+@api_bp.route('/rankings', methods=['GET'])
+def rankings():
+    """
+    API endpoint to return team rankings.
+    Query params:
+      - region: e.g. 'na', 'eu', etc. (default 'na')
+    """
+    try:
+        region = request.args.get("region", "na")
+        entries = fetch_rankings_data(region)
+        return jsonify({"data": entries})
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
 
 def get_upcoming_matches_data():
     """

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Valorant Team Rankings</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 2rem; background-color: #f9f9f9; color: #333; }
+        h1 { text-align: center; }
+        table { width: 100%; border-collapse: collapse; margin-top: 2rem; }
+        th, td { padding: 10px; border: 1px solid #ddd; text-align: left; }
+        th { background-color: #f2f2f2; }
+    </style>
+</head>
+<body>
+    <h1>Valorant Team Rankings</h1>
+    {% if rankings %}
+    <table>
+        <thead>
+            <tr>
+                <th>Rank</th>
+                <th>Team</th>
+                <th>Country</th>
+                <th>Record</th>
+                <th>Earnings</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for r in rankings %}
+            <tr>
+                <td>{{ r.rank }}</td>
+                <td>{{ r.team }}</td>
+                <td>{{ r.country }}</td>
+                <td>{{ r.record }}</td>
+                <td>{{ r.earnings }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% else %}
+        <p>No rankings data available.</p>
+    {% endif %}
+</body>
+</html>

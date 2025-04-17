@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Valorant Player Statistics</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 2rem; background-color: #f9f9f9; color: #333; }
+        h1 { text-align: center; }
+        table { width: 100%; border-collapse: collapse; margin-top: 2rem; }
+        th, td { padding: 10px; border: 1px solid #ddd; text-align: left; }
+        th { background-color: #f2f2f2; }
+    </style>
+</head>
+<body>
+    <h1>Valorant Player Statistics (Last 30 Days)</h1>
+    {% if stats %}
+    <table>
+        <thead>
+            <tr>
+                <th>Player</th>
+                <th>Org</th>
+                <th>Rating</th>
+                <th>ACS</th>
+                <th>K/D</th>
+                <th>ADR</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for p in stats %}
+            <tr>
+                <td>{{ p.player }}</td>
+                <td>{{ p.org }}</td>
+                <td>{{ p.rating }}</td>
+                <td>{{ p.average_combat_score }}</td>
+                <td>{{ p.kill_deaths }}</td>
+                <td>{{ p.average_damage_per_round }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% else %}
+        <p>No stats data available.</p>
+    {% endif %}
