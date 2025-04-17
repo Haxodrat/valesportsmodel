@@ -80,10 +80,10 @@ A Valorant Esports Tournament Bracket Predictor that leverages historical data a
    npx create-react-app frontend --template typescript
    ```
 
-   Install frontend dependencies.
+   Install frontend dependencies from package.json.
    ```bash
    cd frontend
-   pip install -r requirements.txt
+   npm install
    ```
 
    Run the server:
