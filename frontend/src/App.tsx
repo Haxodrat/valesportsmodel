@@ -1,20 +1,21 @@
 // imports
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { Matches, News, PastMatches } from './types';
+import { Matches, News, PastMatches, LiveMatch } from './types';
 import './App.css';
 
 // backend URL for API requests
 const BACKEND_URL = process.env.REACT_APP_API_URL || 'http://localhost:8000';
 // the different possible views
-type View = 'past' | 'matches' | 'news';
+type View = 'past' | 'matches' | 'news' | 'live';
 
 function App() {
-  // State variables
+	// State variables
 	const [view, setView] = useState<View>('matches');
 	const [matches, setMatches] = useState<Matches[]>([]);
 	const [news, setNews] = useState<News[]>([]);
 	const [pastMatches, setPastMatches] = useState<PastMatches[]>([]);
+	const [liveMatches, setLiveMatches] = useState<LiveMatch[]>([]);
 	const [loading, setLoading] = useState(false);
 	const [error, setError] = useState<string>('');
 	const [expandedEvents, setExpandedEvents] = useState<Record<string, boolean>>({});
@@ -23,7 +24,7 @@ function App() {
 	const toVlrUrl = (path: string) =>
 		path.startsWith('http') ? path : `https://www.vlr.gg${path}`;
 
-	// data fetcher
+	// Generic data fetcher
 	const fetchData = async <T,>(
 		endpoint: string,
 		setter: React.Dispatch<React.SetStateAction<T[]>>
@@ -34,9 +35,10 @@ function App() {
 			const res = await axios.get<{ data: T[] }>(
 				`${BACKEND_URL}/api/${endpoint}`
 			);
-      // for matches, set the teams to be a string array
+			// set fetched data into state
 			setter(res.data.data);
-			if (endpoint === 'upcoming-matches' || endpoint === 'past-matches') {
+			// clear any expanded sections
+			if (['upcoming-matches','past-matches','live-matches'].includes(endpoint)) {
 				setExpandedEvents({});
 			}
 		} catch (err: any) {
@@ -48,12 +50,18 @@ function App() {
 
 	// Fetch when view changes
 	useEffect(() => {
-		if (view === 'past') {
-      fetchData<PastMatches>('past-matches', setPastMatches);
-		} else if (view === 'news') {
-			fetchData<News>('news', setNews);
-		} else {
-      fetchData<Matches>('upcoming-matches', setMatches);
+		switch (view) {
+			case 'live':
+				fetchData<LiveMatch>('live-matches', setLiveMatches);
+				break;
+			case 'past':
+				fetchData<PastMatches>('past-matches', setPastMatches);
+				break;
+			case 'news':
+				fetchData<News>('news', setNews);
+				break;
+			default:
+				fetchData<Matches>('upcoming-matches', setMatches);
 		}
 	}, [view]);
 
@@ -63,39 +71,107 @@ function App() {
 		return acc;
 	}, {} as Record<string, Matches[]>);
 
-	// Filter past matches to only last 30 days
+	// Filter past to last 30 days & group by event
 	const recentPast = pastMatches.filter(pm => {
-		const tc = pm.time_until_match;
-		const match = tc.match(/(\d+)([hd])/);
-		if (match) {
-      // parser for time until match
-			const val = parseInt(match[1], 10);
-			const unit = match[2];
-			if (unit === 'h' || unit === 'm') return true;
-			if (unit === 'd' && val <= 30) return true;
-		}
-		return false;
+		const match = pm.time_until_match.match(/(\d+)([hd])/);
+		if (!match) return false;
+		const val = parseInt(match[1], 10);
+		return match[2]==='h' || match[2]==='m' || (match[2]==='d' && val<=30);
 	});
-
-	// Group recent past matches by event
 	const groupedPast = recentPast.reduce((acc, m) => {
 		(acc[m.match_event] = acc[m.match_event] || []).push(m);
 		return acc;
 	}, {} as Record<string, PastMatches[]>);
 
+	// Group live matches by event as well
+	const groupedLive = liveMatches.reduce((acc, m) => {
+		(acc[m.match_event] = acc[m.match_event] || []).push(m);
+		return acc;
+	}, {} as Record<string, LiveMatch[]>);
+
+	// toggle showing a section’s table
 	const toggleEvent = (event: string) =>
 		setExpandedEvents(prev => ({
 			...prev,
 			[event]: !prev[event],
 		}));
 
-  // Render the content based on the current view
+	// Render the content based on the current view
 	const renderContent = () => {
 		if (loading) return <div className="loading">Loading…</div>;
-		if (error) return <div className="error">Error: {error}</div>;
+		if (error)   return <div className="error">Error: {error}</div>;
 
-		if (view === 'past') {
-      return (
+		if (view === 'live') {
+			return (
+				<div className="matches-by-event">
+					{Object.entries(groupedLive).map(([event, lms]) => (
+						<section key={event}>
+							<h2
+								className={`event-title ${
+									expandedEvents[event] ? 'expanded' : ''
+								}`}
+								onClick={() => toggleEvent(event)}
+							>
+								{event}
+							</h2>
+							{expandedEvents[event] && (
+								<table className="data-table">
+									<thead>
+										<tr>
+											<th>Series</th>
+											<th>Team 1</th>
+											<th>Logo 1</th>
+											<th>Score 1</th>
+											<th>Score 2</th>
+											<th>Logo 2</th>
+											<th>Team 2</th>
+											<th>Started</th>
+											<th>Link</th>
+										</tr>
+									</thead>
+									<tbody>
+										{lms.map((m, i) => (
+											<tr key={i}>
+												<td>{m.match_series}</td>
+												<td>{m.teams[0]}</td>
+												<td>
+													<img
+														src={m.team1_logo.startsWith('//') ? 'https:' + m.team1_logo : m.team1_logo}
+														alt={m.teams[0]}
+														className="logo"
+													/>
+												</td>
+												<td>{m.score1}</td>
+												<td>{m.score2}</td>
+												<td>
+													<img
+														src={m.team2_logo.startsWith('//') ? 'https:' + m.team2_logo : m.team2_logo}
+														alt={m.teams[1]}
+														className="logo"
+													/>
+												</td>
+												<td>{m.teams[1]}</td>
+												<td>{m.time_started}</td>
+												<td>
+													<a
+														href={toVlrUrl(m.match_page)}
+														target="_blank"
+														rel="noopener noreferrer"
+													>
+														View on VLR.gg
+													</a>
+												</td>
+											</tr>
+										))}
+									</tbody>
+								</table>
+							)}
+						</section>
+					))}
+				</div>
+			);
+		} else if (view === 'past') {
+			return (
 				<div className="matches-by-event">
 					{Object.entries(groupedPast).map(([event, pms]) => (
 						<section key={event}>
@@ -112,7 +188,10 @@ function App() {
 									<thead>
 										<tr>
 											<th>Series</th>
-											<th>Teams & Scores</th>
+											<th>Team 1</th>
+											<th>Score 1</th>
+											<th>Score 2</th>
+											<th>Team 2</th>
 											<th>Winner</th>
 											<th>Completed</th>
 											<th>Link</th>
@@ -122,14 +201,12 @@ function App() {
 										{pms.map((m, i) => (
 											<tr key={i}>
 												<td>{m.match_series}</td>
+												<td>{m.teams[0]}</td>
+												<td>{m.score1}</td>
+												<td>{m.score2}</td>
+												<td>{m.teams[1]}</td>
 												<td>
-													{m.teams[0]} {m.score1} - {m.score2}{' '}
-													{m.teams[1]}
-												</td>
-												<td>
-													{m.score1 > m.score2
-														? m.teams[0]
-														: m.teams[1]}
+													{m.score1 > m.score2 ? m.teams[0] : m.teams[1]}
 												</td>
 												<td>{m.time_until_match}</td>
 												<td>
@@ -138,7 +215,7 @@ function App() {
 														target="_blank"
 														rel="noopener noreferrer"
 													>
-														View on VLR.gg
+														View on VLR.gg
 													</a>
 												</td>
 											</tr>
@@ -150,7 +227,6 @@ function App() {
 					))}
 				</div>
 			);
-			
 		} else if (view === 'news') {
 			return (
 				<div className="news-list">
@@ -166,7 +242,7 @@ function App() {
 								</a>
 							</h3>
 							<p className="meta">
-								{n.date} • {n.author}
+								{n.date} • {n.author}
 							</p>
 							<p>{n.description}</p>
 						</div>
@@ -202,7 +278,7 @@ function App() {
 											<tr key={i}>
 												<td>{m.match_series}</td>
 												<td>
-													{m.teams[0]} vs {m.teams[1]}
+													{m.teams[0]} vs {m.teams[1]}
 												</td>
 												<td>{m.time_until_match}</td>
 												<td>{m.predicted_winner}</td>
@@ -212,7 +288,7 @@ function App() {
 														target="_blank"
 														rel="noopener noreferrer"
 													>
-														View on VLR.gg
+														View on VLR.gg
 													</a>
 												</td>
 											</tr>
@@ -230,10 +306,10 @@ function App() {
 	return (
 		<div className="App">
 			<header>
-				<h1>Valorant Esports Dashboard</h1>
+				<h1>Valorant Esports Dashboard</h1>
 			</header>
 			<nav className="nav">
-				{(['past', 'matches', 'news'] as View[]).map(v => (
+				{(['live','past','matches','news'] as View[]).map(v => (
 					<button
 						key={v}
 						className={`nav-button ${view === v ? 'active' : ''}`}

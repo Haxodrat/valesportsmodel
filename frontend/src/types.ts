@@ -26,6 +26,19 @@ export interface PastMatches {
   match_page: string;
 }
 
+// Live matches
+export interface LiveMatch {
+	match_event: string;
+	match_series: string;
+	teams: [string, string];
+	team1_logo: string;
+	team2_logo: string;
+	score1: number;
+	score2: number;
+	time_started: string;
+	match_page: string;
+}
+
 // export interface Stats {
 //   player: string;
 //   org: string;

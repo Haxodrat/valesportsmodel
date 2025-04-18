@@ -2,7 +2,7 @@
 from flask import Flask, jsonify, render_template
 from flask_cors import CORS
 from dotenv import load_dotenv
-from api import api_bp, get_upcoming_matches_data, fetch_news_data
+from api import api_bp, get_upcoming_matches_data, fetch_news_data, fetch_past_matches_data, fetch_live_matches_data
 
 # Load environment variables
 load_dotenv()
@@ -146,6 +146,44 @@ def matches_page():
             raise TypeError("Returned matches data is not iterable")
         # render html template with matches data
         return render_template('matches.html', matches=matches)
+    
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
+# past matches page
+@app.route('/past-matches', methods=['GET'])
+def past_matches_page():
+    """
+    This route uses the helper function from your API blueprint to get past matches,
+    then renders an HTML page displaying the match event, series, teams, scores, time completed,
+    and the match page.
+    """
+    try:
+        past = fetch_past_matches_data()
+        # catches iterable object
+        if not hasattr(past, '__iter__'):
+            raise TypeError("Returned past matches data is not iterable")
+        # render html template with matches data
+        return render_template('past-matches.html', past=past)
+    
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+    
+# live matches page
+@app.route('/live-matches', methods=['GET'])
+def live_matches_page():
+    """
+    This route uses the helper function from your API blueprint to get live matches,
+    then renders an HTML page displaying the match event, series, teams, scores, time started,
+    and the match page.
+    """
+    try:
+        live = fetch_live_matches_data()
+        # catches iterable object
+        if not hasattr(live, '__iter__'):
+            raise TypeError("Returned live matches data is not iterable")
+        # render html template with matches data
+        return render_template('live-matches.html', live=live)
     
     except Exception as e:
         return jsonify({"error": str(e)}), 500

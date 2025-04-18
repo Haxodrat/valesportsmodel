@@ -30,63 +30,63 @@ def news():
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
-# getting stats
-def fetch_stats_data(region: str = "na", timespan: str = "all") -> list:
-    """
-    Fetches player statistics for a given region and timespan.
-    Returns a list of stat segments.
-    """
-    url = f"https://vlrggapi.vercel.app/stats?region={region}&timespan={timespan}"
-    scraper = cloudscraper.create_scraper()
-    resp = scraper.get(url)
-    resp.raise_for_status()
-    data = resp.json()
-    # structure: { "data": { "status": 200, "segments": [...] } }
-    return data.get("data", {}).get("segments", [])
+# # getting stats
+# def fetch_stats_data(region: str = "na", timespan: str = "all") -> list:
+#     """
+#     Fetches player statistics for a given region and timespan.
+#     Returns a list of stat segments.
+#     """
+#     url = f"https://vlrggapi.vercel.app/stats?region={region}&timespan={timespan}"
+#     scraper = cloudscraper.create_scraper()
+#     resp = scraper.get(url)
+#     resp.raise_for_status()
+#     data = resp.json()
+#     # structure: { "data": { "status": 200, "segments": [...] } }
+#     return data.get("data", {}).get("segments", [])
 
-@api_bp.route('/stats', methods=['GET'])
-def stats():
-    """
-    API endpoint to return player stats.
-    Query params:
-      - region: e.g. 'na', 'eu', etc. (default 'na')
-      - timespan: days (e.g. '30') or 'all' (default '30')
-    """
-    try:
-        region = request.args.get("region", "na")
-        timespan = request.args.get("timespan", "30")
-        segments = fetch_stats_data(region, timespan)
-        return jsonify({"data": segments})
-    except Exception as e:
-        return jsonify({"error": str(e)}), 500
+# @api_bp.route('/stats', methods=['GET'])
+# def stats():
+#     """
+#     API endpoint to return player stats.
+#     Query params:
+#       - region: e.g. 'na', 'eu', etc. (default 'na')
+#       - timespan: days (e.g. '30') or 'all' (default '30')
+#     """
+#     try:
+#         region = request.args.get("region", "na")
+#         timespan = request.args.get("timespan", "30")
+#         segments = fetch_stats_data(region, timespan)
+#         return jsonify({"data": segments})
+#     except Exception as e:
+#         return jsonify({"error": str(e)}), 500
 
-# getting the rankings data
-def fetch_rankings_data(region: str = "na") -> list:
-    """
-    Fetches team rankings for a given region.
-    Returns a list of ranking entries.
-    """
-    url = f"https://vlrggapi.vercel.app/rankings?region={region}"
-    scraper = cloudscraper.create_scraper()
-    resp = scraper.get(url)
-    resp.raise_for_status()
-    data = resp.json()
-    # structure: { "status": 200, "data": [...] }
-    return data.get("data", [])
+# # getting the rankings data
+# def fetch_rankings_data(region: str = "na") -> list:
+#     """
+#     Fetches team rankings for a given region.
+#     Returns a list of ranking entries.
+#     """
+#     url = f"https://vlrggapi.vercel.app/rankings?region={region}"
+#     scraper = cloudscraper.create_scraper()
+#     resp = scraper.get(url)
+#     resp.raise_for_status()
+#     data = resp.json()
+#     # structure: { "status": 200, "data": [...] }
+#     return data.get("data", [])
 
-@api_bp.route('/rankings', methods=['GET'])
-def rankings():
-    """
-    API endpoint to return team rankings.
-    Query params:
-      - region: e.g. 'na', 'eu', etc. (default 'na')
-    """
-    try:
-        region = request.args.get("region", "na")
-        entries = fetch_rankings_data(region)
-        return jsonify({"data": entries})
-    except Exception as e:
-        return jsonify({"error": str(e)}), 500
+# @api_bp.route('/rankings', methods=['GET'])
+# def rankings():
+#     """
+#     API endpoint to return team rankings.
+#     Query params:
+#       - region: e.g. 'na', 'eu', etc. (default 'na')
+#     """
+#     try:
+#         region = request.args.get("region", "na")
+#         entries = fetch_rankings_data(region)
+#         return jsonify({"data": entries})
+#     except Exception as e:
+#         return jsonify({"error": str(e)}), 500
 
 def get_upcoming_matches_data():
     """
@@ -166,30 +166,81 @@ def fetch_past_matches_data() -> list[dict]:
       - match_page
       - time_completed (as time_until_match)
     """
-    url = "https://vlrggapi.vercel.app/match?q=results"
+    external_url = "https://vlrggapi.vercel.app/match?q=results"
     scraper = cloudscraper.create_scraper()
-    resp = scraper.get(url)
+    resp = scraper.get(external_url)
     resp.raise_for_status()
     data = resp.json().get("data", {}).get("segments", [])
-    # Normalize each segment into your Matches shape
-    normalized = []
+    out = []
 
-    # iterate through the segments
-    for seg in data:
-        normalized.append({
-            "match_event": seg.get("tournament_name", "Unknown Event"),
-            "teams": [seg.get("team1"), seg.get("team2")],
-            "match_series": seg.get("round_info", ""),
-            "match_page": seg.get("match_page", ""),
-            "predicted_winner": None,
-            "time_until_match": seg.get("time_completed", "")
-        })
-    return normalized
+    # iterate through the matches
+    for m in data:
+        # require all the fields we need
+        if all(k in m for k in ("team1","team2","score1","score2","time_completed","round_info","tournament_name","match_page")):
+            out.append({
+                "match_event":      m["tournament_name"],
+                "match_series":     m["round_info"],
+                "teams":            [m["team1"], m["team2"]],
+                "score1":           int(m["score1"]),
+                "score2":           int(m["score2"]),
+                "time_until_match": m["time_completed"],
+                "match_page":       m["match_page"],
+            })
+    
+    return out
 
 @api_bp.route('/past-matches', methods=['GET'])
 def past_matches():
     try:
         matches = fetch_past_matches_data()
+        return jsonify({ "data": matches })
+    except Exception as e:
+        return jsonify({ "error": str(e) }), 500
+
+# gets live matches
+def fetch_live_matches_data() -> list[dict]:
+    """
+    Fetches all live Valorant matches from the unofficial vlr.gg API.
+    Returns a list of match dicts normalized to include:
+      - tournament_name (as match_event)
+      - teams (a list of the two teams)
+      - team1_score (as score1)
+      - team2_score (as score2)
+      - team1_logo (as team1_logo)
+      - team2_logo (as team2_logo)
+      - round_info (as match_series)
+      - match_page
+      - time_started (unix_timestamp)
+    """
+    external_url = "https://vlrggapi.vercel.app/match?q=live"
+    scraper = cloudscraper.create_scraper()
+    resp = scraper.get(external_url)
+    resp.raise_for_status()
+    data = resp.json().get("data", {}).get("segments", [])
+    out = []
+
+    # iterate through the matches
+    for m in data:
+        # require all the fields we need
+        if all(k in m for k in ("team1","team2","team1_logo","team2_logo","score1","score2","match_event","match_series","match_page","unix_timestamp")):
+            out.append({
+                "match_event":      m["match_event"],
+                "match_series":     m["match_series"],
+                "teams":            [m["team1"], m["team2"]],
+                "team1_logo":       m["team1_logo"],
+                "team2_logo":       m["team2_logo"],
+                "score1":           int(m["score1"]),
+                "score2":           int(m["score2"]),
+                "time_started":     m["unix_timestamp"],
+                "match_page":       m["match_page"],
+            })
+    
+    return out
+
+@api_bp.route('/live-matches', methods=['GET'])
+def live_matches():
+    try:
+        matches = fetch_live_matches_data()
         return jsonify({ "data": matches })
     except Exception as e:
         return jsonify({ "error": str(e) }), 500
