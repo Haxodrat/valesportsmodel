@@ -106,6 +106,8 @@ valesportsmodel/
 ├── frontend/
 │   ├── public/            # Static files
 │   ├── src/               # React source code
+        ├── App.tsx        # The main dashboard for users
+        ├── App.css        # Design for the dashboard
 │   ├── package.json       # Frontend dependencies
 │   └── README.md          # Frontend-specific documentation
 │   └── matches.html       # HTML Page
