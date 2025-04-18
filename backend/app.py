@@ -2,7 +2,7 @@
 from flask import Flask, jsonify, render_template
 from flask_cors import CORS
 from dotenv import load_dotenv
-from api import api_bp, get_upcoming_matches_data, fetch_news_data, fetch_rankings_data, fetch_stats_data
+from api import api_bp, get_upcoming_matches_data, fetch_news_data
 
 # Load environment variables
 load_dotenv()
@@ -35,39 +35,101 @@ def news_page():
     except Exception as e:
         return jsonify({"error": str(e)}), 500
     
-# stats page
-@app.route('/stats', methods=['GET'])
-def stats_page():
-    """
-    This route uses the helper function from your API blueprint to get player stats.
-    """
-    try:
-        stats = fetch_stats_data(region='na', timespan='all')
-        # catches iterable object
-        if not hasattr(stats, '__iter__'):
-            raise TypeError("Returned stats data is not iterable")
-        # render html template with stats data
-        return render_template('stats.html', stats=stats)
+# # stats page
+# @app.route('/stats', methods=['GET'])
+# def stats_page():
+#     """
+#     Render player stats, filtered by region & (optionally) tournament.
+#     Query params:
+#       - region: default 'na'
+#       - tournament: optional, will filter on stat['tournament_name']
+#     """
+#     region     = request.args.get('region', 'na')
+#     tournament = request.args.get('tournament')  # e.g. 'Champions Tour 2024: Americas Stage 1'
+
+#     try:
+#         # 1) fetch all stats
+#         all_stats = fetch_stats_data(region=region, timespan='all')
+
+#         # 2) if tournament filter is set, figure out which teams play in that event:
+#         if tournament:
+#             upcoming = get_upcoming_matches_data()
+#             teams_in_event = {
+#                 team
+#                 for m in upcoming
+#                 if m['match_event'] == tournament
+#                 for team in m['teams']
+#             }
+#             # 3) filter stats by org in that team set
+#             all_stats = [s for s in all_stats if s.get('org') in teams_in_event]
+
+#         return render_template(
+#             'stats.html',
+#             stats=all_stats,
+#             region=region,
+#             tournament=tournament
+#         )
+#     # """
+#     # This route uses the helper function from your API blueprint to get player stats.
+#     # """
+#     # try:
+#     #     stats = fetch_stats_data(region='na', timespan='all')
+#     #     # catches iterable object
+#     #     if not hasattr(stats, '__iter__'):
+#     #         raise TypeError("Returned stats data is not iterable")
+#     #     # render html template with stats data
+#     #     return render_template('stats.html', stats=stats)
     
-    except Exception as e:
-        return jsonify({"error": str(e)}), 500
+#     except Exception as e:
+#         return jsonify({"error": str(e)}), 500
     
-# rankings page
-@app.route('/rankings', methods=['GET'])
-def rankings_page():
-    """
-    This route uses the helper function from your API blueprint to get team rankings.
-    """
-    try:
-        rankings = fetch_rankings_data(region='na')
-        # catches iterable object
-        if not hasattr(rankings, '__iter__'):
-            raise TypeError("Returned rankings data is not iterable")
-        # render html template with rankings data
-        return render_template('rankings.html', rankings=rankings)
+# # rankings page
+# @app.route('/rankings', methods=['GET'])
+# def rankings_page():
+#     """
+#     Render team rankings, filtered by region & (optionally) tournament.
+#     Query params:
+#       - region: default 'na'
+#       - tournament: optional, will filter on ranking['tournament_name']
+#     """
+#     region     = request.args.get('region', 'na')
+#     tournament = request.args.get('tournament')
+
+#     try:
+#         # 1) fetch all rankings
+#         all_rankings = fetch_rankings_data(region=region)
+
+#         # 2) if tournament filter is set, find participating teams
+#         if tournament:
+#             upcoming = get_upcoming_matches_data()
+#             teams_in_event = {
+#                 team
+#                 for m in upcoming
+#                 if m['match_event'] == tournament
+#                 for team in m['teams']
+#             }
+#             # 3) filter rankings by team in that set
+#             all_rankings = [r for r in all_rankings if r.get('team') in teams_in_event]
+
+#         return render_template(
+#             'rankings.html',
+#             rankings=all_rankings,
+#             region=region,
+#             tournament=tournament
+#         )
+    # """
+    # This route uses the helper function from your API blueprint to get team rankings.
+    # """
+    # try:
+    #     rankings = fetch_rankings_data(region='na')
+    #     # catches iterable object
+    #     if not hasattr(rankings, '__iter__'):
+    #         raise TypeError("Returned rankings data is not iterable")
+    #     # render html template with rankings data
+    #     return render_template('rankings.html', rankings=rankings)
     
-    except Exception as e:
-        return jsonify({"error": str(e)}), 500
+    # except Exception as e:
+    #     return jsonify({"error": str(e)}), 500
 
 # matches page
 @app.route('/matches', methods=['GET'])

@@ -154,3 +154,42 @@ def upcoming_matches():
     except requests.exceptions.RequestException as e:
         # Return an error message as JSON if any issues occur
         return jsonify({"error": str(e)}), 500
+
+# gets past matches
+def fetch_past_matches_data() -> list[dict]:
+    """
+    Fetches all completed Valorant matches from the unofficial vlr.gg API.
+    Returns a list of match dicts normalized to include:
+      - tournament_name (as match_event)
+      - teams (a list of the two teams)
+      - round_info (as match_series)
+      - match_page
+      - time_completed (as time_until_match)
+    """
+    url = "https://vlrggapi.vercel.app/match?q=results"
+    scraper = cloudscraper.create_scraper()
+    resp = scraper.get(url)
+    resp.raise_for_status()
+    data = resp.json().get("data", {}).get("segments", [])
+    # Normalize each segment into your Matches shape
+    normalized = []
+
+    # iterate through the segments
+    for seg in data:
+        normalized.append({
+            "match_event": seg.get("tournament_name", "Unknown Event"),
+            "teams": [seg.get("team1"), seg.get("team2")],
+            "match_series": seg.get("round_info", ""),
+            "match_page": seg.get("match_page", ""),
+            "predicted_winner": None,
+            "time_until_match": seg.get("time_completed", "")
+        })
+    return normalized
+
+@api_bp.route('/past-matches', methods=['GET'])
+def past_matches():
+    try:
+        matches = fetch_past_matches_data()
+        return jsonify({ "data": matches })
+    except Exception as e:
+        return jsonify({ "error": str(e) }), 500

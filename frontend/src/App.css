@@ -121,3 +121,19 @@ header h1 {
 .event-title.expanded {
   color: #FFDAB9;
 }
+
+/* Filters */
+.filters {
+  margin: 1rem 0;
+  text-align: center;
+}
+.filters label {
+  margin: 0 1rem;
+  color: #fff;
+}
+.filters select {
+  margin-left: 0.5rem;
+  padding: 0.25rem;
+  border-radius: 4px;
+  border: none;
+}
