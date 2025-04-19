@@ -212,7 +212,7 @@ def fetch_live_matches_data() -> list[dict]:
       - match_page
       - time_started (unix_timestamp)
     """
-    external_url = "https://vlrggapi.vercel.app/match?q=live"
+    external_url = "https://vlrggapi.vercel.app/match?q=live_score"
     scraper = cloudscraper.create_scraper()
     resp = scraper.get(external_url)
     resp.raise_for_status()
