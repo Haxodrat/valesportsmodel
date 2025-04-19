@@ -3,6 +3,9 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Matches, News, PastMatches, LiveMatch } from './types';
 import './App.css';
+import { Analytics } from "@vercel/analytics/react";
+
+
 
 // backend URL for API requests
 const BACKEND_URL = process.env.REACT_APP_API_URL || 'http://localhost:8000';
