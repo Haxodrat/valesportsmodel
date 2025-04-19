@@ -307,24 +307,29 @@ function App() {
 	};
 
 	return (
-		<div className="App">
-			<header>
-				<h1>Valorant Esports Dashboard</h1>
-			</header>
-			<nav className="nav">
-				{(['live','past','matches','news'] as View[]).map(v => (
-					<button
-						key={v}
-						className={`nav-button ${view === v ? 'active' : ''}`}
-						onClick={() => setView(v)}
-					>
-						{v.charAt(0).toUpperCase() + v.slice(1)}
-					</button>
-				))}
-			</nav>
-			<main>{renderContent()}</main>
-		</div>
+    <>
+      <div className="App">
+        <header>
+          <h1>Valorant Esports Dashboard</h1>
+        </header>
+        <nav className="nav">
+          {(['live','past','matches','news'] as View[]).map(v => (
+            <button
+              key={v}
+              className={`nav-button ${view === v ? 'active' : ''}`}
+              onClick={() => setView(v)}
+            >
+              {v.charAt(0).toUpperCase() + v.slice(1)}
+            </button>
+          ))}
+        </nav>
+        <main>{renderContent()}</main>
+      </div>
+      <Analytics />
+    </>
 	);
+
 }
 
 export default App;
+
