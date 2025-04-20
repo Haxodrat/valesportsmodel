@@ -1,21 +1,98 @@
 /* Global Styles */
 .App {
-  text-align: center;
-  padding: 2rem;
-  background: linear-gradient(to left, rgb(142, 4, 4), #291e01);
+  position: relative;
+  display: flex;
   min-height: 100vh;
+  background: linear-gradient(to left, rgb(142, 4, 4), #3d2c01);
   color: #fff;
 }
 
 .App-container {
+  margin-left: 8rem;   /* same as your open sidebar width */
+  flex: 1;              /* fill remaining space */
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
+/* 3. Content always offset by the *open* sidebar width */
+.App-content {
+  margin-left: 8rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  text-align: center;
+}
+
 /* let the main section push the footer down */
 .App-container main {
   flex: 1;
+}
+
+/* 2. Sidebar is absolutely positioned at left/top/bottom */
+.sidebar {
+  position: absolute;
+  top: 0; 
+  left: 0; 
+  bottom: 0;
+  background: #553d01;     /* or your sidebar bg */
+  overflow: hidden;
+  transition: width 0.3s ease;
+  /* width toggled inline via React (e.g. 16rem vs 4rem) */
+}
+
+/* Sidebar Link Styles */
+.sidebar nav a {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1.25rem;        /* more hit‑area */
+  font-size: 1.125rem;             /* bump up text */
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  transition: background 0.2s, color 0.2s, transform 0.1s;
+  margin-bottom: 0.5rem;
+}
+
+.sidebar nav a .icon {
+  font-size: 1.5rem;               /* larger icon */
+  margin-right: 0.75rem;
+}
+
+.sidebar nav a .label {
+  flex: 1;
+}
+
+/* Hover & Focus States */
+.sidebar nav a:hover,
+.sidebar nav a:focus {
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffeb99;
+  transform: translateX(2px);
+  outline: none;
+}
+
+/* Active/Selected Link */
+.sidebar nav a.active {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+/* If you collapse the sidebar: hide the label but keep larger icon */
+.sidebar.collapsed nav a .label {
+  display: none;
+}
+
+.sidebar.collapsed nav a {
+  justify-content: center;
+  padding: 0.75rem;
+}
+
+.contact-page {
+  margin-top: 2rem;
+  color: white;
 }
 
 header h1 {

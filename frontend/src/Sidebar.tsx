@@ -1,48 +1,47 @@
-// src/Sidebar.tsx
-import React, { useState } from 'react';
+// imports
+import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
-export default function Sidebar() {
-  const [open, setOpen] = useState(true);
+interface SidebarProps {
+  isOpen: boolean;
+  // Function to toggle sidebar
+  toggle: () => void;
+}
+
+// Sidebar links
+const links = [
+  { to: '/',        label: 'Home',       icon: '🏠' },
+  { to: '/contact', label: 'Contact Us', icon: '✉️' },
+];
+
+export default function Sidebar({ isOpen, toggle }: SidebarProps) {
   const { pathname } = useLocation();
 
   return (
     <div
-      className={
-        "flex flex-col bg-gray-900 text-white h-full transition-width duration-300 " +
-        (open ? "w-48" : "w-16")
-      }
+        className="sidebar"
+        style={{ width: isOpen ? '10rem' : '4rem' }} 
     >
-      <button
-        onClick={() => setOpen(o => !o)}
-        className="self-end p-2 m-2 bg-gray-800 rounded focus:outline-none"
-      >
-        {open ? '←' : '→'}
-      </button>
+    <button onClick={toggle}>
+      {isOpen ? '☰' : '☰'}
+    </button>
 
-      <nav className="flex-1 mt-4">
-        <Link
-          to="/"
-          className={
-            "block px-4 py-2 rounded mb-2 transition-colors " +
-            (pathname === '/' 
-              ? "bg-gray-700 text-white" 
-              : "text-gray-300 hover:bg-gray-800")
-          }
-        >
-          {open ? 'Home' : '🏠'}
-        </Link>
-        <Link
-          to="/contact"
-          className={
-            "block px-4 py-2 rounded mb-2 transition-colors " +
-            (pathname === '/contact' 
-              ? "bg-gray-700 text-white" 
-              : "text-gray-300 hover:bg-gray-800")
-          }
-        >
-          {open ? 'Contact Us' : '✉️'}
-        </Link>
+      <nav className="mt-4">
+        {links.map(({ to, label, icon }) => (
+          <Link
+            key={to}
+            to={to}
+            className={`
+              flex items-center px-4 py-2 mb-2 rounded transition-colors
+              ${pathname === to
+                ? 'bg-gray-700 text-white'
+                : 'text-gray-300 hover:bg-gray-800'}
+            `}
+          >
+            <span className="mr-3 text-lg">{icon}</span>
+            {isOpen && <span>{label}</span>}
+          </Link>
+        ))}
       </nav>
     </div>
   );

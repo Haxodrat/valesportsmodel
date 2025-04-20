@@ -23,6 +23,7 @@ function App() {
 	const [loading, setLoading] = useState(false);
 	const [error, setError] = useState<string>('');
 	const [expandedEvents, setExpandedEvents] = useState<Record<string, boolean>>({});
+  const [sidebarOpen, setSidebarOpen] = useState(true);
 
 	// Helper to build full vlr.gg URL
 	const toVlrUrl = (path: string) =>
@@ -317,33 +318,38 @@ function App() {
 
 	return (
     <>
-      <Sidebar />
       <div className="App">
-        <header>
-          <h1>Valorant Esports Dashboard</h1>
-        </header>
-        <nav className="nav">
-          {(['live','past','matches','news'] as View[]).map(v => (
-            <button
-              key={v}
-              className={`nav-button ${view === v ? 'active' : ''}`}
-              onClick={() => setView(v)}
-            >
-              {v.charAt(0).toUpperCase() + v.slice(1)}
-            </button>
-          ))}
-        </nav>
-        <main className="flex-grow">{renderContent()}
-          <Routes>
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/" element={<div className="home">Welcome to the Valorant Esports Dashboard!</div>} />
-          </Routes>
-        </main>
-        <footer className="footer text center py-4 text-sm text-gray-300">
-          Powered by unofficial vlr.gg API
-        </footer>
+        <Sidebar 
+          isOpen={sidebarOpen}
+          toggle={() => setSidebarOpen(open => !open)}
+        />
+        <div className="App-content">
+          <header>
+            <h1>Valorant Esports Dashboard</h1>
+          </header>
+          <nav className="nav">
+            {(['live','past','matches','news'] as View[]).map(v => (
+              <button
+                key={v}
+                className={`nav-button ${view === v ? 'active' : ''}`}
+                onClick={() => setView(v)}
+              >
+                {v.charAt(0).toUpperCase() + v.slice(1)}
+              </button>
+            ))}
+          </nav>
+          <main className="flex-grow">{renderContent()}
+            <Routes>
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/" element={<div className="home">Welcome to the Valorant Esports Dashboard!</div>} />
+            </Routes>
+          </main>
+          <footer className="footer text center py-4 text-sm text-gray-300">
+            Powered by unofficial vlr.gg API
+          </footer>
+        </div>
+        <Analytics />
       </div>
-      <Analytics />
     </>
 	);
 
