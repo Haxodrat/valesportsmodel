@@ -7,6 +7,17 @@
   color: #fff;
 }
 
+.App-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* let the main section push the footer down */
+.App-container main {
+  flex: 1;
+}
+
 header h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
@@ -36,30 +47,106 @@ header h1 {
 }
 
 /* Table Styles */
+/* wrap your <table> in <div class="table-container">…</div> */
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  padding: 1rem 0;
+}
+
+/* card‑style wrapper */
 .data-table {
-  width: 90%;
-  margin: auto;
-  border-collapse: collapse;
-  background: #fff;
-  color: #333;
-  border-radius: 8px;
+  width: 95%;
+  border-collapse: separate;   /* allow rounded corners */
+  border-spacing: 0;
+  margin: 2rem auto;
+  background: #ffffff;
+  border-radius: 0.75rem;
   overflow: hidden;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  font-family: 'Arial', sans-serif;
 }
-.data-table th, .data-table td {
-  padding: 0.75rem;
-  border: 1px solid #ddd;
-}
+
 .data-table thead {
-  background: #B22222;
+  background: linear-gradient(90deg, #cb113c, #a00c24);
+}
+.data-table thead th {
+  position: sticky;
+  top: 0;
+  padding: 1rem 1.5rem;
   color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  border-bottom: 2px solid rgba(255,255,255,0.2);
+}
+
+/* body cells */
+.data-table td {
+  padding: 1rem 1.5rem;
+  color: #333;
+  font-size: 0.95rem;
+  vertical-align: middle;
+  border-bottom: 1px solid #eee;
+}
+
+/* zebra striping */
+.data-table tbody tr:nth-child(odd) {
+  background: #f3dee4;
 }
 .data-table tbody tr:nth-child(even) {
-  background: #f8f0f0;
+  background: #dbbfc7;
 }
+
+/* hover highlight */
 .data-table tbody tr:hover {
-  background: #fdecec;
+  background: #eef3ff;
+  cursor: pointer;
 }
+
+/* modern link buttons */
+.data-table a.view-link {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  border-radius: 9999px;
+  background: linear-gradient(135deg, #8e2de2, #4a00e0, #d7263d);
+  background-size: 200% auto;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-position 0.4s, transform 0.2s, box-shadow 0.2s;
+}
+.data-table a.view-link:hover {
+  background-position: 100% 0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.data-table a.view-link:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+/* Link “jump” effect for all tables */
+.data-table a {
+  color: #5a0d91;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.2s;
+}
+.data-table a:hover {
+  color: #dabce2;
+}
+.data-table a::after {
+  content: '→';
+  margin-left: 0.25rem;
+  transition: margin-left 0.2s;
+}
+.data-table a:hover::after {
+  margin-left: 0.5rem;
+}
+
 
 /* News List */
 .news-list {
@@ -67,21 +154,66 @@ header h1 {
   margin: auto;
   text-align: left;
 }
+
 .news-item {
-  background: #fff;
+  background: #e3d0e0;
   color: #333;
   padding: 1rem;
   margin-bottom: 1rem;
   border-radius: 8px;
   box-shadow: 0 0 8px rgba(0,0,0,0.2);
+  border-left: 6px solid #5a0d91;              /* purple accent stripe */
+  transition: transform 0.2s, box-shadow 0.2s;
 }
-.news-item h3 {
-  margin: 0;
+
+.news-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
 }
+
+.news-item h3 a{
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #5a0d91;
+  text-decoration: none;
+}
+
+.news-item h3 a:hover {
+  text-decoration: underline;
+}
+
 .news-item .meta {
   font-size: 0.9rem;
   color: #666;
   margin: 0.5rem 0;
+}
+
+.news-item .description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.news-item .read-more {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #5a0d91;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+.news-item .read-more:hover {
+  text-decoration: underline;
+}
+.news-item .read-more::after {
+  content: '→';
+  margin-left: 0.5rem;
+  transition: margin-left 0.2s;
+}
+.news-item .read-more:hover::after {
+  margin-left: 0.75rem;
 }
 
 /* Loading & Error */
@@ -120,6 +252,14 @@ header h1 {
 }
 .event-title.expanded {
   color: #FFDAB9;
+}
+
+/* style your footer */
+.footer {
+  padding: 1rem 0;
+  color: rgba(255,255,255,0.7);
+  text-align: center;
+  background: transparent;  /* or a slight overlay if you like */
 }
 
 /* Filters */

@@ -246,6 +246,14 @@ function App() {
 								{n.date} • {n.author}
 							</p>
 							<p>{n.description}</p>
+              <a
+                href={n.url_path}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="read-more"
+              >
+                Read more...
+              </a>
 						</div>
 					))}
 				</div>
@@ -321,8 +329,8 @@ function App() {
             </button>
           ))}
         </nav>
-        <main>{renderContent()}</main>
-        <footer>
+        <main className="flex-grow">{renderContent()}</main>
+        <footer className="footer text center py-4 text-sm text-gray-300">
           Powered by unofficial vlr.gg API
         </footer>
       </div>
