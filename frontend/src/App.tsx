@@ -3,7 +3,10 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Matches, News, PastMatches, LiveMatch } from './types';
 import './App.css';
+import { Routes, Route, Link } from 'react-router-dom';
+import Contact from './Contact';
 import { Analytics } from "@vercel/analytics/react";
+import Sidebar from './Sidebar';
 
 // backend URL for API requests
 const BACKEND_URL = process.env.REACT_APP_API_URL || 'http://localhost:8000';
@@ -314,6 +317,7 @@ function App() {
 
 	return (
     <>
+      <Sidebar />
       <div className="App">
         <header>
           <h1>Valorant Esports Dashboard</h1>
@@ -329,7 +333,12 @@ function App() {
             </button>
           ))}
         </nav>
-        <main className="flex-grow">{renderContent()}</main>
+        <main className="flex-grow">{renderContent()}
+          <Routes>
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/" element={<div className="home">Welcome to the Valorant Esports Dashboard!</div>} />
+          </Routes>
+        </main>
         <footer className="footer text center py-4 text-sm text-gray-300">
           Powered by unofficial vlr.gg API
         </footer>
