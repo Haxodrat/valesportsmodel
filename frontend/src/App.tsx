@@ -5,8 +5,6 @@ import { Matches, News, PastMatches, LiveMatch } from './types';
 import './App.css';
 import { Analytics } from "@vercel/analytics/react";
 
-
-
 // backend URL for API requests
 const BACKEND_URL = process.env.REACT_APP_API_URL || 'http://localhost:8000';
 // the different possible views
@@ -324,6 +322,9 @@ function App() {
           ))}
         </nav>
         <main>{renderContent()}</main>
+        <footer>
+          Powered by unofficial VLR.gg API
+        </footer>
       </div>
       <Analytics />
     </>
