@@ -2,7 +2,7 @@
 .App {
   text-align: center;
   padding: 2rem;
-  background: linear-gradient(to right, #8B0000, #FF0000);
+  background: linear-gradient(to left, rgb(142, 4, 4), #291e01);
   min-height: 100vh;
   color: #fff;
 }
@@ -19,8 +19,8 @@ header h1 {
 }
 .nav-button {
   background: transparent;
-  border: 2px solid #fff;
-  color: #fff;
+  border: 2px solid white;
+  color: white;
   padding: 0.5rem 1rem;
   margin: 0 0.5rem;
   border-radius: 5px;
@@ -31,8 +31,8 @@ header h1 {
   background: rgba(255,255,255,0.2);
 }
 .nav-button.active {
-  background: #fff;
-  color: #B22222;
+  background: #5a0d91;
+  color: #dabce2;
 }
 
 /* Table Styles */

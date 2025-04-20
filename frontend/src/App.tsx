@@ -120,12 +120,12 @@ function App() {
 									<thead>
 										<tr>
 											<th>Series</th>
-											<th>Team 1</th>
-											<th>Logo 1</th>
-											<th>Score 1</th>
-											<th>Score 2</th>
-											<th>Logo 2</th>
-											<th>Team 2</th>
+											<th>Team 1</th>
+											<th>Logo 1</th>
+											<th>Score 1</th>
+											<th>Score 2</th>
+											<th>Logo 2</th>
+											<th>Team 2</th>
 											<th>Started</th>
 											<th>Link</th>
 										</tr>
@@ -159,7 +159,7 @@ function App() {
 														target="_blank"
 														rel="noopener noreferrer"
 													>
-														View on VLR.gg
+														View on vlr.gg
 													</a>
 												</td>
 											</tr>
@@ -189,10 +189,10 @@ function App() {
 									<thead>
 										<tr>
 											<th>Series</th>
-											<th>Team 1</th>
-											<th>Score 1</th>
-											<th>Score 2</th>
-											<th>Team 2</th>
+											<th>Team 1</th>
+											<th>Score 1</th>
+											<th>Score 2</th>
+											<th>Team 2</th>
 											<th>Winner</th>
 											<th>Completed</th>
 											<th>Link</th>
@@ -216,7 +216,7 @@ function App() {
 														target="_blank"
 														rel="noopener noreferrer"
 													>
-														View on VLR.gg
+														View on vlr.gg
 													</a>
 												</td>
 											</tr>
@@ -243,7 +243,7 @@ function App() {
 								</a>
 							</h3>
 							<p className="meta">
-								{n.date} • {n.author}
+								{n.date} • {n.author}
 							</p>
 							<p>{n.description}</p>
 						</div>
@@ -279,7 +279,7 @@ function App() {
 											<tr key={i}>
 												<td>{m.match_series}</td>
 												<td>
-													{m.teams[0]} vs {m.teams[1]}
+													{m.teams[0]} vs {m.teams[1]}
 												</td>
 												<td>{m.time_until_match}</td>
 												<td>{m.predicted_winner}</td>
@@ -289,7 +289,7 @@ function App() {
 														target="_blank"
 														rel="noopener noreferrer"
 													>
-														View on VLR.gg
+														View on vlr.gg
 													</a>
 												</td>
 											</tr>
