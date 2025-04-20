@@ -323,7 +323,7 @@ function App() {
         </nav>
         <main>{renderContent()}</main>
         <footer>
-          Powered by unofficial VLR.gg API
+          Powered by unofficial vlr.gg API
         </footer>
       </div>
       <Analytics />
