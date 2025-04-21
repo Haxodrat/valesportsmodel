@@ -1,23 +1,26 @@
 /* Global Styles */
 .App {
-  position: relative;
   display: flex;
+  position: relative;
   min-height: 100vh;
   background: linear-gradient(to left, rgb(142, 4, 4), #3d2c01);
   color: #fff;
 }
 
 .App-container {
-  margin-left: 8rem;   /* same as your open sidebar width */
-  flex: 1;              /* fill remaining space */
+  flex: 1;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  transition: margin-left 0.3s ease;
+  margin-left: 4rem;
+}
+
+.App-container.shifted {
+  margin-left: 12rem; /* matches sidebar open width */
 }
 
 /* 3. Content always offset by the *open* sidebar width */
 .App-content {
-  margin-left: 8rem;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -32,14 +35,19 @@
 
 /* 2. Sidebar is absolutely positioned at left/top/bottom */
 .sidebar {
-  position: absolute;
-  top: 0; 
-  left: 0; 
+  position: fixed; /* change absolute → fixed */
+  top: 0;
+  left: 0;
   bottom: 0;
-  background: #553d01;     /* or your sidebar bg */
+  width: 2rem; /* collapsed width */
+  background: #553d01;
   overflow: hidden;
   transition: width 0.3s ease;
-  /* width toggled inline via React (e.g. 16rem vs 4rem) */
+  z-index: 1000;
+}
+
+.sidebar.open {
+  width: 12rem; /* expanded width */
 }
 
 /* Sidebar Link Styles */
