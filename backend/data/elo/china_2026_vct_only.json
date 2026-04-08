@@ -1,0 +1,146 @@
+{
+  "region": "china",
+  "season": 2026,
+  "mode": "vct_only",
+  "last_updated": "2026-04-08T08:35:51.357702+00:00",
+  "training_match_count": 137,
+  "team_count": 14,
+  "elo_model": {
+    "config": {
+      "initial_rating": 1500.0,
+      "k_factor": 32.0,
+      "scale": 400.0,
+      "min_matches_for_confidence": 5
+    },
+    "ratings": {
+      "Xi Lai Gaming": {
+        "rating": 1619.8967256299038,
+        "matches_played": 26
+      },
+      "Wolves Esports": {
+        "rating": 1443.440745031741,
+        "matches_played": 21
+      },
+      "TYLOO": {
+        "rating": 1485.9891346923546,
+        "matches_played": 22
+      },
+      "Titan Esports Club": {
+        "rating": 1411.193508941324,
+        "matches_played": 19
+      },
+      "JDG Esports": {
+        "rating": 1432.582240060967,
+        "matches_played": 19
+      },
+      "Dragon Ranger Gaming": {
+        "rating": 1535.601727196663,
+        "matches_played": 27
+      },
+      "All Gamers": {
+        "rating": 1517.2909836756055,
+        "matches_played": 19
+      },
+      "Nova Esports": {
+        "rating": 1401.9398722632272,
+        "matches_played": 19
+      },
+      "Bilibili Gaming": {
+        "rating": 1604.8853553924032,
+        "matches_played": 30
+      },
+      "FunPlus Phoenix": {
+        "rating": 1427.4698052335689,
+        "matches_played": 17
+      },
+      "Trace Esports": {
+        "rating": 1501.8862272197105,
+        "matches_played": 22
+      },
+      "EDward Gaming": {
+        "rating": 1617.8236746625312,
+        "matches_played": 31
+      },
+      "Pure Aim": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "Precise Defeat": {
+        "rating": 1516.0,
+        "matches_played": 1
+      }
+    }
+  },
+  "rankings": [
+    {
+      "team": "Xi Lai Gaming",
+      "rating": 1619.9,
+      "matches_played": 26
+    },
+    {
+      "team": "EDward Gaming",
+      "rating": 1617.82,
+      "matches_played": 31
+    },
+    {
+      "team": "Bilibili Gaming",
+      "rating": 1604.89,
+      "matches_played": 30
+    },
+    {
+      "team": "Dragon Ranger Gaming",
+      "rating": 1535.6,
+      "matches_played": 27
+    },
+    {
+      "team": "All Gamers",
+      "rating": 1517.29,
+      "matches_played": 19
+    },
+    {
+      "team": "Precise Defeat",
+      "rating": 1516.0,
+      "matches_played": 1
+    },
+    {
+      "team": "Trace Esports",
+      "rating": 1501.89,
+      "matches_played": 22
+    },
+    {
+      "team": "TYLOO",
+      "rating": 1485.99,
+      "matches_played": 22
+    },
+    {
+      "team": "Pure Aim",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "Wolves Esports",
+      "rating": 1443.44,
+      "matches_played": 21
+    },
+    {
+      "team": "JDG Esports",
+      "rating": 1432.58,
+      "matches_played": 19
+    },
+    {
+      "team": "FunPlus Phoenix",
+      "rating": 1427.47,
+      "matches_played": 17
+    },
+    {
+      "team": "Titan Esports Club",
+      "rating": 1411.19,
+      "matches_played": 19
+    },
+    {
+      "team": "Nova Esports",
+      "rating": 1401.94,
+      "matches_played": 19
+    }
+  ]
+}

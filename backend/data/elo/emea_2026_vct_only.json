@@ -1,0 +1,164 @@
+{
+  "region": "emea",
+  "season": 2026,
+  "mode": "vct_only",
+  "last_updated": "2026-04-08T08:35:51.276119+00:00",
+  "training_match_count": 137,
+  "team_count": 16,
+  "elo_model": {
+    "config": {
+      "initial_rating": 1500.0,
+      "k_factor": 32.0,
+      "scale": 400.0,
+      "min_matches_for_confidence": 5
+    },
+    "ratings": {
+      "Team Liquid": {
+        "rating": 1672.8645635699033,
+        "matches_played": 33
+      },
+      "KOI": {
+        "rating": 1404.7149102993353,
+        "matches_played": 12
+      },
+      "Karmine Corp": {
+        "rating": 1453.1237515667428,
+        "matches_played": 19
+      },
+      "Natus Vincere": {
+        "rating": 1492.9877723728353,
+        "matches_played": 24
+      },
+      "BBL Esports": {
+        "rating": 1609.00983386918,
+        "matches_played": 26
+      },
+      "GIANTX": {
+        "rating": 1509.4929702320858,
+        "matches_played": 24
+      },
+      "Apeks": {
+        "rating": 1347.4842117181684,
+        "matches_played": 12
+      },
+      "Gentle Mates": {
+        "rating": 1466.4170020922238,
+        "matches_played": 19
+      },
+      "FUT Esports": {
+        "rating": 1441.5723309731134,
+        "matches_played": 20
+      },
+      "Team Vitality": {
+        "rating": 1502.0579114725078,
+        "matches_played": 22
+      },
+      "FNATIC": {
+        "rating": 1591.5173539123343,
+        "matches_played": 28
+      },
+      "Team Heretics": {
+        "rating": 1576.6626064377072,
+        "matches_played": 26
+      },
+      "Team France": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "Team EMEA": {
+        "rating": 1516.0,
+        "matches_played": 1
+      },
+      "PCIFIC": {
+        "rating": 1455.3539725433877,
+        "matches_played": 3
+      },
+      "ULF Esports": {
+        "rating": 1476.7408089404748,
+        "matches_played": 4
+      }
+    }
+  },
+  "rankings": [
+    {
+      "team": "Team Liquid",
+      "rating": 1672.86,
+      "matches_played": 33
+    },
+    {
+      "team": "BBL Esports",
+      "rating": 1609.01,
+      "matches_played": 26
+    },
+    {
+      "team": "FNATIC",
+      "rating": 1591.52,
+      "matches_played": 28
+    },
+    {
+      "team": "Team Heretics",
+      "rating": 1576.66,
+      "matches_played": 26
+    },
+    {
+      "team": "Team EMEA",
+      "rating": 1516.0,
+      "matches_played": 1
+    },
+    {
+      "team": "GIANTX",
+      "rating": 1509.49,
+      "matches_played": 24
+    },
+    {
+      "team": "Team Vitality",
+      "rating": 1502.06,
+      "matches_played": 22
+    },
+    {
+      "team": "Natus Vincere",
+      "rating": 1492.99,
+      "matches_played": 24
+    },
+    {
+      "team": "Team France",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "ULF Esports",
+      "rating": 1476.74,
+      "matches_played": 4
+    },
+    {
+      "team": "Gentle Mates",
+      "rating": 1466.42,
+      "matches_played": 19
+    },
+    {
+      "team": "PCIFIC",
+      "rating": 1455.35,
+      "matches_played": 3
+    },
+    {
+      "team": "Karmine Corp",
+      "rating": 1453.12,
+      "matches_played": 19
+    },
+    {
+      "team": "FUT Esports",
+      "rating": 1441.57,
+      "matches_played": 20
+    },
+    {
+      "team": "KOI",
+      "rating": 1404.71,
+      "matches_played": 12
+    },
+    {
+      "team": "Apeks",
+      "rating": 1347.48,
+      "matches_played": 12
+    }
+  ]
+}

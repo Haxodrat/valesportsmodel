@@ -2,50 +2,51 @@
 
 from __future__ import annotations
 
+import json
+from pathlib import Path
+
 from data_sources.vlr_client import VLRClient
-from ratings.elo import EloModel, EloConfig
-
-import time
-
-_ELO_CACHE = {"model": None, "built_at": 0}
-CACHE_TTL_SECONDS = 300
+from ratings.elo import EloModel
 
 
-def build_elo_model() -> EloModel:
-    """
-    Build the elo model based on historical results.
-    """
-    now = time.time()
-    if _ELO_CACHE["model"] is not None and now - _ELO_CACHE["built_at"] < CACHE_TTL_SECONDS:
-        return _ELO_CACHE["model"]
+def load_region_elo_model(region: str, season: int = 2026, mode: str = "vct_only") -> EloModel:
+    path = Path("data/elo") / f"{region}_{season}_{mode}.json"    
+    if not path.exists():
+        raise FileNotFoundError(f"No saved Elo file found for {region} {season}")
 
-    client = VLRClient()
-    historical_results = client.get_results()
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    return EloModel.from_dict(payload["elo_model"])
 
-    elo = EloModel(EloConfig())
-    elo.fit(historical_results)
 
-    _ELO_CACHE["model"] = elo
-    _ELO_CACHE["built_at"] = now
-    return elo
-
-def get_upcoming_predictions() -> list[dict]:
-    # instantiate the client
+def get_upcoming_predictions(season: int = 2026, mode: str = "vct_only") -> list[dict]:
     client = VLRClient()
     upcoming = client.get_upcoming_matches()
 
-    elo = build_elo_model()
-
     enriched_matches: list[dict] = []
+
     for match in upcoming:
-        pred = elo.predict_match(match["team1"], match["team2"])
+        region = client._infer_region_from_event(match.get("event"))
+        if region is None:
+            continue
+
+        try:
+            elo = load_region_elo_model(region=region, season=season, mode=mode)
+        except FileNotFoundError:
+            continue
+
+        team1 = match["team1"]
+        team2 = match["team2"]
+        pred = elo.predict_match(team1, team2)
 
         enriched_matches.append({
             "match_id": match["match_id"],
             "match_event": match["event"],
             "match_series": match["series"],
             "match_page": match["match_page"],
-            "teams": [match["team1"], match["team2"]],
+            "region": region,
+            "team1": team1,
+            "team2": team2,
+            "teams": [team1, team2],
             "time_until_match": match["time_until_match"],
             "unix_timestamp": match["unix_timestamp"],
             "predicted_winner": pred["predicted_winner"],
@@ -55,5 +56,13 @@ def get_upcoming_predictions() -> list[dict]:
             "team2_rating": pred["team2_rating"],
             "confidence": pred["confidence"],
         })
+
+    enriched_matches.sort(
+        key=lambda m: (
+            m.get("unix_timestamp") is None,
+            m.get("unix_timestamp") if m.get("unix_timestamp") is not None else 0,
+            m.get("match_id", ""),
+        )
+    )
 
     return enriched_matches

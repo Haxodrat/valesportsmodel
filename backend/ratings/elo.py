@@ -103,6 +103,20 @@ class EloModel:
             winner = match["winner"]
             self.update_match(team1, team2, winner)
 
+    def get_rankings(self) -> list[dict]:
+        return sorted(
+            [
+                {
+                    "team": team,
+                    "rating": round(state.rating, 2),
+                    "matches_played": state.matches_played,
+                }
+                for team, state in self.ratings.items()
+            ],
+            key=lambda x: x["rating"],
+            reverse=True,
+        )
+    
     def _ensure_team(self, team: str) -> None:
         if team not in self.ratings:
             self.ratings[team] = TeamRatingState(rating=self.config.initial_rating, matches_played=0)
@@ -116,3 +130,41 @@ class EloModel:
         if edge_from_even >= 0.10:
             return "medium"
         return "low"
+    
+    def to_dict(self) -> dict:
+        return {
+            "config": {
+                "initial_rating": self.config.initial_rating,
+                "k_factor": self.config.k_factor,
+                "scale": self.config.scale,
+                "min_matches_for_confidence": self.config.min_matches_for_confidence,
+            },
+            "ratings": {
+                team: {
+                    "rating": state.rating,
+                    "matches_played": state.matches_played,
+                }
+                for team, state in self.ratings.items()
+            },
+        }
+
+    @classmethod
+    def from_dict(cls, payload: dict) -> "EloModel":
+        config_data = payload.get("config", {})
+        ratings_data = payload.get("ratings", {})
+        model = cls(
+            config=EloConfig(
+                initial_rating=config_data.get("initial_rating", 1500.0),
+                k_factor=config_data.get("k_factor", 32.0),
+                scale=config_data.get("scale", 400.0),
+                min_matches_for_confidence=config_data.get("min_matches_for_confidence", 5),
+            )
+        )
+
+        for team, state in ratings_data.items():
+            model.ratings[team] = TeamRatingState(
+                rating=float(state.get("rating", model.config.initial_rating)),
+                matches_played=int(state.get("matches_played", 0)),
+            )
+
+        return model

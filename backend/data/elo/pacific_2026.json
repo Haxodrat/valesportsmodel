@@ -1,0 +1,694 @@
+{
+  "region": "pacific",
+  "season": 2026,
+  "last_updated": "2026-04-08T08:15:09.037392+00:00",
+  "training_match_count": 311,
+  "team_count": 75,
+  "elo_model": {
+    "config": {
+      "initial_rating": 1500.0,
+      "k_factor": 32.0,
+      "scale": 400.0,
+      "min_matches_for_confidence": 5
+    },
+    "ratings": {
+      "ZETA DIVISION": {
+        "rating": 1412.696330832555,
+        "matches_played": 21
+      },
+      "DRX": {
+        "rating": 1570.0957525244667,
+        "matches_played": 35
+      },
+      "Team Secret": {
+        "rating": 1385.448846386105,
+        "matches_played": 23
+      },
+      "BLEED": {
+        "rating": 1439.759437183402,
+        "matches_played": 4
+      },
+      "T1": {
+        "rating": 1598.544297830595,
+        "matches_played": 32
+      },
+      "Gen.G": {
+        "rating": 1529.2258100910817,
+        "matches_played": 32
+      },
+      "Paper Rex": {
+        "rating": 1640.7902080156161,
+        "matches_played": 35
+      },
+      "TALON": {
+        "rating": 1517.5538247611255,
+        "matches_played": 29
+      },
+      "Rex Regum Qeon": {
+        "rating": 1583.0290708394919,
+        "matches_played": 38
+      },
+      "DetonatioN FocusMe": {
+        "rating": 1466.9486302267562,
+        "matches_played": 27
+      },
+      "Global Esports": {
+        "rating": 1428.8750392415575,
+        "matches_played": 23
+      },
+      "ZETA DIVISION GC": {
+        "rating": 1470.0578125775808,
+        "matches_played": 8
+      },
+      "BOBA": {
+        "rating": 1484.0,
+        "matches_played": 3
+      },
+      "Xipto Esports GC": {
+        "rating": 1614.511401225312,
+        "matches_played": 8
+      },
+      "FENNEL GC": {
+        "rating": 1473.6088232186214,
+        "matches_played": 6
+      },
+      "Mir Gaming GC": {
+        "rating": 1515.263693206478,
+        "matches_played": 3
+      },
+      "Purr-fectionists": {
+        "rating": 1468.0,
+        "matches_played": 2
+      },
+      "sisu": {
+        "rating": 1500.736306793522,
+        "matches_played": 4
+      },
+      "swaglord9000": {
+        "rating": 1484.0,
+        "matches_played": 3
+      },
+      "Revenant Esports": {
+        "rating": 1483.2975328274754,
+        "matches_played": 3
+      },
+      "Sin Prisa Gaming": {
+        "rating": 1575.7422489710452,
+        "matches_played": 5
+      },
+      "FULL SENSE": {
+        "rating": 1474.6469019337044,
+        "matches_played": 14
+      },
+      "Oblivion Force": {
+        "rating": 1468.0,
+        "matches_played": 2
+      },
+      "RIDDLE ORDER": {
+        "rating": 1440.3604421771176,
+        "matches_played": 8
+      },
+      "NAOS": {
+        "rating": 1484.7182074370746,
+        "matches_played": 9
+      },
+      "BOOM Esports": {
+        "rating": 1540.100092124735,
+        "matches_played": 35
+      },
+      "Disguised": {
+        "rating": 1471.5678301527382,
+        "matches_played": 6
+      },
+      "Justice For Tomorrow": {
+        "rating": 1484.736375302694,
+        "matches_played": 3
+      },
+      "Rapid Lofi": {
+        "rating": 1468.0,
+        "matches_played": 2
+      },
+      "Team f0rsakeN": {
+        "rating": 1516.0,
+        "matches_played": 1
+      },
+      "Team xccurate": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "CREST GAMING Zst": {
+        "rating": 1499.397280446186,
+        "matches_played": 4
+      },
+      "Alter Ego": {
+        "rating": 1572.897168154227,
+        "matches_played": 5
+      },
+      "Xipto Esports": {
+        "rating": 1529.134686862332,
+        "matches_played": 8
+      },
+      "ZOL Esports": {
+        "rating": 1517.584430470975,
+        "matches_played": 5
+      },
+      "Nongshim RedForce": {
+        "rating": 1630.7785859500316,
+        "matches_played": 30
+      },
+      "Paper Rex x Spotlight Series": {
+        "rating": 1534.0960742077264,
+        "matches_played": 4
+      },
+      "Xipto x Global Esports": {
+        "rating": 1528.4868988707083,
+        "matches_played": 4
+      },
+      "DRX Changers": {
+        "rating": 1484.7641423912783,
+        "matches_played": 3
+      },
+      "Next Gen": {
+        "rating": 1515.5230357372056,
+        "matches_played": 3
+      },
+      "RIVAL": {
+        "rating": 1483.5229978530751,
+        "matches_played": 3
+      },
+      "Team NKT Academy": {
+        "rating": 1481.1605690225454,
+        "matches_played": 3
+      },
+      "TUMT Shark": {
+        "rating": 1484.0995838783438,
+        "matches_played": 3
+      },
+      "All Gamers Young": {
+        "rating": 1453.5854298421632,
+        "matches_played": 3
+      },
+      "CNEsports": {
+        "rating": 1514.6464270640677,
+        "matches_played": 3
+      },
+      "Chaos Alliance": {
+        "rating": 1440.1002899928458,
+        "matches_played": 6
+      },
+      "Team Flash": {
+        "rating": 1488.319490066108,
+        "matches_played": 3
+      },
+      "Orangutan": {
+        "rating": 1485.4013264199527,
+        "matches_played": 3
+      },
+      "Team World": {
+        "rating": 1516.0,
+        "matches_played": 1
+      },
+      "Glory Once Again": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "Fancy United Esports": {
+        "rating": 1569.1394817298744,
+        "matches_played": 5
+      },
+      "Team IAM": {
+        "rating": 1532.0209871759564,
+        "matches_played": 4
+      },
+      "Team NKT": {
+        "rating": 1489.502614041164,
+        "matches_played": 7
+      },
+      "Motiv Esports": {
+        "rating": 1513.6876155682291,
+        "matches_played": 9
+      },
+      "E-KING": {
+        "rating": 1431.7855463130813,
+        "matches_played": 7
+      },
+      "Velocity Gaming": {
+        "rating": 1497.928595548981,
+        "matches_played": 6
+      },
+      "SLT Seongnam": {
+        "rating": 1586.9202536733803,
+        "matches_played": 6
+      },
+      "Rising Esports GC": {
+        "rating": 1470.7204924055145,
+        "matches_played": 2
+      },
+      "Team Falcons Vega": {
+        "rating": 1515.8534403312267,
+        "matches_played": 5
+      },
+      "REIGNITE Lily": {
+        "rating": 1482.787057101501,
+        "matches_played": 3
+      },
+      "Hypa Hypa Esports": {
+        "rating": 1482.7881856474378,
+        "matches_played": 3
+      },
+      "Ninetails": {
+        "rating": 1522.3933446658516,
+        "matches_played": 5
+      },
+      "Asterisk Women": {
+        "rating": 1467.9323273572415,
+        "matches_played": 2
+      },
+      "T1 Spotlight": {
+        "rating": 1484.0,
+        "matches_played": 3
+      },
+      "Global Esports Spotlight": {
+        "rating": 1454.9390030579511,
+        "matches_played": 3
+      },
+      "RRQ Spotlight": {
+        "rating": 1559.7258009629222,
+        "matches_played": 4
+      },
+      "DRX Spotlight": {
+        "rating": 1501.3351959791266,
+        "matches_played": 4
+      },
+      "VARREL": {
+        "rating": 1454.8791466100117,
+        "matches_played": 3
+      },
+      "S8UL Esports": {
+        "rating": 1453.524655338865,
+        "matches_played": 3
+      },
+      "IGZIST": {
+        "rating": 1514.657751718071,
+        "matches_played": 3
+      },
+      "GGEZ": {
+        "rating": 1482.4867496291552,
+        "matches_played": 3
+      },
+      "Lee-Ming Penguin LIT": {
+        "rating": 1453.4071322567497,
+        "matches_played": 3
+      },
+      "Dream Chaser": {
+        "rating": 1457.283446064184,
+        "matches_played": 3
+      },
+      "Todak": {
+        "rating": 1518.3375005660012,
+        "matches_played": 3
+      },
+      "Oasis Gaming": {
+        "rating": 1484.1503431468993,
+        "matches_played": 3
+      }
+    }
+  },
+  "rankings": [
+    {
+      "team": "Paper Rex",
+      "rating": 1640.79,
+      "matches_played": 35
+    },
+    {
+      "team": "Nongshim RedForce",
+      "rating": 1630.78,
+      "matches_played": 30
+    },
+    {
+      "team": "Xipto Esports GC",
+      "rating": 1614.51,
+      "matches_played": 8
+    },
+    {
+      "team": "T1",
+      "rating": 1598.54,
+      "matches_played": 32
+    },
+    {
+      "team": "SLT Seongnam",
+      "rating": 1586.92,
+      "matches_played": 6
+    },
+    {
+      "team": "Rex Regum Qeon",
+      "rating": 1583.03,
+      "matches_played": 38
+    },
+    {
+      "team": "Sin Prisa Gaming",
+      "rating": 1575.74,
+      "matches_played": 5
+    },
+    {
+      "team": "Alter Ego",
+      "rating": 1572.9,
+      "matches_played": 5
+    },
+    {
+      "team": "DRX",
+      "rating": 1570.1,
+      "matches_played": 35
+    },
+    {
+      "team": "Fancy United Esports",
+      "rating": 1569.14,
+      "matches_played": 5
+    },
+    {
+      "team": "RRQ Spotlight",
+      "rating": 1559.73,
+      "matches_played": 4
+    },
+    {
+      "team": "BOOM Esports",
+      "rating": 1540.1,
+      "matches_played": 35
+    },
+    {
+      "team": "Paper Rex x Spotlight Series",
+      "rating": 1534.1,
+      "matches_played": 4
+    },
+    {
+      "team": "Team IAM",
+      "rating": 1532.02,
+      "matches_played": 4
+    },
+    {
+      "team": "Gen.G",
+      "rating": 1529.23,
+      "matches_played": 32
+    },
+    {
+      "team": "Xipto Esports",
+      "rating": 1529.13,
+      "matches_played": 8
+    },
+    {
+      "team": "Xipto x Global Esports",
+      "rating": 1528.49,
+      "matches_played": 4
+    },
+    {
+      "team": "Ninetails",
+      "rating": 1522.39,
+      "matches_played": 5
+    },
+    {
+      "team": "Todak",
+      "rating": 1518.34,
+      "matches_played": 3
+    },
+    {
+      "team": "ZOL Esports",
+      "rating": 1517.58,
+      "matches_played": 5
+    },
+    {
+      "team": "TALON",
+      "rating": 1517.55,
+      "matches_played": 29
+    },
+    {
+      "team": "Team f0rsakeN",
+      "rating": 1516.0,
+      "matches_played": 1
+    },
+    {
+      "team": "Team World",
+      "rating": 1516.0,
+      "matches_played": 1
+    },
+    {
+      "team": "Team Falcons Vega",
+      "rating": 1515.85,
+      "matches_played": 5
+    },
+    {
+      "team": "Next Gen",
+      "rating": 1515.52,
+      "matches_played": 3
+    },
+    {
+      "team": "Mir Gaming GC",
+      "rating": 1515.26,
+      "matches_played": 3
+    },
+    {
+      "team": "IGZIST",
+      "rating": 1514.66,
+      "matches_played": 3
+    },
+    {
+      "team": "CNEsports",
+      "rating": 1514.65,
+      "matches_played": 3
+    },
+    {
+      "team": "Motiv Esports",
+      "rating": 1513.69,
+      "matches_played": 9
+    },
+    {
+      "team": "DRX Spotlight",
+      "rating": 1501.34,
+      "matches_played": 4
+    },
+    {
+      "team": "sisu",
+      "rating": 1500.74,
+      "matches_played": 4
+    },
+    {
+      "team": "CREST GAMING Zst",
+      "rating": 1499.4,
+      "matches_played": 4
+    },
+    {
+      "team": "Velocity Gaming",
+      "rating": 1497.93,
+      "matches_played": 6
+    },
+    {
+      "team": "Team NKT",
+      "rating": 1489.5,
+      "matches_played": 7
+    },
+    {
+      "team": "Team Flash",
+      "rating": 1488.32,
+      "matches_played": 3
+    },
+    {
+      "team": "Orangutan",
+      "rating": 1485.4,
+      "matches_played": 3
+    },
+    {
+      "team": "DRX Changers",
+      "rating": 1484.76,
+      "matches_played": 3
+    },
+    {
+      "team": "Justice For Tomorrow",
+      "rating": 1484.74,
+      "matches_played": 3
+    },
+    {
+      "team": "NAOS",
+      "rating": 1484.72,
+      "matches_played": 9
+    },
+    {
+      "team": "Oasis Gaming",
+      "rating": 1484.15,
+      "matches_played": 3
+    },
+    {
+      "team": "TUMT Shark",
+      "rating": 1484.1,
+      "matches_played": 3
+    },
+    {
+      "team": "BOBA",
+      "rating": 1484.0,
+      "matches_played": 3
+    },
+    {
+      "team": "swaglord9000",
+      "rating": 1484.0,
+      "matches_played": 3
+    },
+    {
+      "team": "Team xccurate",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "Glory Once Again",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "T1 Spotlight",
+      "rating": 1484.0,
+      "matches_played": 3
+    },
+    {
+      "team": "RIVAL",
+      "rating": 1483.52,
+      "matches_played": 3
+    },
+    {
+      "team": "Revenant Esports",
+      "rating": 1483.3,
+      "matches_played": 3
+    },
+    {
+      "team": "REIGNITE Lily",
+      "rating": 1482.79,
+      "matches_played": 3
+    },
+    {
+      "team": "Hypa Hypa Esports",
+      "rating": 1482.79,
+      "matches_played": 3
+    },
+    {
+      "team": "GGEZ",
+      "rating": 1482.49,
+      "matches_played": 3
+    },
+    {
+      "team": "Team NKT Academy",
+      "rating": 1481.16,
+      "matches_played": 3
+    },
+    {
+      "team": "FULL SENSE",
+      "rating": 1474.65,
+      "matches_played": 14
+    },
+    {
+      "team": "FENNEL GC",
+      "rating": 1473.61,
+      "matches_played": 6
+    },
+    {
+      "team": "Disguised",
+      "rating": 1471.57,
+      "matches_played": 6
+    },
+    {
+      "team": "Rising Esports GC",
+      "rating": 1470.72,
+      "matches_played": 2
+    },
+    {
+      "team": "ZETA DIVISION GC",
+      "rating": 1470.06,
+      "matches_played": 8
+    },
+    {
+      "team": "Purr-fectionists",
+      "rating": 1468.0,
+      "matches_played": 2
+    },
+    {
+      "team": "Oblivion Force",
+      "rating": 1468.0,
+      "matches_played": 2
+    },
+    {
+      "team": "Rapid Lofi",
+      "rating": 1468.0,
+      "matches_played": 2
+    },
+    {
+      "team": "Asterisk Women",
+      "rating": 1467.93,
+      "matches_played": 2
+    },
+    {
+      "team": "DetonatioN FocusMe",
+      "rating": 1466.95,
+      "matches_played": 27
+    },
+    {
+      "team": "Dream Chaser",
+      "rating": 1457.28,
+      "matches_played": 3
+    },
+    {
+      "team": "Global Esports Spotlight",
+      "rating": 1454.94,
+      "matches_played": 3
+    },
+    {
+      "team": "VARREL",
+      "rating": 1454.88,
+      "matches_played": 3
+    },
+    {
+      "team": "All Gamers Young",
+      "rating": 1453.59,
+      "matches_played": 3
+    },
+    {
+      "team": "S8UL Esports",
+      "rating": 1453.52,
+      "matches_played": 3
+    },
+    {
+      "team": "Lee-Ming Penguin LIT",
+      "rating": 1453.41,
+      "matches_played": 3
+    },
+    {
+      "team": "RIDDLE ORDER",
+      "rating": 1440.36,
+      "matches_played": 8
+    },
+    {
+      "team": "Chaos Alliance",
+      "rating": 1440.1,
+      "matches_played": 6
+    },
+    {
+      "team": "BLEED",
+      "rating": 1439.76,
+      "matches_played": 4
+    },
+    {
+      "team": "E-KING",
+      "rating": 1431.79,
+      "matches_played": 7
+    },
+    {
+      "team": "Global Esports",
+      "rating": 1428.88,
+      "matches_played": 23
+    },
+    {
+      "team": "ZETA DIVISION",
+      "rating": 1412.7,
+      "matches_played": 21
+    },
+    {
+      "team": "Team Secret",
+      "rating": 1385.45,
+      "matches_played": 23
+    }
+  ]
+}

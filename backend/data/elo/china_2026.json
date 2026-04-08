@@ -1,0 +1,919 @@
+{
+  "region": "china",
+  "season": 2026,
+  "last_updated": "2026-04-08T08:15:09.381206+00:00",
+  "training_match_count": 454,
+  "team_count": 100,
+  "elo_model": {
+    "config": {
+      "initial_rating": 1500.0,
+      "k_factor": 32.0,
+      "scale": 400.0,
+      "min_matches_for_confidence": 5
+    },
+    "ratings": {
+      "Titan Esports Club": {
+        "rating": 1450.5418835183107,
+        "matches_played": 36
+      },
+      "JDG Esports": {
+        "rating": 1555.2032565824054,
+        "matches_played": 41
+      },
+      "All Gamers": {
+        "rating": 1486.3741359702017,
+        "matches_played": 28
+      },
+      "TYLOO": {
+        "rating": 1501.4249182002006,
+        "matches_played": 35
+      },
+      "Bilibili Gaming": {
+        "rating": 1616.791170644297,
+        "matches_played": 49
+      },
+      "Wolves Esports": {
+        "rating": 1458.9600720115282,
+        "matches_played": 40
+      },
+      "Dragon Ranger Gaming": {
+        "rating": 1534.132129039607,
+        "matches_played": 41
+      },
+      "Nova Esports": {
+        "rating": 1438.3756199104212,
+        "matches_played": 35
+      },
+      "FunPlus Phoenix": {
+        "rating": 1461.5500953341057,
+        "matches_played": 37
+      },
+      "Trace Esports": {
+        "rating": 1481.2716298901346,
+        "matches_played": 40
+      },
+      "EDward Gaming": {
+        "rating": 1584.6423177384286,
+        "matches_played": 48
+      },
+      "Kulin Esports": {
+        "rating": 1503.4122759451307,
+        "matches_played": 4
+      },
+      "Rare Atom": {
+        "rating": 1635.546479383251,
+        "matches_played": 26
+      },
+      "ZFGaming": {
+        "rating": 1469.4695015289756,
+        "matches_played": 2
+      },
+      "Xi Lai Gaming": {
+        "rating": 1612.1530905815969,
+        "matches_played": 40
+      },
+      "Chosen Clique Gaming": {
+        "rating": 1535.531224906284,
+        "matches_played": 18
+      },
+      "Octagonal Disposition Gaming": {
+        "rating": 1434.0834996912117,
+        "matches_played": 14
+      },
+      "ZY Gaming": {
+        "rating": 1486.0532820408105,
+        "matches_played": 5
+      },
+      "Xtreme Gaming": {
+        "rating": 1443.0039424593258,
+        "matches_played": 4
+      },
+      "1one": {
+        "rating": 1498.5304984710244,
+        "matches_played": 2
+      },
+      "老头乐": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "Qing Jiu Club": {
+        "rating": 1469.8646190168633,
+        "matches_played": 6
+      },
+      "Temperature X": {
+        "rating": 1487.6215671975906,
+        "matches_played": 3
+      },
+      "LanTu Gaming": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "Ambitious Legend Gaming": {
+        "rating": 1501.8281395413392,
+        "matches_played": 19
+      },
+      "KeepBest Gaming": {
+        "rating": 1520.7381571800572,
+        "matches_played": 10
+      },
+      "I May": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "HaoXiang Gaming": {
+        "rating": 1513.898108351777,
+        "matches_played": 5
+      },
+      "NAXAN": {
+        "rating": 1468.0,
+        "matches_played": 2
+      },
+      "DaiZhu": {
+        "rating": 1484.0662547399324,
+        "matches_played": 5
+      },
+      "Qinyu Gaming": {
+        "rating": 1484.0,
+        "matches_played": 3
+      },
+      "Creator Gaming GC": {
+        "rating": 1484.0,
+        "matches_played": 3
+      },
+      "TeLa NvBing Esports": {
+        "rating": 1468.0,
+        "matches_played": 2
+      },
+      "Nova Esports GC": {
+        "rating": 1666.5934573016564,
+        "matches_played": 17
+      },
+      "Ambitious Legend Gaming GC": {
+        "rating": 1632.3356021591612,
+        "matches_played": 19
+      },
+      "Dream Chaser": {
+        "rating": 1460.6637436846402,
+        "matches_played": 5
+      },
+      "Dragon": {
+        "rating": 1500.1233788388163,
+        "matches_played": 6
+      },
+      "Trace Esports GC": {
+        "rating": 1518.6862259378786,
+        "matches_played": 5
+      },
+      "YaoGuang": {
+        "rating": 1485.4018891056082,
+        "matches_played": 5
+      },
+      "Team Unicorn": {
+        "rating": 1470.0766582701813,
+        "matches_played": 6
+      },
+      "Killer Angel Girls ESC": {
+        "rating": 1564.6527964093698,
+        "matches_played": 8
+      },
+      "TYLOO GC": {
+        "rating": 1468.0,
+        "matches_played": 2
+      },
+      "1one GC": {
+        "rating": 1472.6206057887982,
+        "matches_played": 8
+      },
+      "Team WHZ": {
+        "rating": 1466.8189537528724,
+        "matches_played": 2
+      },
+      "Antler Crane Esports Alliance": {
+        "rating": 1468.8010233716489,
+        "matches_played": 2
+      },
+      "Havoc & Yonder GC": {
+        "rating": 1532.3838958575534,
+        "matches_played": 11
+      },
+      "Team XT": {
+        "rating": 1468.736306793522,
+        "matches_played": 2
+      },
+      "Team VTG": {
+        "rating": 1483.5916438485979,
+        "matches_played": 5
+      },
+      "DashStar": {
+        "rating": 1514.8661320383228,
+        "matches_played": 5
+      },
+      "Team RG": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "101 Outlaws": {
+        "rating": 1484.8230424828603,
+        "matches_played": 5
+      },
+      "Team 1Z": {
+        "rating": 1467.2975328274754,
+        "matches_played": 2
+      },
+      "Team YK": {
+        "rating": 1503.404744799352,
+        "matches_played": 8
+      },
+      "LANDODGERS": {
+        "rating": 1555.7020031098639,
+        "matches_played": 6
+      },
+      "不知道": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "EDward Gaming Youth": {
+        "rating": 1516.91981569748,
+        "matches_played": 3
+      },
+      "黑铁妞妞": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "哈基米": {
+        "rating": 1484.736306793522,
+        "matches_played": 1
+      },
+      "Sanyou Esports Center": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "aqua": {
+        "rating": 1502.0688211901727,
+        "matches_played": 2
+      },
+      "Rui Gaming": {
+        "rating": 1486.1668601230558,
+        "matches_played": 1
+      },
+      "X-GAME 单打王": {
+        "rating": 1483.263693206478,
+        "matches_played": 1
+      },
+      "ZYL": {
+        "rating": 1469.4695015289756,
+        "matches_played": 2
+      },
+      "电竞巅峰": {
+        "rating": 1516.0,
+        "matches_played": 1
+      },
+      "HT": {
+        "rating": 1531.2397376242313,
+        "matches_played": 4
+      },
+      "Fake WHU": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "时隙光年电竞": {
+        "rating": 1484.040347539178,
+        "matches_played": 1
+      },
+      "仿生人": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "Radiant Virtue": {
+        "rating": 1529.3189494963235,
+        "matches_played": 4
+      },
+      "HP": {
+        "rating": 1523.7678399829304,
+        "matches_played": 3
+      },
+      "5FW": {
+        "rating": 1485.4712590654285,
+        "matches_played": 1
+      },
+      "meuz": {
+        "rating": 1485.402373648406,
+        "matches_played": 1
+      },
+      "Pure Aim": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "Precise Defeat": {
+        "rating": 1516.0,
+        "matches_played": 1
+      },
+      "Cambodia": {
+        "rating": 1454.1721796717984,
+        "matches_played": 3
+      },
+      "Thailand": {
+        "rating": 1484.637960913621,
+        "matches_played": 3
+      },
+      "Indonesia": {
+        "rating": 1576.4321457096823,
+        "matches_played": 5
+      },
+      "Malaysia": {
+        "rating": 1516.7552973511024,
+        "matches_played": 5
+      },
+      "Myanmar": {
+        "rating": 1454.1965245402773,
+        "matches_played": 3
+      },
+      "Brunei Darussalam": {
+        "rating": 1484.6664911034452,
+        "matches_played": 3
+      },
+      "Laos": {
+        "rating": 1487.2802612741068,
+        "matches_played": 5
+      },
+      "China": {
+        "rating": 1541.8591394359664,
+        "matches_played": 5
+      },
+      "Victory No Limits Gaming": {
+        "rating": 1510.1755081663434,
+        "matches_played": 4
+      },
+      "GTI": {
+        "rating": 1485.462723797949,
+        "matches_played": 3
+      },
+      "Auraldynx NineCrest GC": {
+        "rating": 1488.519771675683,
+        "matches_played": 3
+      },
+      "Zhu Chao Gaming": {
+        "rating": 1479.2739132660095,
+        "matches_played": 10
+      },
+      "Thunder Gaming": {
+        "rating": 1466.772829874248,
+        "matches_played": 2
+      },
+      "Any Questions Gaming": {
+        "rating": 1554.4086397335886,
+        "matches_played": 20
+      },
+      "GDG": {
+        "rating": 1580.516266380029,
+        "matches_played": 8
+      },
+      "UR": {
+        "rating": 1483.315854730386,
+        "matches_played": 7
+      },
+      "Invictus Gaming": {
+        "rating": 1546.1422890655183,
+        "matches_played": 9
+      },
+      "A Team": {
+        "rating": 1490.0824401825366,
+        "matches_played": 7
+      },
+      "Ever Growing Gaming": {
+        "rating": 1466.9631876269575,
+        "matches_played": 6
+      },
+      "GTOO": {
+        "rating": 1411.6226957938802,
+        "matches_played": 6
+      },
+      "SEC": {
+        "rating": 1420.7577312625015,
+        "matches_played": 6
+      },
+      "VXG": {
+        "rating": 1477.4858112172603,
+        "matches_played": 6
+      },
+      "Rex Regum Qeon": {
+        "rating": 1472.9367591617122,
+        "matches_played": 2
+      },
+      "LEVIATÁN": {
+        "rating": 1567.4237571748297,
+        "matches_played": 4
+      },
+      "DRX": {
+        "rating": 1508.0206080855032,
+        "matches_played": 4
+      },
+      "World Sports Invictus Gaming": {
+        "rating": 1481.6062006558925,
+        "matches_played": 1
+      }
+    }
+  },
+  "rankings": [
+    {
+      "team": "Nova Esports GC",
+      "rating": 1666.59,
+      "matches_played": 17
+    },
+    {
+      "team": "Rare Atom",
+      "rating": 1635.55,
+      "matches_played": 26
+    },
+    {
+      "team": "Ambitious Legend Gaming GC",
+      "rating": 1632.34,
+      "matches_played": 19
+    },
+    {
+      "team": "Bilibili Gaming",
+      "rating": 1616.79,
+      "matches_played": 49
+    },
+    {
+      "team": "Xi Lai Gaming",
+      "rating": 1612.15,
+      "matches_played": 40
+    },
+    {
+      "team": "EDward Gaming",
+      "rating": 1584.64,
+      "matches_played": 48
+    },
+    {
+      "team": "GDG",
+      "rating": 1580.52,
+      "matches_played": 8
+    },
+    {
+      "team": "Indonesia",
+      "rating": 1576.43,
+      "matches_played": 5
+    },
+    {
+      "team": "LEVIATÁN",
+      "rating": 1567.42,
+      "matches_played": 4
+    },
+    {
+      "team": "Killer Angel Girls ESC",
+      "rating": 1564.65,
+      "matches_played": 8
+    },
+    {
+      "team": "LANDODGERS",
+      "rating": 1555.7,
+      "matches_played": 6
+    },
+    {
+      "team": "JDG Esports",
+      "rating": 1555.2,
+      "matches_played": 41
+    },
+    {
+      "team": "Any Questions Gaming",
+      "rating": 1554.41,
+      "matches_played": 20
+    },
+    {
+      "team": "Invictus Gaming",
+      "rating": 1546.14,
+      "matches_played": 9
+    },
+    {
+      "team": "China",
+      "rating": 1541.86,
+      "matches_played": 5
+    },
+    {
+      "team": "Chosen Clique Gaming",
+      "rating": 1535.53,
+      "matches_played": 18
+    },
+    {
+      "team": "Dragon Ranger Gaming",
+      "rating": 1534.13,
+      "matches_played": 41
+    },
+    {
+      "team": "Havoc & Yonder GC",
+      "rating": 1532.38,
+      "matches_played": 11
+    },
+    {
+      "team": "HT",
+      "rating": 1531.24,
+      "matches_played": 4
+    },
+    {
+      "team": "Radiant Virtue",
+      "rating": 1529.32,
+      "matches_played": 4
+    },
+    {
+      "team": "HP",
+      "rating": 1523.77,
+      "matches_played": 3
+    },
+    {
+      "team": "KeepBest Gaming",
+      "rating": 1520.74,
+      "matches_played": 10
+    },
+    {
+      "team": "Trace Esports GC",
+      "rating": 1518.69,
+      "matches_played": 5
+    },
+    {
+      "team": "EDward Gaming Youth",
+      "rating": 1516.92,
+      "matches_played": 3
+    },
+    {
+      "team": "Malaysia",
+      "rating": 1516.76,
+      "matches_played": 5
+    },
+    {
+      "team": "电竞巅峰",
+      "rating": 1516.0,
+      "matches_played": 1
+    },
+    {
+      "team": "Precise Defeat",
+      "rating": 1516.0,
+      "matches_played": 1
+    },
+    {
+      "team": "DashStar",
+      "rating": 1514.87,
+      "matches_played": 5
+    },
+    {
+      "team": "HaoXiang Gaming",
+      "rating": 1513.9,
+      "matches_played": 5
+    },
+    {
+      "team": "Victory No Limits Gaming",
+      "rating": 1510.18,
+      "matches_played": 4
+    },
+    {
+      "team": "DRX",
+      "rating": 1508.02,
+      "matches_played": 4
+    },
+    {
+      "team": "Kulin Esports",
+      "rating": 1503.41,
+      "matches_played": 4
+    },
+    {
+      "team": "Team YK",
+      "rating": 1503.4,
+      "matches_played": 8
+    },
+    {
+      "team": "aqua",
+      "rating": 1502.07,
+      "matches_played": 2
+    },
+    {
+      "team": "Ambitious Legend Gaming",
+      "rating": 1501.83,
+      "matches_played": 19
+    },
+    {
+      "team": "TYLOO",
+      "rating": 1501.42,
+      "matches_played": 35
+    },
+    {
+      "team": "Dragon",
+      "rating": 1500.12,
+      "matches_played": 6
+    },
+    {
+      "team": "1one",
+      "rating": 1498.53,
+      "matches_played": 2
+    },
+    {
+      "team": "A Team",
+      "rating": 1490.08,
+      "matches_played": 7
+    },
+    {
+      "team": "Auraldynx NineCrest GC",
+      "rating": 1488.52,
+      "matches_played": 3
+    },
+    {
+      "team": "Temperature X",
+      "rating": 1487.62,
+      "matches_played": 3
+    },
+    {
+      "team": "Laos",
+      "rating": 1487.28,
+      "matches_played": 5
+    },
+    {
+      "team": "All Gamers",
+      "rating": 1486.37,
+      "matches_played": 28
+    },
+    {
+      "team": "Rui Gaming",
+      "rating": 1486.17,
+      "matches_played": 1
+    },
+    {
+      "team": "ZY Gaming",
+      "rating": 1486.05,
+      "matches_played": 5
+    },
+    {
+      "team": "5FW",
+      "rating": 1485.47,
+      "matches_played": 1
+    },
+    {
+      "team": "GTI",
+      "rating": 1485.46,
+      "matches_played": 3
+    },
+    {
+      "team": "YaoGuang",
+      "rating": 1485.4,
+      "matches_played": 5
+    },
+    {
+      "team": "meuz",
+      "rating": 1485.4,
+      "matches_played": 1
+    },
+    {
+      "team": "101 Outlaws",
+      "rating": 1484.82,
+      "matches_played": 5
+    },
+    {
+      "team": "哈基米",
+      "rating": 1484.74,
+      "matches_played": 1
+    },
+    {
+      "team": "Brunei Darussalam",
+      "rating": 1484.67,
+      "matches_played": 3
+    },
+    {
+      "team": "Thailand",
+      "rating": 1484.64,
+      "matches_played": 3
+    },
+    {
+      "team": "DaiZhu",
+      "rating": 1484.07,
+      "matches_played": 5
+    },
+    {
+      "team": "时隙光年电竞",
+      "rating": 1484.04,
+      "matches_played": 1
+    },
+    {
+      "team": "老头乐",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "LanTu Gaming",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "I May",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "Qinyu Gaming",
+      "rating": 1484.0,
+      "matches_played": 3
+    },
+    {
+      "team": "Creator Gaming GC",
+      "rating": 1484.0,
+      "matches_played": 3
+    },
+    {
+      "team": "Team RG",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "不知道",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "黑铁妞妞",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "Sanyou Esports Center",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "Fake WHU",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "仿生人",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "Pure Aim",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "Team VTG",
+      "rating": 1483.59,
+      "matches_played": 5
+    },
+    {
+      "team": "UR",
+      "rating": 1483.32,
+      "matches_played": 7
+    },
+    {
+      "team": "X-GAME 单打王",
+      "rating": 1483.26,
+      "matches_played": 1
+    },
+    {
+      "team": "World Sports Invictus Gaming",
+      "rating": 1481.61,
+      "matches_played": 1
+    },
+    {
+      "team": "Trace Esports",
+      "rating": 1481.27,
+      "matches_played": 40
+    },
+    {
+      "team": "Zhu Chao Gaming",
+      "rating": 1479.27,
+      "matches_played": 10
+    },
+    {
+      "team": "VXG",
+      "rating": 1477.49,
+      "matches_played": 6
+    },
+    {
+      "team": "Rex Regum Qeon",
+      "rating": 1472.94,
+      "matches_played": 2
+    },
+    {
+      "team": "1one GC",
+      "rating": 1472.62,
+      "matches_played": 8
+    },
+    {
+      "team": "Team Unicorn",
+      "rating": 1470.08,
+      "matches_played": 6
+    },
+    {
+      "team": "Qing Jiu Club",
+      "rating": 1469.86,
+      "matches_played": 6
+    },
+    {
+      "team": "ZFGaming",
+      "rating": 1469.47,
+      "matches_played": 2
+    },
+    {
+      "team": "ZYL",
+      "rating": 1469.47,
+      "matches_played": 2
+    },
+    {
+      "team": "Antler Crane Esports Alliance",
+      "rating": 1468.8,
+      "matches_played": 2
+    },
+    {
+      "team": "Team XT",
+      "rating": 1468.74,
+      "matches_played": 2
+    },
+    {
+      "team": "NAXAN",
+      "rating": 1468.0,
+      "matches_played": 2
+    },
+    {
+      "team": "TeLa NvBing Esports",
+      "rating": 1468.0,
+      "matches_played": 2
+    },
+    {
+      "team": "TYLOO GC",
+      "rating": 1468.0,
+      "matches_played": 2
+    },
+    {
+      "team": "Team 1Z",
+      "rating": 1467.3,
+      "matches_played": 2
+    },
+    {
+      "team": "Ever Growing Gaming",
+      "rating": 1466.96,
+      "matches_played": 6
+    },
+    {
+      "team": "Team WHZ",
+      "rating": 1466.82,
+      "matches_played": 2
+    },
+    {
+      "team": "Thunder Gaming",
+      "rating": 1466.77,
+      "matches_played": 2
+    },
+    {
+      "team": "FunPlus Phoenix",
+      "rating": 1461.55,
+      "matches_played": 37
+    },
+    {
+      "team": "Dream Chaser",
+      "rating": 1460.66,
+      "matches_played": 5
+    },
+    {
+      "team": "Wolves Esports",
+      "rating": 1458.96,
+      "matches_played": 40
+    },
+    {
+      "team": "Myanmar",
+      "rating": 1454.2,
+      "matches_played": 3
+    },
+    {
+      "team": "Cambodia",
+      "rating": 1454.17,
+      "matches_played": 3
+    },
+    {
+      "team": "Titan Esports Club",
+      "rating": 1450.54,
+      "matches_played": 36
+    },
+    {
+      "team": "Xtreme Gaming",
+      "rating": 1443.0,
+      "matches_played": 4
+    },
+    {
+      "team": "Nova Esports",
+      "rating": 1438.38,
+      "matches_played": 35
+    },
+    {
+      "team": "Octagonal Disposition Gaming",
+      "rating": 1434.08,
+      "matches_played": 14
+    },
+    {
+      "team": "SEC",
+      "rating": 1420.76,
+      "matches_played": 6
+    },
+    {
+      "team": "GTOO",
+      "rating": 1411.62,
+      "matches_played": 6
+    }
+  ]
+}

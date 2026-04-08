@@ -1,0 +1,155 @@
+{
+  "region": "americas",
+  "season": 2026,
+  "mode": "vct_only",
+  "last_updated": "2026-04-08T08:35:51.438117+00:00",
+  "training_match_count": 137,
+  "team_count": 15,
+  "elo_model": {
+    "config": {
+      "initial_rating": 1500.0,
+      "k_factor": 32.0,
+      "scale": 400.0,
+      "min_matches_for_confidence": 5
+    },
+    "ratings": {
+      "Evil Geniuses": {
+        "rating": 1477.1053872697103,
+        "matches_played": 22
+      },
+      "LOUD": {
+        "rating": 1358.420677738615,
+        "matches_played": 17
+      },
+      "MIBR": {
+        "rating": 1520.7767821573748,
+        "matches_played": 25
+      },
+      "100 Thieves": {
+        "rating": 1530.397700890205,
+        "matches_played": 27
+      },
+      "NRG": {
+        "rating": 1580.2153565651302,
+        "matches_played": 25
+      },
+      "Cloud9": {
+        "rating": 1516.4915795476145,
+        "matches_played": 26
+      },
+      "2Game Esports": {
+        "rating": 1408.2517137631603,
+        "matches_played": 12
+      },
+      "FURIA": {
+        "rating": 1458.5003467070303,
+        "matches_played": 17
+      },
+      "KRÜ Esports": {
+        "rating": 1428.316692117463,
+        "matches_played": 21
+      },
+      "Sentinels": {
+        "rating": 1562.3773911789112,
+        "matches_played": 26
+      },
+      "G2 Esports": {
+        "rating": 1719.2557278145,
+        "matches_played": 28
+      },
+      "LEVIATÁN": {
+        "rating": 1458.6264138712593,
+        "matches_played": 21
+      },
+      "Team Alpha": {
+        "rating": 1516.0,
+        "matches_played": 1
+      },
+      "Team Omega": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "ENVY": {
+        "rating": 1481.2642303790258,
+        "matches_played": 5
+      }
+    }
+  },
+  "rankings": [
+    {
+      "team": "G2 Esports",
+      "rating": 1719.26,
+      "matches_played": 28
+    },
+    {
+      "team": "NRG",
+      "rating": 1580.22,
+      "matches_played": 25
+    },
+    {
+      "team": "Sentinels",
+      "rating": 1562.38,
+      "matches_played": 26
+    },
+    {
+      "team": "100 Thieves",
+      "rating": 1530.4,
+      "matches_played": 27
+    },
+    {
+      "team": "MIBR",
+      "rating": 1520.78,
+      "matches_played": 25
+    },
+    {
+      "team": "Cloud9",
+      "rating": 1516.49,
+      "matches_played": 26
+    },
+    {
+      "team": "Team Alpha",
+      "rating": 1516.0,
+      "matches_played": 1
+    },
+    {
+      "team": "Team Omega",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "ENVY",
+      "rating": 1481.26,
+      "matches_played": 5
+    },
+    {
+      "team": "Evil Geniuses",
+      "rating": 1477.11,
+      "matches_played": 22
+    },
+    {
+      "team": "LEVIATÁN",
+      "rating": 1458.63,
+      "matches_played": 21
+    },
+    {
+      "team": "FURIA",
+      "rating": 1458.5,
+      "matches_played": 17
+    },
+    {
+      "team": "KRÜ Esports",
+      "rating": 1428.32,
+      "matches_played": 21
+    },
+    {
+      "team": "2Game Esports",
+      "rating": 1408.25,
+      "matches_played": 12
+    },
+    {
+      "team": "LOUD",
+      "rating": 1358.42,
+      "matches_played": 17
+    }
+  ]
+}

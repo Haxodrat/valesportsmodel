@@ -1,0 +1,164 @@
+{
+  "region": "pacific",
+  "season": 2026,
+  "mode": "vct_only",
+  "last_updated": "2026-04-08T08:35:51.182658+00:00",
+  "training_match_count": 137,
+  "team_count": 16,
+  "elo_model": {
+    "config": {
+      "initial_rating": 1500.0,
+      "k_factor": 32.0,
+      "scale": 400.0,
+      "min_matches_for_confidence": 5
+    },
+    "ratings": {
+      "BOOM Esports": {
+        "rating": 1435.334595334991,
+        "matches_played": 14
+      },
+      "T1": {
+        "rating": 1587.191117847081,
+        "matches_played": 28
+      },
+      "ZETA DIVISION": {
+        "rating": 1428.7013233831078,
+        "matches_played": 16
+      },
+      "Nongshim RedForce": {
+        "rating": 1567.9877734457334,
+        "matches_played": 23
+      },
+      "Global Esports": {
+        "rating": 1435.2107685322592,
+        "matches_played": 19
+      },
+      "Team Secret": {
+        "rating": 1371.1946378434504,
+        "matches_played": 15
+      },
+      "DetonatioN FocusMe": {
+        "rating": 1474.386280548483,
+        "matches_played": 22
+      },
+      "Rex Regum Qeon": {
+        "rating": 1562.2268378600768,
+        "matches_played": 29
+      },
+      "Paper Rex": {
+        "rating": 1623.0798798593987,
+        "matches_played": 27
+      },
+      "TALON": {
+        "rating": 1520.8784713522352,
+        "matches_played": 21
+      },
+      "Gen.G": {
+        "rating": 1497.1439951005248,
+        "matches_played": 24
+      },
+      "DRX": {
+        "rating": 1557.7322506795383,
+        "matches_played": 26
+      },
+      "Team World": {
+        "rating": 1516.0,
+        "matches_played": 1
+      },
+      "Glory Once Again": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "FULL SENSE": {
+        "rating": 1485.8761055898506,
+        "matches_played": 5
+      },
+      "VARREL": {
+        "rating": 1453.0559626232696,
+        "matches_played": 3
+      }
+    }
+  },
+  "rankings": [
+    {
+      "team": "Paper Rex",
+      "rating": 1623.08,
+      "matches_played": 27
+    },
+    {
+      "team": "T1",
+      "rating": 1587.19,
+      "matches_played": 28
+    },
+    {
+      "team": "Nongshim RedForce",
+      "rating": 1567.99,
+      "matches_played": 23
+    },
+    {
+      "team": "Rex Regum Qeon",
+      "rating": 1562.23,
+      "matches_played": 29
+    },
+    {
+      "team": "DRX",
+      "rating": 1557.73,
+      "matches_played": 26
+    },
+    {
+      "team": "TALON",
+      "rating": 1520.88,
+      "matches_played": 21
+    },
+    {
+      "team": "Team World",
+      "rating": 1516.0,
+      "matches_played": 1
+    },
+    {
+      "team": "Gen.G",
+      "rating": 1497.14,
+      "matches_played": 24
+    },
+    {
+      "team": "FULL SENSE",
+      "rating": 1485.88,
+      "matches_played": 5
+    },
+    {
+      "team": "Glory Once Again",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "DetonatioN FocusMe",
+      "rating": 1474.39,
+      "matches_played": 22
+    },
+    {
+      "team": "VARREL",
+      "rating": 1453.06,
+      "matches_played": 3
+    },
+    {
+      "team": "BOOM Esports",
+      "rating": 1435.33,
+      "matches_played": 14
+    },
+    {
+      "team": "Global Esports",
+      "rating": 1435.21,
+      "matches_played": 19
+    },
+    {
+      "team": "ZETA DIVISION",
+      "rating": 1428.7,
+      "matches_played": 16
+    },
+    {
+      "team": "Team Secret",
+      "rating": 1371.19,
+      "matches_played": 15
+    }
+  ]
+}

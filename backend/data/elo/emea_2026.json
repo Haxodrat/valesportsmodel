@@ -1,0 +1,5473 @@
+{
+  "region": "emea",
+  "season": 2026,
+  "last_updated": "2026-04-08T08:15:09.263005+00:00",
+  "training_match_count": 2841,
+  "team_count": 606,
+  "elo_model": {
+    "config": {
+      "initial_rating": 1500.0,
+      "k_factor": 32.0,
+      "scale": 400.0,
+      "min_matches_for_confidence": 5
+    },
+    "ratings": {
+      "FUT Esports": {
+        "rating": 1513.4988177897037,
+        "matches_played": 39
+      },
+      "KOI": {
+        "rating": 1394.7169909571276,
+        "matches_played": 17
+      },
+      "BBL Esports": {
+        "rating": 1609.781549922929,
+        "matches_played": 30
+      },
+      "FNATIC": {
+        "rating": 1628.5991175325303,
+        "matches_played": 36
+      },
+      "Team Heretics": {
+        "rating": 1602.072069418297,
+        "matches_played": 34
+      },
+      "Natus Vincere": {
+        "rating": 1457.4397366102564,
+        "matches_played": 32
+      },
+      "Team Vitality": {
+        "rating": 1577.3663310567342,
+        "matches_played": 34
+      },
+      "Team Liquid": {
+        "rating": 1680.2132861582854,
+        "matches_played": 37
+      },
+      "GIANTX": {
+        "rating": 1496.1820609727865,
+        "matches_played": 32
+      },
+      "Gentle Mates": {
+        "rating": 1453.354758869393,
+        "matches_played": 24
+      },
+      "Karmine Corp": {
+        "rating": 1412.42343601373,
+        "matches_played": 26
+      },
+      "BLVKHVND": {
+        "rating": 1616.6299430527272,
+        "matches_played": 53
+      },
+      "No Pecan!": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "OMNIA": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "Scald eSport GC": {
+        "rating": 1505.388473701046,
+        "matches_played": 10
+      },
+      "Digity Esport": {
+        "rating": 1484.0,
+        "matches_played": 3
+      },
+      "Dortmund Esports Warriors": {
+        "rating": 1484.736306793522,
+        "matches_played": 3
+      },
+      "Crvena zvezda Esports": {
+        "rating": 1515.682446295831,
+        "matches_played": 18
+      },
+      "Frags of Fire CO GC": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "Team PlayHard Glasterz": {
+        "rating": 1483.263693206478,
+        "matches_played": 3
+      },
+      "Venenum GC": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "Red Velvet": {
+        "rating": 1468.736306793522,
+        "matches_played": 2
+      },
+      "Soul society": {
+        "rating": 1514.5273864129558,
+        "matches_played": 5
+      },
+      "Colorful Radiation": {
+        "rating": 1484.0339081301693,
+        "matches_played": 3
+      },
+      "ForsaKen": {
+        "rating": 1529.2186924314028,
+        "matches_played": 6
+      },
+      "Hurricane Of Feathers Kitsune": {
+        "rating": 1484.7023986633528,
+        "matches_played": 3
+      },
+      "Saltire Sirens": {
+        "rating": 1499.9660918698307,
+        "matches_played": 4
+      },
+      "EMUs": {
+        "rating": 1564.2279859460082,
+        "matches_played": 25
+      },
+      "BRUXA": {
+        "rating": 1430.394546403428,
+        "matches_played": 11
+      },
+      "F9 Wonders": {
+        "rating": 1513.8034754597227,
+        "matches_played": 5
+      },
+      "PSQ": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "TREMBLE": {
+        "rating": 1468.736306793522,
+        "matches_played": 2
+      },
+      "Acient Freya": {
+        "rating": 1516.6069677864755,
+        "matches_played": 5
+      },
+      "PowerPuff GC": {
+        "rating": 1468.736306793522,
+        "matches_played": 2
+      },
+      "Idynomashimi": {
+        "rating": 1500.0,
+        "matches_played": 4
+      },
+      "Celestials": {
+        "rating": 1517.6194301812852,
+        "matches_played": 7
+      },
+      "Last Second": {
+        "rating": 1529.803651092877,
+        "matches_played": 6
+      },
+      "Formulation GC": {
+        "rating": 1608.8278155340195,
+        "matches_played": 32
+      },
+      "Giga Liba": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "SPICY": {
+        "rating": 1468.736306793522,
+        "matches_played": 2
+      },
+      "Dreamers": {
+        "rating": 1484.736306793522,
+        "matches_played": 3
+      },
+      "Alien Anonymo": {
+        "rating": 1529.2232196917184,
+        "matches_played": 6
+      },
+      "SiXSENSE": {
+        "rating": 1500.6716135746117,
+        "matches_played": 4
+      },
+      "ALTERNATE aTTaX Ruby": {
+        "rating": 1602.563243236272,
+        "matches_played": 57
+      },
+      "Last9": {
+        "rating": 1501.471055359896,
+        "matches_played": 4
+      },
+      "Outplayed GC": {
+        "rating": 1429.7432467631254,
+        "matches_played": 9
+      },
+      "MadWolves": {
+        "rating": 1500.0,
+        "matches_played": 2
+      },
+      "DuelsMix": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "GnG Amazigh White": {
+        "rating": 1513.891049135776,
+        "matches_played": 5
+      },
+      "On Sight": {
+        "rating": 1524.10135542402,
+        "matches_played": 8
+      },
+      "Playbay X VISION SYNC": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "Melilla Titans GC": {
+        "rating": 1474.450132894466,
+        "matches_played": 4
+      },
+      "Hidden Horizon GC": {
+        "rating": 1500.0,
+        "matches_played": 2
+      },
+      "Exanimis": {
+        "rating": 1499.263693206478,
+        "matches_played": 4
+      },
+      "CTRL SWAG": {
+        "rating": 1499.7523541550665,
+        "matches_played": 6
+      },
+      "GoatFellas Tragos": {
+        "rating": 1484.0,
+        "matches_played": 3
+      },
+      "ECO Akuma": {
+        "rating": 1468.0,
+        "matches_played": 2
+      },
+      "Twisted Minds Orchid": {
+        "rating": 1738.9651797397023,
+        "matches_played": 73
+      },
+      "PURE GC": {
+        "rating": 1468.736306793522,
+        "matches_played": 2
+      },
+      "Imperial Eagles White": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "Ravens": {
+        "rating": 1500.7024671725246,
+        "matches_played": 4
+      },
+      "RIZON Sugar": {
+        "rating": 1551.242067977844,
+        "matches_played": 23
+      },
+      "Lotus Karma": {
+        "rating": 1498.812958679649,
+        "matches_played": 6
+      },
+      "Shine in Shade": {
+        "rating": 1497.6301203209252,
+        "matches_played": 17
+      },
+      "Alley Cats": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "NYAN ESPORTS": {
+        "rating": 1503.198462508788,
+        "matches_played": 6
+      },
+      "TOG Kitsune": {
+        "rating": 1512.3694779915102,
+        "matches_played": 27
+      },
+      "RV Jushimori": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "Team Galaga Kitsune": {
+        "rating": 1559.855704125412,
+        "matches_played": 27
+      },
+      "Leftovers Crew": {
+        "rating": 1469.4358728782763,
+        "matches_played": 2
+      },
+      "axolotls and chips": {
+        "rating": 1529.894008993795,
+        "matches_played": 6
+      },
+      "Zenithia": {
+        "rating": 1493.0601828221093,
+        "matches_played": 9
+      },
+      "Oserv Esport GC": {
+        "rating": 1502.7301503343294,
+        "matches_played": 10
+      },
+      "RAKUZAN": {
+        "rating": 1441.8731127138944,
+        "matches_played": 15
+      },
+      "Nuxeria GC": {
+        "rating": 1550.1157427667008,
+        "matches_played": 18
+      },
+      "OATMILK": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "5STARS GC": {
+        "rating": 1500.0,
+        "matches_played": 2
+      },
+      "Team Coalesce Roses": {
+        "rating": 1468.110878148106,
+        "matches_played": 15
+      },
+      "Numinous": {
+        "rating": 1483.263693206478,
+        "matches_played": 1
+      },
+      "SK Nebula": {
+        "rating": 1742.1683928923844,
+        "matches_played": 66
+      },
+      "WLGaming Female Stars": {
+        "rating": 1579.4161983132403,
+        "matches_played": 32
+      },
+      "Dragons Esports Women": {
+        "rating": 1483.263693206478,
+        "matches_played": 1
+      },
+      "HELLO KITTY": {
+        "rating": 1467.2280019079026,
+        "matches_played": 8
+      },
+      "DESTINY": {
+        "rating": 1499.2975328274754,
+        "matches_played": 2
+      },
+      "Veni Venom": {
+        "rating": 1513.9894914598303,
+        "matches_played": 3
+      },
+      "Cerberus": {
+        "rating": 1483.263693206478,
+        "matches_played": 1
+      },
+      "Mulieres Vires": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "Imperium Livia": {
+        "rating": 1484.7024671725246,
+        "matches_played": 1
+      },
+      "HeX eSports": {
+        "rating": 1511.223152078879,
+        "matches_played": 5
+      },
+      "Exalty Azalea": {
+        "rating": 1566.1873001057058,
+        "matches_played": 23
+      },
+      "EKO Esports GC": {
+        "rating": 1481.8590881463997,
+        "matches_played": 9
+      },
+      "Cannes Esports": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "Zyron Sadashi": {
+        "rating": 1483.263693206478,
+        "matches_played": 1
+      },
+      "Team Genetix Queens": {
+        "rating": 1483.263693206478,
+        "matches_played": 1
+      },
+      "NOMAD GC": {
+        "rating": 1552.441664361357,
+        "matches_played": 34
+      },
+      "Neira Esports": {
+        "rating": 1484.0339081301693,
+        "matches_played": 1
+      },
+      "VALIANT GC": {
+        "rating": 1575.1139704485104,
+        "matches_played": 19
+      },
+      "NEON BLADE": {
+        "rating": 1538.949685995867,
+        "matches_played": 12
+      },
+      "charbon": {
+        "rating": 1535.999981273376,
+        "matches_played": 8
+      },
+      "FOKUS Sakura": {
+        "rating": 1691.4155844379343,
+        "matches_played": 59
+      },
+      "Permitta Unicorns GC": {
+        "rating": 1551.1676920034938,
+        "matches_played": 11
+      },
+      "NOVO Nightingale": {
+        "rating": 1516.0594047726186,
+        "matches_played": 33
+      },
+      "The Ultimates Odyssey": {
+        "rating": 1521.155523689857,
+        "matches_played": 5
+      },
+      "MAD Lions KOI": {
+        "rating": 1507.5442405950382,
+        "matches_played": 8
+      },
+      "Luminaria": {
+        "rating": 1470.0972685663837,
+        "matches_played": 2
+      },
+      "LUA Gaming": {
+        "rating": 1500.5504406634313,
+        "matches_played": 4
+      },
+      "Zerance Mint": {
+        "rating": 1504.7360017867059,
+        "matches_played": 54
+      },
+      "LXT ESPORTS": {
+        "rating": 1487.9793370237503,
+        "matches_played": 3
+      },
+      "Gamax Lite": {
+        "rating": 1500.5425559562464,
+        "matches_played": 15
+      },
+      "BLAZE": {
+        "rating": 1487.5326219095202,
+        "matches_played": 3
+      },
+      "Ketçaplı Ruffles": {
+        "rating": 1524.5020590933887,
+        "matches_played": 7
+      },
+      "KPI Gaming": {
+        "rating": 1582.9348427528978,
+        "matches_played": 10
+      },
+      "R8 Esports": {
+        "rating": 1468.736306793522,
+        "matches_played": 2
+      },
+      "Galakticos": {
+        "rating": 1486.9024049946643,
+        "matches_played": 3
+      },
+      "Diamant Esports": {
+        "rating": 1499.263693206478,
+        "matches_played": 2
+      },
+      "PPP": {
+        "rating": 1468.736306793522,
+        "matches_played": 2
+      },
+      "CGN Esports": {
+        "rating": 1587.10012778331,
+        "matches_played": 22
+      },
+      "SweetNsour": {
+        "rating": 1466.6627494173088,
+        "matches_played": 4
+      },
+      "Team Valiant": {
+        "rating": 1484.0095722316737,
+        "matches_played": 7
+      },
+      "NOVO Esports": {
+        "rating": 1499.3593758106545,
+        "matches_played": 4
+      },
+      "Apeks": {
+        "rating": 1395.2875386544956,
+        "matches_played": 19
+      },
+      "GoNext Esports": {
+        "rating": 1500.2619851907846,
+        "matches_played": 6
+      },
+      "MOUZ": {
+        "rating": 1513.8277940980163,
+        "matches_played": 7
+      },
+      "SAW": {
+        "rating": 1441.7460538430885,
+        "matches_played": 4
+      },
+      "DSYRE": {
+        "rating": 1505.006004442562,
+        "matches_played": 4
+      },
+      "PCIFIC Esports": {
+        "rating": 1514.1810430523187,
+        "matches_played": 11
+      },
+      "The Ultimates": {
+        "rating": 1459.637836915009,
+        "matches_played": 9
+      },
+      "Barça eSports": {
+        "rating": 1419.1792619031048,
+        "matches_played": 6
+      },
+      "Joblife": {
+        "rating": 1455.9845417817999,
+        "matches_played": 18
+      },
+      "Karmine Corp GC": {
+        "rating": 1726.3353252548418,
+        "matches_played": 58
+      },
+      "Odd 1 OUT": {
+        "rating": 1447.3486472990662,
+        "matches_played": 6
+      },
+      "HEROIC Valkyries": {
+        "rating": 1472.5565800691832,
+        "matches_played": 28
+      },
+      "BBL Queens": {
+        "rating": 1482.0298152750263,
+        "matches_played": 8
+      },
+      "G2 Gozen": {
+        "rating": 1821.6555494974582,
+        "matches_played": 61
+      },
+      "GIANTX GC": {
+        "rating": 1701.0216774621854,
+        "matches_played": 75
+      },
+      "Team Falcons Vega": {
+        "rating": 1529.7665243338906,
+        "matches_played": 8
+      },
+      "NASR Ignite": {
+        "rating": 1441.3169663143708,
+        "matches_played": 24
+      },
+      "Lunar": {
+        "rating": 1479.9613387890704,
+        "matches_played": 14
+      },
+      "Silly Seals": {
+        "rating": 1527.3543452048564,
+        "matches_played": 9
+      },
+      "AlQadsiah Corals": {
+        "rating": 1651.731341095187,
+        "matches_played": 49
+      },
+      "DECIDERS": {
+        "rating": 1570.94569110927,
+        "matches_played": 10
+      },
+      "F9 Iris": {
+        "rating": 1528.51414037995,
+        "matches_played": 9
+      },
+      "DVM Miss": {
+        "rating": 1625.1495160287805,
+        "matches_played": 34
+      },
+      "Siko Esports GC": {
+        "rating": 1528.391702042645,
+        "matches_played": 9
+      },
+      "KBV": {
+        "rating": 1570.6156685998822,
+        "matches_played": 10
+      },
+      "Zephyr Otters": {
+        "rating": 1471.6674293265592,
+        "matches_played": 2
+      },
+      "Good Girls!": {
+        "rating": 1484.0734858962012,
+        "matches_played": 7
+      },
+      "Maneaters": {
+        "rating": 1489.5892875438365,
+        "matches_played": 21
+      },
+      "Fact Revolution": {
+        "rating": 1471.7978875226227,
+        "matches_played": 14
+      },
+      "Blue Orchid": {
+        "rating": 1545.6095303903426,
+        "matches_played": 7
+      },
+      "Myth Esports": {
+        "rating": 1549.4407989723543,
+        "matches_played": 7
+      },
+      "Guinea Pink Silkie": {
+        "rating": 1515.8811509415114,
+        "matches_played": 7
+      },
+      "RADX E-Sports": {
+        "rating": 1391.3559473717414,
+        "matches_played": 14
+      },
+      "Edel eSports": {
+        "rating": 1515.5214578131447,
+        "matches_played": 7
+      },
+      "Nade Venus Gaming": {
+        "rating": 1467.9064402165666,
+        "matches_played": 6
+      },
+      "Parma Esports": {
+        "rating": 1538.2855028973609,
+        "matches_played": 24
+      },
+      "DeMaCiAnS": {
+        "rating": 1452.0897975132768,
+        "matches_played": 7
+      },
+      "Reveal Multigaming Shinsei": {
+        "rating": 1427.0546526792898,
+        "matches_played": 13
+      },
+      "VAY eSports FEM": {
+        "rating": 1526.56734972272,
+        "matches_played": 14
+      },
+      "Team Divergentes GC": {
+        "rating": 1527.789613409485,
+        "matches_played": 14
+      },
+      "Red Royals GC": {
+        "rating": 1420.921259406262,
+        "matches_played": 7
+      },
+      "Dango sellers": {
+        "rating": 1550.3216379732282,
+        "matches_played": 7
+      },
+      "SKÅL Lunaris": {
+        "rating": 1344.0912595935804,
+        "matches_played": 19
+      },
+      "All Good": {
+        "rating": 1467.7737847877454,
+        "matches_played": 6
+      },
+      "Mini Haddock Meal": {
+        "rating": 1555.0226036954432,
+        "matches_played": 16
+      },
+      "Sakura Scorpions": {
+        "rating": 1515.8455418199774,
+        "matches_played": 7
+      },
+      "TN1GHT Clan Female": {
+        "rating": 1543.6245355275228,
+        "matches_played": 7
+      },
+      "CTRL GC": {
+        "rating": 1526.3513830987577,
+        "matches_played": 14
+      },
+      "Dragon Seekers": {
+        "rating": 1515.2711984530079,
+        "matches_played": 7
+      },
+      "hawk2a": {
+        "rating": 1518.8269254218096,
+        "matches_played": 7
+      },
+      "Royal Reapers GC": {
+        "rating": 1483.91764229209,
+        "matches_played": 7
+      },
+      "NSM": {
+        "rating": 1515.5945170765492,
+        "matches_played": 7
+      },
+      "MGA GC": {
+        "rating": 1452.1523319188016,
+        "matches_played": 7
+      },
+      "Valkyrie Vixens": {
+        "rating": 1453.5145799765198,
+        "matches_played": 15
+      },
+      "XPERION NXT HANAMI": {
+        "rating": 1527.0316516976247,
+        "matches_played": 18
+      },
+      "SOS Coven": {
+        "rating": 1438.3635813984015,
+        "matches_played": 10
+      },
+      "ORKADIA GC": {
+        "rating": 1502.394650086367,
+        "matches_played": 14
+      },
+      "Kardeşler Kebap Saloon": {
+        "rating": 1547.6289935531827,
+        "matches_played": 7
+      },
+      "Las Cabras": {
+        "rating": 1451.8778879286392,
+        "matches_played": 7
+      },
+      "Lost Puppies GOLD": {
+        "rating": 1617.4965081246678,
+        "matches_played": 27
+      },
+      "Million Flowerz GC": {
+        "rating": 1559.0497362859871,
+        "matches_played": 33
+      },
+      "eSports Cologne Fireflies": {
+        "rating": 1478.963865964679,
+        "matches_played": 21
+      },
+      "Trusted Rebels": {
+        "rating": 1482.4484064862702,
+        "matches_played": 7
+      },
+      "Veni Esports GC": {
+        "rating": 1515.8475525299698,
+        "matches_played": 7
+      },
+      "Rotaryon GC": {
+        "rating": 1449.3170048851093,
+        "matches_played": 14
+      },
+      "SYFN GC": {
+        "rating": 1515.875026638503,
+        "matches_played": 7
+      },
+      "Fractious Esports GC": {
+        "rating": 1482.6502919503948,
+        "matches_played": 10
+      },
+      "SP Esports Female": {
+        "rating": 1514.3135436007176,
+        "matches_played": 7
+      },
+      "CICADAS Krew": {
+        "rating": 1515.8464750356995,
+        "matches_played": 7
+      },
+      "Team Monsters Inc": {
+        "rating": 1483.3295813740692,
+        "matches_played": 7
+      },
+      "DIVINE": {
+        "rating": 1420.6073955946003,
+        "matches_played": 5
+      },
+      "BoostGate Esports": {
+        "rating": 1606.023073106289,
+        "matches_played": 24
+      },
+      "Iron Fist": {
+        "rating": 1483.0299014668108,
+        "matches_played": 7
+      },
+      "DayLight Lyra": {
+        "rating": 1461.737537055518,
+        "matches_played": 21
+      },
+      "NewDawn Esport": {
+        "rating": 1451.887375451987,
+        "matches_played": 7
+      },
+      "Emergents GC": {
+        "rating": 1436.3447002231042,
+        "matches_played": 14
+      },
+      "Entropy Coven": {
+        "rating": 1483.9135077905435,
+        "matches_played": 7
+      },
+      "Psyshock": {
+        "rating": 1482.7188305344619,
+        "matches_played": 7
+      },
+      "Team Phoenix Female": {
+        "rating": 1471.29814335833,
+        "matches_played": 14
+      },
+      "RoyalCodeName GC": {
+        "rating": 1516.9239577642172,
+        "matches_played": 7
+      },
+      "PULSAR GC": {
+        "rating": 1516.4761936824666,
+        "matches_played": 7
+      },
+      "SSP Numina": {
+        "rating": 1622.2162504191244,
+        "matches_played": 41
+      },
+      "Nyx Esports": {
+        "rating": 1445.893583486343,
+        "matches_played": 14
+      },
+      "Lucidity": {
+        "rating": 1413.8908152001181,
+        "matches_played": 14
+      },
+      "Symbol GC": {
+        "rating": 1484.0926999331664,
+        "matches_played": 7
+      },
+      "UltraViolet": {
+        "rating": 1387.1063370122438,
+        "matches_played": 21
+      },
+      "Lycus Fempire": {
+        "rating": 1483.9397034488977,
+        "matches_played": 7
+      },
+      "DEFIENT GC": {
+        "rating": 1547.0443989535495,
+        "matches_played": 7
+      },
+      "SFAM GC": {
+        "rating": 1484.3138137018998,
+        "matches_played": 7
+      },
+      "OEEA": {
+        "rating": 1515.9353427331198,
+        "matches_played": 7
+      },
+      "GULUGULU": {
+        "rating": 1459.0826280510598,
+        "matches_played": 20
+      },
+      "Southpaw": {
+        "rating": 1424.6035593035824,
+        "matches_played": 21
+      },
+      "PCIFIC Waves": {
+        "rating": 1502.7195687348708,
+        "matches_played": 33
+      },
+      "İstanbul Wildcats Female": {
+        "rating": 1483.960384422293,
+        "matches_played": 7
+      },
+      "ANT1MATTER": {
+        "rating": 1484.06789883734,
+        "matches_played": 7
+      },
+      "NO Offense Valkyries": {
+        "rating": 1420.2667562007757,
+        "matches_played": 7
+      },
+      "Better E-Sport": {
+        "rating": 1513.691561444875,
+        "matches_played": 13
+      },
+      "Ingenious GC": {
+        "rating": 1508.910453417483,
+        "matches_played": 21
+      },
+      "Insomniacs": {
+        "rating": 1482.4602085755982,
+        "matches_played": 7
+      },
+      "ACID GC": {
+        "rating": 1374.7315061852755,
+        "matches_played": 8
+      },
+      "179 Sad Cat Firefighters": {
+        "rating": 1452.6245075523857,
+        "matches_played": 7
+      },
+      "Arthea Queens": {
+        "rating": 1480.076695074098,
+        "matches_played": 14
+      },
+      "Ultra Instinct Astrals": {
+        "rating": 1482.7567826874315,
+        "matches_played": 7
+      },
+      "Catnip Crew": {
+        "rating": 1328.2153111796322,
+        "matches_played": 31
+      },
+      "Affinity Auras": {
+        "rating": 1525.0639193405211,
+        "matches_played": 21
+      },
+      "Nocturne Gale Lyra": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "Bazook GC": {
+        "rating": 1455.0869870228648,
+        "matches_played": 7
+      },
+      "THE RALS DEMURE": {
+        "rating": 1420.6385341147118,
+        "matches_played": 5
+      },
+      "Ceuta Guardians GC": {
+        "rating": 1419.9744628387396,
+        "matches_played": 7
+      },
+      "FRG Sirens": {
+        "rating": 1506.8618664096668,
+        "matches_played": 21
+      },
+      "Valkyriant Heldra": {
+        "rating": 1427.910323996819,
+        "matches_played": 9
+      },
+      "Valkyries Esports": {
+        "rating": 1485.3571430503412,
+        "matches_played": 7
+      },
+      "VCGN Midnight": {
+        "rating": 1449.2889098060584,
+        "matches_played": 14
+      },
+      "GBX Vortex": {
+        "rating": 1515.0326003583605,
+        "matches_played": 7
+      },
+      "Explore": {
+        "rating": 1425.1713750394392,
+        "matches_played": 28
+      },
+      "Mandatory": {
+        "rating": 1554.9871504890264,
+        "matches_played": 21
+      },
+      "HGE Esport": {
+        "rating": 1500.0339081301693,
+        "matches_played": 2
+      },
+      "Metizport": {
+        "rating": 1468.7023986633528,
+        "matches_played": 2
+      },
+      "BBL PCIFIC": {
+        "rating": 1638.54763919114,
+        "matches_played": 15
+      },
+      "Enterprise Esports": {
+        "rating": 1618.5978696672744,
+        "matches_played": 22
+      },
+      "Eternal Fire": {
+        "rating": 1535.1160896372405,
+        "matches_played": 10
+      },
+      "DNSTY": {
+        "rating": 1550.2003367267332,
+        "matches_played": 11
+      },
+      "Team Liquid Academy": {
+        "rating": 1505.4437782567727,
+        "matches_played": 8
+      },
+      "FOKUS": {
+        "rating": 1519.718661170973,
+        "matches_played": 21
+      },
+      "ZennIT Orange GC": {
+        "rating": 1678.9588110609288,
+        "matches_played": 42
+      },
+      "No Pasarun": {
+        "rating": 1609.9914844385678,
+        "matches_played": 20
+      },
+      "Lille Esports GC": {
+        "rating": 1544.347745482934,
+        "matches_played": 10
+      },
+      "La Mala": {
+        "rating": 1548.2676481987307,
+        "matches_played": 22
+      },
+      "Boeckligomes": {
+        "rating": 1533.0404917758228,
+        "matches_played": 9
+      },
+      "S2G Esports Female": {
+        "rating": 1624.0264022684573,
+        "matches_played": 28
+      },
+      "FALKE VENOM": {
+        "rating": 1560.6159756577922,
+        "matches_played": 31
+      },
+      "Killer Kittensss": {
+        "rating": 1584.4096243686954,
+        "matches_played": 10
+      },
+      "Slavic Queens": {
+        "rating": 1530.0788426977929,
+        "matches_played": 9
+      },
+      "NXT Misora": {
+        "rating": 1546.0774949665526,
+        "matches_played": 20
+      },
+      "Burbaloni Luliloli": {
+        "rating": 1645.2707597897006,
+        "matches_played": 28
+      },
+      "Foxglove": {
+        "rating": 1544.4903751399352,
+        "matches_played": 10
+      },
+      "Luminary Petals": {
+        "rating": 1529.2484018771117,
+        "matches_played": 9
+      },
+      "Colors GC": {
+        "rating": 1597.0544594670623,
+        "matches_played": 20
+      },
+      "KOI Fénix": {
+        "rating": 1467.2539816063463,
+        "matches_played": 8
+      },
+      "ULF Esports": {
+        "rating": 1591.7092801665208,
+        "matches_played": 26
+      },
+      "Pixel Lumina": {
+        "rating": 1494.2598451295353,
+        "matches_played": 5
+      },
+      "Zero Tenacity": {
+        "rating": 1467.4247233750361,
+        "matches_played": 2
+      },
+      "UCAM Esports Club": {
+        "rating": 1545.4165590993534,
+        "matches_played": 17
+      },
+      "Bitfix Gaming": {
+        "rating": 1468.766810297684,
+        "matches_played": 2
+      },
+      "KCORP Blue Stars": {
+        "rating": 1497.925222114224,
+        "matches_played": 2
+      },
+      "Devil Esport GC": {
+        "rating": 1484.4051554281475,
+        "matches_played": 7
+      },
+      "EVE GC": {
+        "rating": 1453.5055203372683,
+        "matches_played": 7
+      },
+      "After Dark": {
+        "rating": 1453.3393033664584,
+        "matches_played": 14
+      },
+      "Streamerzone INDIGO": {
+        "rating": 1654.031619380627,
+        "matches_played": 32
+      },
+      "Teabaguette": {
+        "rating": 1490.0709104467983,
+        "matches_played": 7
+      },
+      "AKA Hero GC": {
+        "rating": 1481.4927855326005,
+        "matches_played": 7
+      },
+      "Le Hive Cannes": {
+        "rating": 1446.929876430018,
+        "matches_played": 7
+      },
+      "SiFT SiRENS": {
+        "rating": 1389.7512893154687,
+        "matches_played": 7
+      },
+      "BEE Queens": {
+        "rating": 1426.4581948114399,
+        "matches_played": 24
+      },
+      "DimoniX Lilith": {
+        "rating": 1511.6310362939007,
+        "matches_played": 7
+      },
+      "Voltage GC": {
+        "rating": 1525.417526647938,
+        "matches_played": 14
+      },
+      "TBD": {
+        "rating": 1482.5672996912965,
+        "matches_played": 7
+      },
+      "Kroown Esport GC": {
+        "rating": 1482.3125310127477,
+        "matches_played": 7
+      },
+      "BLC GC": {
+        "rating": 1514.9194440391907,
+        "matches_played": 7
+      },
+      "UnKultured Queens": {
+        "rating": 1423.0021830664148,
+        "matches_played": 14
+      },
+      "VVX Vixens": {
+        "rating": 1447.1391405138752,
+        "matches_played": 7
+      },
+      "Girls Generation": {
+        "rating": 1521.099571189826,
+        "matches_played": 7
+      },
+      "Stallions Esports GC": {
+        "rating": 1512.1424448025625,
+        "matches_played": 7
+      },
+      "K1 Kaisen": {
+        "rating": 1436.4534219938605,
+        "matches_played": 14
+      },
+      "Wildcards": {
+        "rating": 1485.1507232299182,
+        "matches_played": 7
+      },
+      "HINODE TSUKI": {
+        "rating": 1460.7583363657966,
+        "matches_played": 21
+      },
+      "Syde FX": {
+        "rating": 1547.6015503659885,
+        "matches_played": 33
+      },
+      "BunnyWave": {
+        "rating": 1512.7298780721862,
+        "matches_played": 7
+      },
+      "Aim For Khaos Noir": {
+        "rating": 1373.192570725941,
+        "matches_played": 18
+      },
+      "Fantastica": {
+        "rating": 1479.7075728015361,
+        "matches_played": 7
+      },
+      "Insomniacs GC": {
+        "rating": 1480.5161164378833,
+        "matches_played": 7
+      },
+      "Exceptional Gaming PYP": {
+        "rating": 1447.20107046291,
+        "matches_played": 7
+      },
+      "MUVI": {
+        "rating": 1512.5089628109174,
+        "matches_played": 7
+      },
+      "Team to Glory Valkyries": {
+        "rating": 1461.9403383514746,
+        "matches_played": 6
+      },
+      "Klutz Esports": {
+        "rating": 1453.0510474340028,
+        "matches_played": 7
+      },
+      "Forsaken BLAZE": {
+        "rating": 1518.0810177130372,
+        "matches_played": 7
+      },
+      "Axolotl Esports GC": {
+        "rating": 1499.8457903356627,
+        "matches_played": 6
+      },
+      "RVS Shinobu": {
+        "rating": 1517.0546920601034,
+        "matches_played": 7
+      },
+      "MLL Lotus": {
+        "rating": 1448.0029786793848,
+        "matches_played": 7
+      },
+      "KSO Vixen": {
+        "rating": 1511.6900141012238,
+        "matches_played": 7
+      },
+      "Reyna Roulette": {
+        "rating": 1502.7540559674655,
+        "matches_played": 6
+      },
+      "White Angels": {
+        "rating": 1468.2054166729858,
+        "matches_played": 4
+      },
+      "Meliora E-Sport": {
+        "rating": 1416.3529623892518,
+        "matches_played": 7
+      },
+      "ALTF4 GC": {
+        "rating": 1501.4308707088508,
+        "matches_played": 6
+      },
+      "Digity GC": {
+        "rating": 1528.0188125918914,
+        "matches_played": 16
+      },
+      "Valkyriant": {
+        "rating": 1450.6645054741086,
+        "matches_played": 7
+      },
+      "Pirox Valkyries": {
+        "rating": 1469.9899392521481,
+        "matches_played": 6
+      },
+      "4 FUN GC": {
+        "rating": 1502.0168601524604,
+        "matches_played": 14
+      },
+      "TWISTED SAINTS X": {
+        "rating": 1566.2331379177795,
+        "matches_played": 34
+      },
+      "Munin Esports": {
+        "rating": 1463.4998396854091,
+        "matches_played": 14
+      },
+      "Dynasty": {
+        "rating": 1500.0,
+        "matches_played": 2
+      },
+      "Arcanum Esports": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "BLX CORP": {
+        "rating": 1514.5304984710244,
+        "matches_played": 3
+      },
+      "Polder Pushers": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "Eintracht Frankfurt": {
+        "rating": 1514.9489036175344,
+        "matches_played": 9
+      },
+      "XPERION NXT": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "KRC Genk Esports": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "Pertinax Esports": {
+        "rating": 1500.0676726427585,
+        "matches_played": 2
+      },
+      "BXL Zoo": {
+        "rating": 1533.4018288862171,
+        "matches_played": 2
+      },
+      "Zena Kora": {
+        "rating": 1354.3269788578948,
+        "matches_played": 16
+      },
+      "DETECT QUEENS": {
+        "rating": 1467.0564611771922,
+        "matches_played": 16
+      },
+      "Aftermath GC": {
+        "rating": 1544.3163516184463,
+        "matches_played": 7
+      },
+      "Ecofrag Divas": {
+        "rating": 1484.104406781045,
+        "matches_played": 7
+      },
+      "CAVI Esports GC": {
+        "rating": 1515.851701908008,
+        "matches_played": 7
+      },
+      "TODOBEW GC": {
+        "rating": 1608.3827426074715,
+        "matches_played": 17
+      },
+      "ZETA Gaming GC": {
+        "rating": 1515.3909409683038,
+        "matches_played": 9
+      },
+      "WAYFINDERS": {
+        "rating": 1448.9248983823004,
+        "matches_played": 7
+      },
+      "TRAUM": {
+        "rating": 1465.1857866360522,
+        "matches_played": 14
+      },
+      "Vixens Nocturne": {
+        "rating": 1513.8291912318573,
+        "matches_played": 7
+      },
+      "Owned GC": {
+        "rating": 1534.911580098472,
+        "matches_played": 10
+      },
+      "Rush B": {
+        "rating": 1545.9328322224535,
+        "matches_played": 7
+      },
+      "Eunoia GC": {
+        "rating": 1452.1219330354936,
+        "matches_played": 7
+      },
+      "BEM Esports": {
+        "rating": 1555.0690071684746,
+        "matches_played": 16
+      },
+      "MDN Midnight": {
+        "rating": 1485.0058470165388,
+        "matches_played": 7
+      },
+      "nootnootnoot": {
+        "rating": 1514.7541045807152,
+        "matches_played": 7
+      },
+      "IndigoDark Esports": {
+        "rating": 1517.0057272762376,
+        "matches_played": 7
+      },
+      "meowtiepies": {
+        "rating": 1447.3690335885185,
+        "matches_played": 7
+      },
+      "Delulu Bottoms": {
+        "rating": 1529.3204178656983,
+        "matches_played": 14
+      },
+      "Divine Karma GC": {
+        "rating": 1477.7483109866046,
+        "matches_played": 7
+      },
+      "DRK RIFT": {
+        "rating": 1448.4311488314659,
+        "matches_played": 7
+      },
+      "Delulus": {
+        "rating": 1517.926911084835,
+        "matches_played": 7
+      },
+      "LPG": {
+        "rating": 1447.1295180579832,
+        "matches_played": 7
+      },
+      "Guinea Pink Texel": {
+        "rating": 1481.356006163274,
+        "matches_played": 7
+      },
+      "LAKAMBINI": {
+        "rating": 1416.4834564339887,
+        "matches_played": 7
+      },
+      "AKURA Esport GC": {
+        "rating": 1521.837363167335,
+        "matches_played": 7
+      },
+      "Jungle Diff GC": {
+        "rating": 1511.339392956992,
+        "matches_played": 7
+      },
+      "UWU g4ng": {
+        "rating": 1515.1195937900736,
+        "matches_played": 7
+      },
+      "SUPERNOVA": {
+        "rating": 1462.4902176182488,
+        "matches_played": 6
+      },
+      "FMCL": {
+        "rating": 1657.1961588894412,
+        "matches_played": 22
+      },
+      "Brest Esport": {
+        "rating": 1482.984943252098,
+        "matches_played": 7
+      },
+      "Barkers Rex": {
+        "rating": 1516.1829794404257,
+        "matches_played": 7
+      },
+      "PCS Aphrodite": {
+        "rating": 1451.1819880950216,
+        "matches_played": 7
+      },
+      "Cat Lovers GC": {
+        "rating": 1470.471387423993,
+        "matches_played": 14
+      },
+      "HGE GC": {
+        "rating": 1538.0973941901136,
+        "matches_played": 4
+      },
+      "NGU Roo": {
+        "rating": 1475.5780370743832,
+        "matches_played": 18
+      },
+      "JK Protocol GC": {
+        "rating": 1414.2310144700023,
+        "matches_played": 7
+      },
+      "Long Way": {
+        "rating": 1581.9957900921972,
+        "matches_played": 9
+      },
+      "WARTHOX GC": {
+        "rating": 1507.306397312828,
+        "matches_played": 14
+      },
+      "Primora GC": {
+        "rating": 1482.3122009744511,
+        "matches_played": 7
+      },
+      "no fox given": {
+        "rating": 1484.164012008181,
+        "matches_played": 7
+      },
+      "pew pew meow meow": {
+        "rating": 1486.93661457864,
+        "matches_played": 7
+      },
+      "Olympique Mnihla GC": {
+        "rating": 1480.7264297692857,
+        "matches_played": 7
+      },
+      "Girls Girls": {
+        "rating": 1359.5657013555779,
+        "matches_played": 14
+      },
+      "VCGN Sakura": {
+        "rating": 1445.261145031572,
+        "matches_played": 14
+      },
+      "FRAGDOLLS": {
+        "rating": 1576.2217299036156,
+        "matches_played": 11
+      },
+      "Midnight Ember GC": {
+        "rating": 1479.6318737039082,
+        "matches_played": 7
+      },
+      "Aura Farmers": {
+        "rating": 1390.3531852015062,
+        "matches_played": 7
+      },
+      "SillyPuff Girls": {
+        "rating": 1475.6025627738313,
+        "matches_played": 18
+      },
+      "0xyde GC": {
+        "rating": 1487.2690598169133,
+        "matches_played": 7
+      },
+      "OPX Valkyries": {
+        "rating": 1487.5456422917625,
+        "matches_played": 7
+      },
+      "Reine de Papier": {
+        "rating": 1523.136976947742,
+        "matches_played": 7
+      },
+      "The Moomins": {
+        "rating": 1541.0234555421423,
+        "matches_played": 10
+      },
+      "Bulldog Esports": {
+        "rating": 1512.0221108933072,
+        "matches_played": 7
+      },
+      "RAFHA eSPORTS GC": {
+        "rating": 1457.7461989902927,
+        "matches_played": 6
+      },
+      "Dark Nebula": {
+        "rating": 1472.8019330647116,
+        "matches_played": 2
+      },
+      "Small Crew": {
+        "rating": 1546.6674984368053,
+        "matches_played": 9
+      },
+      "Twisted Minds": {
+        "rating": 1506.253678301533,
+        "matches_played": 8
+      },
+      "děti ulice": {
+        "rating": 1454.402331178976,
+        "matches_played": 3
+      },
+      "BOARS": {
+        "rating": 1484.2225418168084,
+        "matches_played": 3
+      },
+      "Team France": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "Team EMEA": {
+        "rating": 1516.0,
+        "matches_played": 1
+      },
+      "Tan´i eSports": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "ZETA Gaming": {
+        "rating": 1501.2153597910574,
+        "matches_played": 4
+      },
+      "NGU eSports": {
+        "rating": 1485.3995131905956,
+        "matches_played": 1
+      },
+      "Nex Mix": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "java y gon unban waiting room": {
+        "rating": 1500.0,
+        "matches_played": 2
+      },
+      "KlanNaLan": {
+        "rating": 1580.7653459099374,
+        "matches_played": 7
+      },
+      "FAS MIX B": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "Boostgate Esports Academy": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "7 States Esports": {
+        "rating": 1529.320236284244,
+        "matches_played": 6
+      },
+      "10SaatYeter": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "Team Verdant": {
+        "rating": 1533.884638972772,
+        "matches_played": 6
+      },
+      "YokOlmaz": {
+        "rating": 1500.0,
+        "matches_played": 2
+      },
+      "Team KAOS": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "karıncayiyenler": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "SU SAMURLARI": {
+        "rating": 1514.5304984710244,
+        "matches_played": 5
+      },
+      "KAMIKAZE": {
+        "rating": 1516.0,
+        "matches_played": 3
+      },
+      "2.6 Hog Rider": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "Redaniaa": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "Team Jud Me": {
+        "rating": 1500.0,
+        "matches_played": 2
+      },
+      "Magna Lupus": {
+        "rating": 1500.0,
+        "matches_played": 2
+      },
+      "qqsoesman": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "REIGNITED": {
+        "rating": 1576.4270283191295,
+        "matches_played": 14
+      },
+      "VoxDei": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "Gigantic LynX": {
+        "rating": 1552.2331460618614,
+        "matches_played": 7
+      },
+      "manifestboys": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "XXLv2": {
+        "rating": 1514.5612260339533,
+        "matches_played": 5
+      },
+      "BABA": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "Fire Flux Esports": {
+        "rating": 1508.6801936363577,
+        "matches_played": 6
+      },
+      "Fenerbahçe Esports": {
+        "rating": 1578.2711608874147,
+        "matches_played": 10
+      },
+      "S2G Esports": {
+        "rating": 1492.0020348790254,
+        "matches_played": 9
+      },
+      "NEANLATIYONBOLM": {
+        "rating": 1486.13853822723,
+        "matches_played": 3
+      },
+      "TFT Demons": {
+        "rating": 1500.0,
+        "matches_played": 4
+      },
+      "LEXIBLE": {
+        "rating": 1485.4387739660467,
+        "matches_played": 3
+      },
+      "Sacrifice": {
+        "rating": 1470.9144190820782,
+        "matches_played": 2
+      },
+      "GHOSTS": {
+        "rating": 1514.6287807769208,
+        "matches_played": 5
+      },
+      "TEAM NEXUS": {
+        "rating": 1514.5304984710244,
+        "matches_played": 5
+      },
+      "Takım Adı": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "USTUNLUKURANLAR": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "ACİL PARA LAZIM": {
+        "rating": 1500.0,
+        "matches_played": 2
+      },
+      "VOLKANIC": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "Arise": {
+        "rating": 1500.0,
+        "matches_played": 2
+      },
+      "Team Velaxis": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "vcT CHAMPIONS V2": {
+        "rating": 1544.4594406501155,
+        "matches_played": 5
+      },
+      "MHH PAELLA": {
+        "rating": 1511.927057462557,
+        "matches_played": 5
+      },
+      "RR Project": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "gli asparagi": {
+        "rating": 1484.061503316748,
+        "matches_played": 1
+      },
+      "Burun Kiranlar": {
+        "rating": 1484.736306793522,
+        "matches_played": 1
+      },
+      "Qpak": {
+        "rating": 1483.263693206478,
+        "matches_played": 1
+      },
+      "Gaziosmanpaşa Belediyesi eSpor": {
+        "rating": 1484.736306793522,
+        "matches_played": 1
+      },
+      "Chaos": {
+        "rating": 1484.736306793522,
+        "matches_played": 1
+      },
+      "Team Sentinus": {
+        "rating": 1532.7302327797056,
+        "matches_played": 4
+      },
+      "STARz-": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "3 Gün Yeter": {
+        "rating": 1483.263693206478,
+        "matches_played": 1
+      },
+      "FIVE WONDERKID": {
+        "rating": 1515.3622320924185,
+        "matches_played": 3
+      },
+      "haddini bilbao": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "PCIFIC Akademi": {
+        "rating": 1502.064691329156,
+        "matches_played": 2
+      },
+      "G2STAR": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "0 GÜN YETER": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "Team SCARS": {
+        "rating": 1500.0,
+        "matches_played": 2
+      },
+      "GLUKGLUK": {
+        "rating": 1517.9711214549668,
+        "matches_played": 3
+      },
+      "Team eXcellence": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "AYAR": {
+        "rating": 1516.0645562024295,
+        "matches_played": 3
+      },
+      "babalarzinyo": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "HADDINIBILBAO": {
+        "rating": 1501.4018288862171,
+        "matches_played": 2
+      },
+      "OLD5": {
+        "rating": 1468.736306793522,
+        "matches_played": 2
+      },
+      "MİXİZBEOLM": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "Otakar Esports": {
+        "rating": 1470.8045915890298,
+        "matches_played": 2
+      },
+      "Ramboot Club": {
+        "rating": 1486.915468172313,
+        "matches_played": 3
+      },
+      "Suzaku Esports": {
+        "rating": 1470.6662413324736,
+        "matches_played": 2
+      },
+      "Galatasaray Esports": {
+        "rating": 1463.3535491350733,
+        "matches_played": 5
+      },
+      "Papara SuperMassive": {
+        "rating": 1514.3034697375997,
+        "matches_played": 5
+      },
+      "Misa Esports": {
+        "rating": 1456.1894378789004,
+        "matches_played": 8
+      },
+      "Raton": {
+        "rating": 1500.0,
+        "matches_played": 2
+      },
+      "Excelled": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "Aestralis": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "BONK": {
+        "rating": 1564.142433533609,
+        "matches_played": 4
+      },
+      "Ejsgir": {
+        "rating": 1500.0,
+        "matches_played": 2
+      },
+      "team VASQUEZ": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "WIP Esports": {
+        "rating": 1516.0,
+        "matches_played": 3
+      },
+      "Ghools Esports": {
+        "rating": 1468.736306793522,
+        "matches_played": 2
+      },
+      "Szach Mat": {
+        "rating": 1499.9541623347252,
+        "matches_played": 2
+      },
+      "VENDETTA": {
+        "rating": 1502.1073920703639,
+        "matches_played": 4
+      },
+      "LANDODGERS": {
+        "rating": 1515.2456237745707,
+        "matches_played": 3
+      },
+      "team iLkaow": {
+        "rating": 1485.9858583811183,
+        "matches_played": 1
+      },
+      "LEO Esports": {
+        "rating": 1534.9505530559584,
+        "matches_played": 4
+      },
+      "FULL BOX 200": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "Wooka Esport": {
+        "rating": 1499.2975328274754,
+        "matches_played": 2
+      },
+      "BAYER NEVERLOSEN": {
+        "rating": 1483.263693206478,
+        "matches_played": 1
+      },
+      "HASBI": {
+        "rating": 1531.6090035346258,
+        "matches_played": 4
+      },
+      "BWBB": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "Oxuji": {
+        "rating": 1499.2976013366472,
+        "matches_played": 2
+      },
+      "LaPolizia": {
+        "rating": 1529.8375278743958,
+        "matches_played": 4
+      },
+      "Goblins": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "GNR w Z": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "TCN": {
+        "rating": 1500.0,
+        "matches_played": 2
+      },
+      "MIR": {
+        "rating": 1466.4181087173026,
+        "matches_played": 6
+      },
+      "Million Flowerz": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "CE Calling": {
+        "rating": 1499.2976013366472,
+        "matches_played": 2
+      },
+      "chiikawa crew": {
+        "rating": 1421.4003476565001,
+        "matches_played": 7
+      },
+      "TEAM PARADOX": {
+        "rating": 1484.7421362287644,
+        "matches_played": 7
+      },
+      "Royal Legion GC": {
+        "rating": 1556.4289686060629,
+        "matches_played": 12
+      },
+      "Requiem Hime": {
+        "rating": 1542.8893267434123,
+        "matches_played": 7
+      },
+      "Stellarix GC": {
+        "rating": 1468.772846324744,
+        "matches_played": 6
+      },
+      "HANAMI": {
+        "rating": 1484.3079447329176,
+        "matches_played": 9
+      },
+      "noxfae": {
+        "rating": 1451.8884455037505,
+        "matches_played": 7
+      },
+      "Aim Optional": {
+        "rating": 1451.8085472480816,
+        "matches_played": 7
+      },
+      "FACT GC": {
+        "rating": 1450.4801444089662,
+        "matches_played": 7
+      },
+      "Team ORA": {
+        "rating": 1517.508852799081,
+        "matches_played": 7
+      },
+      "VentuCorp GC": {
+        "rating": 1508.486313492947,
+        "matches_played": 11
+      },
+      "Team Aeon": {
+        "rating": 1497.9123513642603,
+        "matches_played": 6
+      },
+      "HatTrick Gaming": {
+        "rating": 1451.655973582385,
+        "matches_played": 7
+      },
+      "Heroic Hunters": {
+        "rating": 1486.9495114849353,
+        "matches_played": 7
+      },
+      "Enisorail GC": {
+        "rating": 1444.6626250606134,
+        "matches_played": 7
+      },
+      "Terreno Gioco GC": {
+        "rating": 1453.9149019366569,
+        "matches_played": 7
+      },
+      "Nightfall": {
+        "rating": 1481.0505511119666,
+        "matches_played": 7
+      },
+      "FAE Lumeris": {
+        "rating": 1483.8372992855661,
+        "matches_played": 7
+      },
+      "Luminary Dragons": {
+        "rating": 1557.9780087184372,
+        "matches_played": 11
+      },
+      "Chikuli": {
+        "rating": 1510.679169320608,
+        "matches_played": 11
+      },
+      "X1 Esports GC": {
+        "rating": 1515.569481303499,
+        "matches_played": 7
+      },
+      "OUTCASTS": {
+        "rating": 1559.5403066088593,
+        "matches_played": 12
+      },
+      "goofy goobers": {
+        "rating": 1551.2210641633535,
+        "matches_played": 7
+      },
+      "Siren": {
+        "rating": 1419.2732657940319,
+        "matches_played": 7
+      },
+      "Noxy GC": {
+        "rating": 1484.1320709061306,
+        "matches_played": 7
+      },
+      "THE REST OF US": {
+        "rating": 1501.3449251509696,
+        "matches_played": 8
+      },
+      "Cristaux de Menthe": {
+        "rating": 1583.5807017426828,
+        "matches_played": 9
+      },
+      "FLOPPERS": {
+        "rating": 1556.7833345313377,
+        "matches_played": 12
+      },
+      "WIP STARS": {
+        "rating": 1515.2303294462047,
+        "matches_played": 7
+      },
+      "Bitfix Puppies": {
+        "rating": 1609.9767114324634,
+        "matches_played": 23
+      },
+      "FRG GC": {
+        "rating": 1550.7321205109622,
+        "matches_played": 7
+      },
+      "Serene Skyline": {
+        "rating": 1497.115921120623,
+        "matches_played": 11
+      },
+      "T2G Esports": {
+        "rating": 1484.2071381526036,
+        "matches_played": 7
+      },
+      "ÉCLAT GC": {
+        "rating": 1525.6958275681568,
+        "matches_played": 12
+      },
+      "67GANG": {
+        "rating": 1512.1675872229382,
+        "matches_played": 11
+      },
+      "TSK Fenrir": {
+        "rating": 1514.789166886049,
+        "matches_played": 7
+      },
+      "EmpressX": {
+        "rating": 1484.0623644232026,
+        "matches_played": 7
+      },
+      "Kapro GC": {
+        "rating": 1481.120130527359,
+        "matches_played": 7
+      },
+      "Late Night Crew GC": {
+        "rating": 1484.4771156319505,
+        "matches_played": 7
+      },
+      "RIZON Pulse": {
+        "rating": 1516.930263980098,
+        "matches_played": 7
+      },
+      "5M Kitsumi": {
+        "rating": 1430.2893923092558,
+        "matches_played": 11
+      },
+      "Yokoso Kunoichi GC": {
+        "rating": 1447.5419846303853,
+        "matches_played": 7
+      },
+      "Skibidi": {
+        "rating": 1469.622629072909,
+        "matches_played": 6
+      },
+      "LEO Azalea": {
+        "rating": 1520.8731287383573,
+        "matches_played": 11
+      },
+      "TOG Inari": {
+        "rating": 1511.3093918287893,
+        "matches_played": 7
+      },
+      "Yugen Esports GC": {
+        "rating": 1485.9719890929607,
+        "matches_played": 7
+      },
+      "cute monsters": {
+        "rating": 1383.019312044898,
+        "matches_played": 10
+      },
+      "DSQ Viola": {
+        "rating": 1481.0492114696035,
+        "matches_played": 7
+      },
+      "Voltage IKM": {
+        "rating": 1461.4310101568783,
+        "matches_played": 11
+      },
+      "Team LEISURE Luna": {
+        "rating": 1540.2518226555208,
+        "matches_played": 11
+      },
+      "Kanjo Skyline": {
+        "rating": 1551.6042971042764,
+        "matches_played": 12
+      },
+      "Ege University GC": {
+        "rating": 1409.7175292593895,
+        "matches_played": 10
+      },
+      "Elemental Obscura": {
+        "rating": 1483.2219185239228,
+        "matches_played": 11
+      },
+      "Reveal Multigaming Shinobu": {
+        "rating": 1472.1537594492538,
+        "matches_played": 8
+      },
+      "Eclipse Esport": {
+        "rating": 1516.1360035175915,
+        "matches_played": 7
+      },
+      "Exceptional Gaming Misora": {
+        "rating": 1550.4078732180278,
+        "matches_played": 7
+      },
+      "Out of Fame GC": {
+        "rating": 1484.9934204768315,
+        "matches_played": 7
+      },
+      "NOCTX FBL": {
+        "rating": 1454.533148760345,
+        "matches_played": 7
+      },
+      "NAMMZ": {
+        "rating": 1516.4639797430189,
+        "matches_played": 7
+      },
+      "ROA Scarlet": {
+        "rating": 1513.9708446718578,
+        "matches_played": 7
+      },
+      "Les Potineuz": {
+        "rating": 1419.9136610999365,
+        "matches_played": 7
+      },
+      "last minute": {
+        "rating": 1483.9154979866646,
+        "matches_played": 7
+      },
+      "Spartan Valkyries": {
+        "rating": 1483.4310640006863,
+        "matches_played": 7
+      },
+      "Ranked Connoisseurs GC": {
+        "rating": 1557.7755104123826,
+        "matches_played": 16
+      },
+      "21 Legacy GC": {
+        "rating": 1450.2088514224474,
+        "matches_played": 7
+      },
+      "THE ONE GC": {
+        "rating": 1486.5785335810863,
+        "matches_played": 7
+      },
+      "UltraViolet GC": {
+        "rating": 1441.389551818482,
+        "matches_played": 10
+      },
+      "Nexra Girls": {
+        "rating": 1446.6549676435666,
+        "matches_played": 7
+      },
+      "5 stack": {
+        "rating": 1514.2048454853607,
+        "matches_played": 11
+      },
+      "AZ Rising": {
+        "rating": 1499.2180314709053,
+        "matches_played": 12
+      },
+      "NoQL": {
+        "rating": 1518.866806132288,
+        "matches_played": 16
+      },
+      "Nyxie": {
+        "rating": 1386.6897517796265,
+        "matches_played": 7
+      },
+      "DELTAX SAFFRON": {
+        "rating": 1445.8009395365577,
+        "matches_played": 5
+      },
+      "Onyx": {
+        "rating": 1416.4389251847338,
+        "matches_played": 7
+      },
+      "MONTA CLUB GC": {
+        "rating": 1519.1136443434525,
+        "matches_played": 7
+      },
+      "Najin Esports GC": {
+        "rating": 1452.0951183499972,
+        "matches_played": 7
+      },
+      "Killties": {
+        "rating": 1479.9804746535406,
+        "matches_played": 7
+      },
+      "KIT CATS": {
+        "rating": 1597.9985319673833,
+        "matches_played": 19
+      },
+      "OVERPEEK": {
+        "rating": 1593.3805095258376,
+        "matches_played": 24
+      },
+      "Barça eSports GC": {
+        "rating": 1636.3298162711087,
+        "matches_played": 27
+      },
+      "Hornets": {
+        "rating": 1477.0134200145162,
+        "matches_played": 2
+      },
+      "Joblife GC": {
+        "rating": 1490.878339028171,
+        "matches_played": 24
+      },
+      "Gentle Mates GC": {
+        "rating": 1699.125130154235,
+        "matches_played": 12
+      },
+      "meows united": {
+        "rating": 1506.1743202724595,
+        "matches_played": 4
+      },
+      "Bishop's Nix": {
+        "rating": 1459.37335176558,
+        "matches_played": 3
+      },
+      "TALMP": {
+        "rating": 1545.3150962036577,
+        "matches_played": 5
+      },
+      "Greenlanders": {
+        "rating": 1574.0847027433083,
+        "matches_played": 7
+      },
+      "RECOIL ESPORT GC": {
+        "rating": 1503.2530112970194,
+        "matches_played": 4
+      },
+      "NorP GC": {
+        "rating": 1474.437596772489,
+        "matches_played": 4
+      },
+      "Genius": {
+        "rating": 1468.0667753684445,
+        "matches_played": 4
+      },
+      "Last Day Mix": {
+        "rating": 1548.6611982413108,
+        "matches_played": 5
+      },
+      "HTG E-sports": {
+        "rating": 1472.7471052235846,
+        "matches_played": 4
+      },
+      "ECLIPSE E-Sports": {
+        "rating": 1447.8413584264379,
+        "matches_played": 4
+      },
+      "KØRE FOCUS": {
+        "rating": 1438.6996461789959,
+        "matches_played": 4
+      },
+      "LNX Venus": {
+        "rating": 1463.8792648199321,
+        "matches_played": 4
+      },
+      "ZEKROHAN O": {
+        "rating": 1515.8168538118625,
+        "matches_played": 5
+      },
+      "Üsküdar E Spor": {
+        "rating": 1446.1406047131677,
+        "matches_played": 4
+      },
+      "Howlers Luna": {
+        "rating": 1480.6537481817354,
+        "matches_played": 2
+      },
+      "2KZ3R": {
+        "rating": 1487.838359534603,
+        "matches_played": 3
+      },
+      "BBL": {
+        "rating": 1511.854331423047,
+        "matches_played": 5
+      },
+      "NEXA": {
+        "rating": 1455.9125158317083,
+        "matches_played": 3
+      },
+      "miXora": {
+        "rating": 1473.10892414214,
+        "matches_played": 2
+      },
+      "Team Selenis": {
+        "rating": 1484.0,
+        "matches_played": 3
+      },
+      "VOS PAINS": {
+        "rating": 1529.3428368284701,
+        "matches_played": 4
+      },
+      "Claw's Unity": {
+        "rating": 1454.9144190820782,
+        "matches_played": 3
+      },
+      "Meow": {
+        "rating": 1502.702578284483,
+        "matches_played": 4
+      },
+      "TOB E-Sports": {
+        "rating": 1533.285520898593,
+        "matches_played": 4
+      },
+      "Stallions Esports": {
+        "rating": 1440.6132612925767,
+        "matches_played": 6
+      },
+      "Beşiktaş Esports": {
+        "rating": 1487.9962299852277,
+        "matches_played": 3
+      },
+      "Playing Ducks": {
+        "rating": 1490.7307528004778,
+        "matches_played": 3
+      },
+      "Valorando": {
+        "rating": 1488.038982734457,
+        "matches_played": 3
+      },
+      "ALTERNATE aTTaX EVO": {
+        "rating": 1468.0,
+        "matches_played": 2
+      },
+      "Agent X": {
+        "rating": 1517.6605264652894,
+        "matches_played": 5
+      },
+      "Dortmund eSports": {
+        "rating": 1499.880553800043,
+        "matches_played": 4
+      },
+      "Ingenious Esports": {
+        "rating": 1483.878136342586,
+        "matches_played": 3
+      },
+      "TeamOrangeGaming": {
+        "rating": 1497.8701651153617,
+        "matches_played": 4
+      },
+      "ALTERNATE aTTaX": {
+        "rating": 1481.4720774621264,
+        "matches_played": 3
+      },
+      "Glacial Guardians": {
+        "rating": 1467.8722537692668,
+        "matches_played": 2
+      },
+      "RIZON": {
+        "rating": 1518.830430393148,
+        "matches_played": 5
+      },
+      "eSports Cologne": {
+        "rating": 1518.2529089523416,
+        "matches_played": 5
+      },
+      "everlasting": {
+        "rating": 1453.1171250558086,
+        "matches_played": 6
+      },
+      "WIP GC": {
+        "rating": 1489.4564534323963,
+        "matches_played": 1
+      },
+      "GnG Esports": {
+        "rating": 1483.7798355364766,
+        "matches_played": 3
+      },
+      "R2S": {
+        "rating": 1547.1024053387002,
+        "matches_played": 6
+      },
+      "WIP Esports GC": {
+        "rating": 1457.0928175593804,
+        "matches_played": 3
+      },
+      "INDIGO": {
+        "rating": 1519.739288701854,
+        "matches_played": 3
+      },
+      "teamflashers": {
+        "rating": 1458.6027069836487,
+        "matches_played": 3
+      }
+    }
+  },
+  "rankings": [
+    {
+      "team": "G2 Gozen",
+      "rating": 1821.66,
+      "matches_played": 61
+    },
+    {
+      "team": "SK Nebula",
+      "rating": 1742.17,
+      "matches_played": 66
+    },
+    {
+      "team": "Twisted Minds Orchid",
+      "rating": 1738.97,
+      "matches_played": 73
+    },
+    {
+      "team": "Karmine Corp GC",
+      "rating": 1726.34,
+      "matches_played": 58
+    },
+    {
+      "team": "GIANTX GC",
+      "rating": 1701.02,
+      "matches_played": 75
+    },
+    {
+      "team": "Gentle Mates GC",
+      "rating": 1699.13,
+      "matches_played": 12
+    },
+    {
+      "team": "FOKUS Sakura",
+      "rating": 1691.42,
+      "matches_played": 59
+    },
+    {
+      "team": "Team Liquid",
+      "rating": 1680.21,
+      "matches_played": 37
+    },
+    {
+      "team": "ZennIT Orange GC",
+      "rating": 1678.96,
+      "matches_played": 42
+    },
+    {
+      "team": "FMCL",
+      "rating": 1657.2,
+      "matches_played": 22
+    },
+    {
+      "team": "Streamerzone INDIGO",
+      "rating": 1654.03,
+      "matches_played": 32
+    },
+    {
+      "team": "AlQadsiah Corals",
+      "rating": 1651.73,
+      "matches_played": 49
+    },
+    {
+      "team": "Burbaloni Luliloli",
+      "rating": 1645.27,
+      "matches_played": 28
+    },
+    {
+      "team": "BBL PCIFIC",
+      "rating": 1638.55,
+      "matches_played": 15
+    },
+    {
+      "team": "Barça eSports GC",
+      "rating": 1636.33,
+      "matches_played": 27
+    },
+    {
+      "team": "FNATIC",
+      "rating": 1628.6,
+      "matches_played": 36
+    },
+    {
+      "team": "DVM Miss",
+      "rating": 1625.15,
+      "matches_played": 34
+    },
+    {
+      "team": "S2G Esports Female",
+      "rating": 1624.03,
+      "matches_played": 28
+    },
+    {
+      "team": "SSP Numina",
+      "rating": 1622.22,
+      "matches_played": 41
+    },
+    {
+      "team": "Enterprise Esports",
+      "rating": 1618.6,
+      "matches_played": 22
+    },
+    {
+      "team": "Lost Puppies GOLD",
+      "rating": 1617.5,
+      "matches_played": 27
+    },
+    {
+      "team": "BLVKHVND",
+      "rating": 1616.63,
+      "matches_played": 53
+    },
+    {
+      "team": "No Pasarun",
+      "rating": 1609.99,
+      "matches_played": 20
+    },
+    {
+      "team": "Bitfix Puppies",
+      "rating": 1609.98,
+      "matches_played": 23
+    },
+    {
+      "team": "BBL Esports",
+      "rating": 1609.78,
+      "matches_played": 30
+    },
+    {
+      "team": "Formulation GC",
+      "rating": 1608.83,
+      "matches_played": 32
+    },
+    {
+      "team": "TODOBEW GC",
+      "rating": 1608.38,
+      "matches_played": 17
+    },
+    {
+      "team": "BoostGate Esports",
+      "rating": 1606.02,
+      "matches_played": 24
+    },
+    {
+      "team": "ALTERNATE aTTaX Ruby",
+      "rating": 1602.56,
+      "matches_played": 57
+    },
+    {
+      "team": "Team Heretics",
+      "rating": 1602.07,
+      "matches_played": 34
+    },
+    {
+      "team": "KIT CATS",
+      "rating": 1598.0,
+      "matches_played": 19
+    },
+    {
+      "team": "Colors GC",
+      "rating": 1597.05,
+      "matches_played": 20
+    },
+    {
+      "team": "OVERPEEK",
+      "rating": 1593.38,
+      "matches_played": 24
+    },
+    {
+      "team": "ULF Esports",
+      "rating": 1591.71,
+      "matches_played": 26
+    },
+    {
+      "team": "CGN Esports",
+      "rating": 1587.1,
+      "matches_played": 22
+    },
+    {
+      "team": "Killer Kittensss",
+      "rating": 1584.41,
+      "matches_played": 10
+    },
+    {
+      "team": "Cristaux de Menthe",
+      "rating": 1583.58,
+      "matches_played": 9
+    },
+    {
+      "team": "KPI Gaming",
+      "rating": 1582.93,
+      "matches_played": 10
+    },
+    {
+      "team": "Long Way",
+      "rating": 1582.0,
+      "matches_played": 9
+    },
+    {
+      "team": "KlanNaLan",
+      "rating": 1580.77,
+      "matches_played": 7
+    },
+    {
+      "team": "WLGaming Female Stars",
+      "rating": 1579.42,
+      "matches_played": 32
+    },
+    {
+      "team": "Fenerbahçe Esports",
+      "rating": 1578.27,
+      "matches_played": 10
+    },
+    {
+      "team": "Team Vitality",
+      "rating": 1577.37,
+      "matches_played": 34
+    },
+    {
+      "team": "REIGNITED",
+      "rating": 1576.43,
+      "matches_played": 14
+    },
+    {
+      "team": "FRAGDOLLS",
+      "rating": 1576.22,
+      "matches_played": 11
+    },
+    {
+      "team": "VALIANT GC",
+      "rating": 1575.11,
+      "matches_played": 19
+    },
+    {
+      "team": "Greenlanders",
+      "rating": 1574.08,
+      "matches_played": 7
+    },
+    {
+      "team": "DECIDERS",
+      "rating": 1570.95,
+      "matches_played": 10
+    },
+    {
+      "team": "KBV",
+      "rating": 1570.62,
+      "matches_played": 10
+    },
+    {
+      "team": "TWISTED SAINTS X",
+      "rating": 1566.23,
+      "matches_played": 34
+    },
+    {
+      "team": "Exalty Azalea",
+      "rating": 1566.19,
+      "matches_played": 23
+    },
+    {
+      "team": "EMUs",
+      "rating": 1564.23,
+      "matches_played": 25
+    },
+    {
+      "team": "BONK",
+      "rating": 1564.14,
+      "matches_played": 4
+    },
+    {
+      "team": "FALKE VENOM",
+      "rating": 1560.62,
+      "matches_played": 31
+    },
+    {
+      "team": "Team Galaga Kitsune",
+      "rating": 1559.86,
+      "matches_played": 27
+    },
+    {
+      "team": "OUTCASTS",
+      "rating": 1559.54,
+      "matches_played": 12
+    },
+    {
+      "team": "Million Flowerz GC",
+      "rating": 1559.05,
+      "matches_played": 33
+    },
+    {
+      "team": "Luminary Dragons",
+      "rating": 1557.98,
+      "matches_played": 11
+    },
+    {
+      "team": "Ranked Connoisseurs GC",
+      "rating": 1557.78,
+      "matches_played": 16
+    },
+    {
+      "team": "FLOPPERS",
+      "rating": 1556.78,
+      "matches_played": 12
+    },
+    {
+      "team": "Royal Legion GC",
+      "rating": 1556.43,
+      "matches_played": 12
+    },
+    {
+      "team": "BEM Esports",
+      "rating": 1555.07,
+      "matches_played": 16
+    },
+    {
+      "team": "Mini Haddock Meal",
+      "rating": 1555.02,
+      "matches_played": 16
+    },
+    {
+      "team": "Mandatory",
+      "rating": 1554.99,
+      "matches_played": 21
+    },
+    {
+      "team": "NOMAD GC",
+      "rating": 1552.44,
+      "matches_played": 34
+    },
+    {
+      "team": "Gigantic LynX",
+      "rating": 1552.23,
+      "matches_played": 7
+    },
+    {
+      "team": "Kanjo Skyline",
+      "rating": 1551.6,
+      "matches_played": 12
+    },
+    {
+      "team": "RIZON Sugar",
+      "rating": 1551.24,
+      "matches_played": 23
+    },
+    {
+      "team": "goofy goobers",
+      "rating": 1551.22,
+      "matches_played": 7
+    },
+    {
+      "team": "Permitta Unicorns GC",
+      "rating": 1551.17,
+      "matches_played": 11
+    },
+    {
+      "team": "FRG GC",
+      "rating": 1550.73,
+      "matches_played": 7
+    },
+    {
+      "team": "Exceptional Gaming Misora",
+      "rating": 1550.41,
+      "matches_played": 7
+    },
+    {
+      "team": "Dango sellers",
+      "rating": 1550.32,
+      "matches_played": 7
+    },
+    {
+      "team": "DNSTY",
+      "rating": 1550.2,
+      "matches_played": 11
+    },
+    {
+      "team": "Nuxeria GC",
+      "rating": 1550.12,
+      "matches_played": 18
+    },
+    {
+      "team": "Myth Esports",
+      "rating": 1549.44,
+      "matches_played": 7
+    },
+    {
+      "team": "Last Day Mix",
+      "rating": 1548.66,
+      "matches_played": 5
+    },
+    {
+      "team": "La Mala",
+      "rating": 1548.27,
+      "matches_played": 22
+    },
+    {
+      "team": "Kardeşler Kebap Saloon",
+      "rating": 1547.63,
+      "matches_played": 7
+    },
+    {
+      "team": "Syde FX",
+      "rating": 1547.6,
+      "matches_played": 33
+    },
+    {
+      "team": "R2S",
+      "rating": 1547.1,
+      "matches_played": 6
+    },
+    {
+      "team": "DEFIENT GC",
+      "rating": 1547.04,
+      "matches_played": 7
+    },
+    {
+      "team": "Small Crew",
+      "rating": 1546.67,
+      "matches_played": 9
+    },
+    {
+      "team": "NXT Misora",
+      "rating": 1546.08,
+      "matches_played": 20
+    },
+    {
+      "team": "Rush B",
+      "rating": 1545.93,
+      "matches_played": 7
+    },
+    {
+      "team": "Blue Orchid",
+      "rating": 1545.61,
+      "matches_played": 7
+    },
+    {
+      "team": "UCAM Esports Club",
+      "rating": 1545.42,
+      "matches_played": 17
+    },
+    {
+      "team": "TALMP",
+      "rating": 1545.32,
+      "matches_played": 5
+    },
+    {
+      "team": "Foxglove",
+      "rating": 1544.49,
+      "matches_played": 10
+    },
+    {
+      "team": "vcT CHAMPIONS V2",
+      "rating": 1544.46,
+      "matches_played": 5
+    },
+    {
+      "team": "Lille Esports GC",
+      "rating": 1544.35,
+      "matches_played": 10
+    },
+    {
+      "team": "Aftermath GC",
+      "rating": 1544.32,
+      "matches_played": 7
+    },
+    {
+      "team": "TN1GHT Clan Female",
+      "rating": 1543.62,
+      "matches_played": 7
+    },
+    {
+      "team": "Requiem Hime",
+      "rating": 1542.89,
+      "matches_played": 7
+    },
+    {
+      "team": "The Moomins",
+      "rating": 1541.02,
+      "matches_played": 10
+    },
+    {
+      "team": "Team LEISURE Luna",
+      "rating": 1540.25,
+      "matches_played": 11
+    },
+    {
+      "team": "NEON BLADE",
+      "rating": 1538.95,
+      "matches_played": 12
+    },
+    {
+      "team": "Parma Esports",
+      "rating": 1538.29,
+      "matches_played": 24
+    },
+    {
+      "team": "HGE GC",
+      "rating": 1538.1,
+      "matches_played": 4
+    },
+    {
+      "team": "charbon",
+      "rating": 1536.0,
+      "matches_played": 8
+    },
+    {
+      "team": "Eternal Fire",
+      "rating": 1535.12,
+      "matches_played": 10
+    },
+    {
+      "team": "LEO Esports",
+      "rating": 1534.95,
+      "matches_played": 4
+    },
+    {
+      "team": "Owned GC",
+      "rating": 1534.91,
+      "matches_played": 10
+    },
+    {
+      "team": "Team Verdant",
+      "rating": 1533.88,
+      "matches_played": 6
+    },
+    {
+      "team": "BXL Zoo",
+      "rating": 1533.4,
+      "matches_played": 2
+    },
+    {
+      "team": "TOB E-Sports",
+      "rating": 1533.29,
+      "matches_played": 4
+    },
+    {
+      "team": "Boeckligomes",
+      "rating": 1533.04,
+      "matches_played": 9
+    },
+    {
+      "team": "Team Sentinus",
+      "rating": 1532.73,
+      "matches_played": 4
+    },
+    {
+      "team": "HASBI",
+      "rating": 1531.61,
+      "matches_played": 4
+    },
+    {
+      "team": "Slavic Queens",
+      "rating": 1530.08,
+      "matches_played": 9
+    },
+    {
+      "team": "axolotls and chips",
+      "rating": 1529.89,
+      "matches_played": 6
+    },
+    {
+      "team": "LaPolizia",
+      "rating": 1529.84,
+      "matches_played": 4
+    },
+    {
+      "team": "Last Second",
+      "rating": 1529.8,
+      "matches_played": 6
+    },
+    {
+      "team": "Team Falcons Vega",
+      "rating": 1529.77,
+      "matches_played": 8
+    },
+    {
+      "team": "VOS PAINS",
+      "rating": 1529.34,
+      "matches_played": 4
+    },
+    {
+      "team": "Delulu Bottoms",
+      "rating": 1529.32,
+      "matches_played": 14
+    },
+    {
+      "team": "7 States Esports",
+      "rating": 1529.32,
+      "matches_played": 6
+    },
+    {
+      "team": "Luminary Petals",
+      "rating": 1529.25,
+      "matches_played": 9
+    },
+    {
+      "team": "ForsaKen",
+      "rating": 1529.22,
+      "matches_played": 6
+    },
+    {
+      "team": "Alien Anonymo",
+      "rating": 1529.22,
+      "matches_played": 6
+    },
+    {
+      "team": "F9 Iris",
+      "rating": 1528.51,
+      "matches_played": 9
+    },
+    {
+      "team": "Siko Esports GC",
+      "rating": 1528.39,
+      "matches_played": 9
+    },
+    {
+      "team": "Digity GC",
+      "rating": 1528.02,
+      "matches_played": 16
+    },
+    {
+      "team": "Team Divergentes GC",
+      "rating": 1527.79,
+      "matches_played": 14
+    },
+    {
+      "team": "Silly Seals",
+      "rating": 1527.35,
+      "matches_played": 9
+    },
+    {
+      "team": "XPERION NXT HANAMI",
+      "rating": 1527.03,
+      "matches_played": 18
+    },
+    {
+      "team": "VAY eSports FEM",
+      "rating": 1526.57,
+      "matches_played": 14
+    },
+    {
+      "team": "CTRL GC",
+      "rating": 1526.35,
+      "matches_played": 14
+    },
+    {
+      "team": "ÉCLAT GC",
+      "rating": 1525.7,
+      "matches_played": 12
+    },
+    {
+      "team": "Voltage GC",
+      "rating": 1525.42,
+      "matches_played": 14
+    },
+    {
+      "team": "Affinity Auras",
+      "rating": 1525.06,
+      "matches_played": 21
+    },
+    {
+      "team": "Ketçaplı Ruffles",
+      "rating": 1524.5,
+      "matches_played": 7
+    },
+    {
+      "team": "On Sight",
+      "rating": 1524.1,
+      "matches_played": 8
+    },
+    {
+      "team": "Reine de Papier",
+      "rating": 1523.14,
+      "matches_played": 7
+    },
+    {
+      "team": "AKURA Esport GC",
+      "rating": 1521.84,
+      "matches_played": 7
+    },
+    {
+      "team": "The Ultimates Odyssey",
+      "rating": 1521.16,
+      "matches_played": 5
+    },
+    {
+      "team": "Girls Generation",
+      "rating": 1521.1,
+      "matches_played": 7
+    },
+    {
+      "team": "LEO Azalea",
+      "rating": 1520.87,
+      "matches_played": 11
+    },
+    {
+      "team": "INDIGO",
+      "rating": 1519.74,
+      "matches_played": 3
+    },
+    {
+      "team": "FOKUS",
+      "rating": 1519.72,
+      "matches_played": 21
+    },
+    {
+      "team": "MONTA CLUB GC",
+      "rating": 1519.11,
+      "matches_played": 7
+    },
+    {
+      "team": "NoQL",
+      "rating": 1518.87,
+      "matches_played": 16
+    },
+    {
+      "team": "hawk2a",
+      "rating": 1518.83,
+      "matches_played": 7
+    },
+    {
+      "team": "RIZON",
+      "rating": 1518.83,
+      "matches_played": 5
+    },
+    {
+      "team": "eSports Cologne",
+      "rating": 1518.25,
+      "matches_played": 5
+    },
+    {
+      "team": "Forsaken BLAZE",
+      "rating": 1518.08,
+      "matches_played": 7
+    },
+    {
+      "team": "GLUKGLUK",
+      "rating": 1517.97,
+      "matches_played": 3
+    },
+    {
+      "team": "Delulus",
+      "rating": 1517.93,
+      "matches_played": 7
+    },
+    {
+      "team": "Agent X",
+      "rating": 1517.66,
+      "matches_played": 5
+    },
+    {
+      "team": "Celestials",
+      "rating": 1517.62,
+      "matches_played": 7
+    },
+    {
+      "team": "Team ORA",
+      "rating": 1517.51,
+      "matches_played": 7
+    },
+    {
+      "team": "RVS Shinobu",
+      "rating": 1517.05,
+      "matches_played": 7
+    },
+    {
+      "team": "IndigoDark Esports",
+      "rating": 1517.01,
+      "matches_played": 7
+    },
+    {
+      "team": "RIZON Pulse",
+      "rating": 1516.93,
+      "matches_played": 7
+    },
+    {
+      "team": "RoyalCodeName GC",
+      "rating": 1516.92,
+      "matches_played": 7
+    },
+    {
+      "team": "Acient Freya",
+      "rating": 1516.61,
+      "matches_played": 5
+    },
+    {
+      "team": "PULSAR GC",
+      "rating": 1516.48,
+      "matches_played": 7
+    },
+    {
+      "team": "NAMMZ",
+      "rating": 1516.46,
+      "matches_played": 7
+    },
+    {
+      "team": "Barkers Rex",
+      "rating": 1516.18,
+      "matches_played": 7
+    },
+    {
+      "team": "Eclipse Esport",
+      "rating": 1516.14,
+      "matches_played": 7
+    },
+    {
+      "team": "NOVO Nightingale",
+      "rating": 1516.06,
+      "matches_played": 33
+    },
+    {
+      "team": "AYAR",
+      "rating": 1516.06,
+      "matches_played": 3
+    },
+    {
+      "team": "Team EMEA",
+      "rating": 1516.0,
+      "matches_played": 1
+    },
+    {
+      "team": "KAMIKAZE",
+      "rating": 1516.0,
+      "matches_played": 3
+    },
+    {
+      "team": "WIP Esports",
+      "rating": 1516.0,
+      "matches_played": 3
+    },
+    {
+      "team": "OEEA",
+      "rating": 1515.94,
+      "matches_played": 7
+    },
+    {
+      "team": "Guinea Pink Silkie",
+      "rating": 1515.88,
+      "matches_played": 7
+    },
+    {
+      "team": "SYFN GC",
+      "rating": 1515.88,
+      "matches_played": 7
+    },
+    {
+      "team": "Sakura Scorpions",
+      "rating": 1515.85,
+      "matches_played": 7
+    },
+    {
+      "team": "Veni Esports GC",
+      "rating": 1515.85,
+      "matches_played": 7
+    },
+    {
+      "team": "CICADAS Krew",
+      "rating": 1515.85,
+      "matches_played": 7
+    },
+    {
+      "team": "CAVI Esports GC",
+      "rating": 1515.85,
+      "matches_played": 7
+    },
+    {
+      "team": "ZEKROHAN O",
+      "rating": 1515.82,
+      "matches_played": 5
+    },
+    {
+      "team": "Crvena zvezda Esports",
+      "rating": 1515.68,
+      "matches_played": 18
+    },
+    {
+      "team": "NSM",
+      "rating": 1515.59,
+      "matches_played": 7
+    },
+    {
+      "team": "X1 Esports GC",
+      "rating": 1515.57,
+      "matches_played": 7
+    },
+    {
+      "team": "Edel eSports",
+      "rating": 1515.52,
+      "matches_played": 7
+    },
+    {
+      "team": "ZETA Gaming GC",
+      "rating": 1515.39,
+      "matches_played": 9
+    },
+    {
+      "team": "FIVE WONDERKID",
+      "rating": 1515.36,
+      "matches_played": 3
+    },
+    {
+      "team": "Dragon Seekers",
+      "rating": 1515.27,
+      "matches_played": 7
+    },
+    {
+      "team": "LANDODGERS",
+      "rating": 1515.25,
+      "matches_played": 3
+    },
+    {
+      "team": "WIP STARS",
+      "rating": 1515.23,
+      "matches_played": 7
+    },
+    {
+      "team": "UWU g4ng",
+      "rating": 1515.12,
+      "matches_played": 7
+    },
+    {
+      "team": "GBX Vortex",
+      "rating": 1515.03,
+      "matches_played": 7
+    },
+    {
+      "team": "Eintracht Frankfurt",
+      "rating": 1514.95,
+      "matches_played": 9
+    },
+    {
+      "team": "BLC GC",
+      "rating": 1514.92,
+      "matches_played": 7
+    },
+    {
+      "team": "TSK Fenrir",
+      "rating": 1514.79,
+      "matches_played": 7
+    },
+    {
+      "team": "nootnootnoot",
+      "rating": 1514.75,
+      "matches_played": 7
+    },
+    {
+      "team": "GHOSTS",
+      "rating": 1514.63,
+      "matches_played": 5
+    },
+    {
+      "team": "XXLv2",
+      "rating": 1514.56,
+      "matches_played": 5
+    },
+    {
+      "team": "Soul society",
+      "rating": 1514.53,
+      "matches_played": 5
+    },
+    {
+      "team": "BLX CORP",
+      "rating": 1514.53,
+      "matches_played": 3
+    },
+    {
+      "team": "SU SAMURLARI",
+      "rating": 1514.53,
+      "matches_played": 5
+    },
+    {
+      "team": "TEAM NEXUS",
+      "rating": 1514.53,
+      "matches_played": 5
+    },
+    {
+      "team": "SP Esports Female",
+      "rating": 1514.31,
+      "matches_played": 7
+    },
+    {
+      "team": "Papara SuperMassive",
+      "rating": 1514.3,
+      "matches_played": 5
+    },
+    {
+      "team": "5 stack",
+      "rating": 1514.2,
+      "matches_played": 11
+    },
+    {
+      "team": "PCIFIC Esports",
+      "rating": 1514.18,
+      "matches_played": 11
+    },
+    {
+      "team": "Veni Venom",
+      "rating": 1513.99,
+      "matches_played": 3
+    },
+    {
+      "team": "ROA Scarlet",
+      "rating": 1513.97,
+      "matches_played": 7
+    },
+    {
+      "team": "GnG Amazigh White",
+      "rating": 1513.89,
+      "matches_played": 5
+    },
+    {
+      "team": "MOUZ",
+      "rating": 1513.83,
+      "matches_played": 7
+    },
+    {
+      "team": "Vixens Nocturne",
+      "rating": 1513.83,
+      "matches_played": 7
+    },
+    {
+      "team": "F9 Wonders",
+      "rating": 1513.8,
+      "matches_played": 5
+    },
+    {
+      "team": "Better E-Sport",
+      "rating": 1513.69,
+      "matches_played": 13
+    },
+    {
+      "team": "FUT Esports",
+      "rating": 1513.5,
+      "matches_played": 39
+    },
+    {
+      "team": "BunnyWave",
+      "rating": 1512.73,
+      "matches_played": 7
+    },
+    {
+      "team": "MUVI",
+      "rating": 1512.51,
+      "matches_played": 7
+    },
+    {
+      "team": "TOG Kitsune",
+      "rating": 1512.37,
+      "matches_played": 27
+    },
+    {
+      "team": "67GANG",
+      "rating": 1512.17,
+      "matches_played": 11
+    },
+    {
+      "team": "Stallions Esports GC",
+      "rating": 1512.14,
+      "matches_played": 7
+    },
+    {
+      "team": "Bulldog Esports",
+      "rating": 1512.02,
+      "matches_played": 7
+    },
+    {
+      "team": "MHH PAELLA",
+      "rating": 1511.93,
+      "matches_played": 5
+    },
+    {
+      "team": "BBL",
+      "rating": 1511.85,
+      "matches_played": 5
+    },
+    {
+      "team": "KSO Vixen",
+      "rating": 1511.69,
+      "matches_played": 7
+    },
+    {
+      "team": "DimoniX Lilith",
+      "rating": 1511.63,
+      "matches_played": 7
+    },
+    {
+      "team": "Jungle Diff GC",
+      "rating": 1511.34,
+      "matches_played": 7
+    },
+    {
+      "team": "TOG Inari",
+      "rating": 1511.31,
+      "matches_played": 7
+    },
+    {
+      "team": "HeX eSports",
+      "rating": 1511.22,
+      "matches_played": 5
+    },
+    {
+      "team": "Chikuli",
+      "rating": 1510.68,
+      "matches_played": 11
+    },
+    {
+      "team": "Ingenious GC",
+      "rating": 1508.91,
+      "matches_played": 21
+    },
+    {
+      "team": "Fire Flux Esports",
+      "rating": 1508.68,
+      "matches_played": 6
+    },
+    {
+      "team": "VentuCorp GC",
+      "rating": 1508.49,
+      "matches_played": 11
+    },
+    {
+      "team": "MAD Lions KOI",
+      "rating": 1507.54,
+      "matches_played": 8
+    },
+    {
+      "team": "WARTHOX GC",
+      "rating": 1507.31,
+      "matches_played": 14
+    },
+    {
+      "team": "FRG Sirens",
+      "rating": 1506.86,
+      "matches_played": 21
+    },
+    {
+      "team": "Twisted Minds",
+      "rating": 1506.25,
+      "matches_played": 8
+    },
+    {
+      "team": "meows united",
+      "rating": 1506.17,
+      "matches_played": 4
+    },
+    {
+      "team": "Team Liquid Academy",
+      "rating": 1505.44,
+      "matches_played": 8
+    },
+    {
+      "team": "Scald eSport GC",
+      "rating": 1505.39,
+      "matches_played": 10
+    },
+    {
+      "team": "DSYRE",
+      "rating": 1505.01,
+      "matches_played": 4
+    },
+    {
+      "team": "Zerance Mint",
+      "rating": 1504.74,
+      "matches_played": 54
+    },
+    {
+      "team": "RECOIL ESPORT GC",
+      "rating": 1503.25,
+      "matches_played": 4
+    },
+    {
+      "team": "NYAN ESPORTS",
+      "rating": 1503.2,
+      "matches_played": 6
+    },
+    {
+      "team": "Reyna Roulette",
+      "rating": 1502.75,
+      "matches_played": 6
+    },
+    {
+      "team": "Oserv Esport GC",
+      "rating": 1502.73,
+      "matches_played": 10
+    },
+    {
+      "team": "PCIFIC Waves",
+      "rating": 1502.72,
+      "matches_played": 33
+    },
+    {
+      "team": "Meow",
+      "rating": 1502.7,
+      "matches_played": 4
+    },
+    {
+      "team": "ORKADIA GC",
+      "rating": 1502.39,
+      "matches_played": 14
+    },
+    {
+      "team": "VENDETTA",
+      "rating": 1502.11,
+      "matches_played": 4
+    },
+    {
+      "team": "PCIFIC Akademi",
+      "rating": 1502.06,
+      "matches_played": 2
+    },
+    {
+      "team": "4 FUN GC",
+      "rating": 1502.02,
+      "matches_played": 14
+    },
+    {
+      "team": "Last9",
+      "rating": 1501.47,
+      "matches_played": 4
+    },
+    {
+      "team": "ALTF4 GC",
+      "rating": 1501.43,
+      "matches_played": 6
+    },
+    {
+      "team": "HADDINIBILBAO",
+      "rating": 1501.4,
+      "matches_played": 2
+    },
+    {
+      "team": "THE REST OF US",
+      "rating": 1501.34,
+      "matches_played": 8
+    },
+    {
+      "team": "ZETA Gaming",
+      "rating": 1501.22,
+      "matches_played": 4
+    },
+    {
+      "team": "Ravens",
+      "rating": 1500.7,
+      "matches_played": 4
+    },
+    {
+      "team": "SiXSENSE",
+      "rating": 1500.67,
+      "matches_played": 4
+    },
+    {
+      "team": "LUA Gaming",
+      "rating": 1500.55,
+      "matches_played": 4
+    },
+    {
+      "team": "Gamax Lite",
+      "rating": 1500.54,
+      "matches_played": 15
+    },
+    {
+      "team": "GoNext Esports",
+      "rating": 1500.26,
+      "matches_played": 6
+    },
+    {
+      "team": "Pertinax Esports",
+      "rating": 1500.07,
+      "matches_played": 2
+    },
+    {
+      "team": "HGE Esport",
+      "rating": 1500.03,
+      "matches_played": 2
+    },
+    {
+      "team": "Idynomashimi",
+      "rating": 1500.0,
+      "matches_played": 4
+    },
+    {
+      "team": "MadWolves",
+      "rating": 1500.0,
+      "matches_played": 2
+    },
+    {
+      "team": "Hidden Horizon GC",
+      "rating": 1500.0,
+      "matches_played": 2
+    },
+    {
+      "team": "5STARS GC",
+      "rating": 1500.0,
+      "matches_played": 2
+    },
+    {
+      "team": "Dynasty",
+      "rating": 1500.0,
+      "matches_played": 2
+    },
+    {
+      "team": "java y gon unban waiting room",
+      "rating": 1500.0,
+      "matches_played": 2
+    },
+    {
+      "team": "YokOlmaz",
+      "rating": 1500.0,
+      "matches_played": 2
+    },
+    {
+      "team": "Team Jud Me",
+      "rating": 1500.0,
+      "matches_played": 2
+    },
+    {
+      "team": "Magna Lupus",
+      "rating": 1500.0,
+      "matches_played": 2
+    },
+    {
+      "team": "TFT Demons",
+      "rating": 1500.0,
+      "matches_played": 4
+    },
+    {
+      "team": "ACİL PARA LAZIM",
+      "rating": 1500.0,
+      "matches_played": 2
+    },
+    {
+      "team": "Arise",
+      "rating": 1500.0,
+      "matches_played": 2
+    },
+    {
+      "team": "Team SCARS",
+      "rating": 1500.0,
+      "matches_played": 2
+    },
+    {
+      "team": "Raton",
+      "rating": 1500.0,
+      "matches_played": 2
+    },
+    {
+      "team": "Ejsgir",
+      "rating": 1500.0,
+      "matches_played": 2
+    },
+    {
+      "team": "TCN",
+      "rating": 1500.0,
+      "matches_played": 2
+    },
+    {
+      "team": "Saltire Sirens",
+      "rating": 1499.97,
+      "matches_played": 4
+    },
+    {
+      "team": "Szach Mat",
+      "rating": 1499.95,
+      "matches_played": 2
+    },
+    {
+      "team": "Dortmund eSports",
+      "rating": 1499.88,
+      "matches_played": 4
+    },
+    {
+      "team": "Axolotl Esports GC",
+      "rating": 1499.85,
+      "matches_played": 6
+    },
+    {
+      "team": "CTRL SWAG",
+      "rating": 1499.75,
+      "matches_played": 6
+    },
+    {
+      "team": "NOVO Esports",
+      "rating": 1499.36,
+      "matches_played": 4
+    },
+    {
+      "team": "DESTINY",
+      "rating": 1499.3,
+      "matches_played": 2
+    },
+    {
+      "team": "Wooka Esport",
+      "rating": 1499.3,
+      "matches_played": 2
+    },
+    {
+      "team": "Oxuji",
+      "rating": 1499.3,
+      "matches_played": 2
+    },
+    {
+      "team": "CE Calling",
+      "rating": 1499.3,
+      "matches_played": 2
+    },
+    {
+      "team": "Exanimis",
+      "rating": 1499.26,
+      "matches_played": 4
+    },
+    {
+      "team": "Diamant Esports",
+      "rating": 1499.26,
+      "matches_played": 2
+    },
+    {
+      "team": "AZ Rising",
+      "rating": 1499.22,
+      "matches_played": 12
+    },
+    {
+      "team": "Lotus Karma",
+      "rating": 1498.81,
+      "matches_played": 6
+    },
+    {
+      "team": "KCORP Blue Stars",
+      "rating": 1497.93,
+      "matches_played": 2
+    },
+    {
+      "team": "Team Aeon",
+      "rating": 1497.91,
+      "matches_played": 6
+    },
+    {
+      "team": "TeamOrangeGaming",
+      "rating": 1497.87,
+      "matches_played": 4
+    },
+    {
+      "team": "Shine in Shade",
+      "rating": 1497.63,
+      "matches_played": 17
+    },
+    {
+      "team": "Serene Skyline",
+      "rating": 1497.12,
+      "matches_played": 11
+    },
+    {
+      "team": "GIANTX",
+      "rating": 1496.18,
+      "matches_played": 32
+    },
+    {
+      "team": "Pixel Lumina",
+      "rating": 1494.26,
+      "matches_played": 5
+    },
+    {
+      "team": "Zenithia",
+      "rating": 1493.06,
+      "matches_played": 9
+    },
+    {
+      "team": "S2G Esports",
+      "rating": 1492.0,
+      "matches_played": 9
+    },
+    {
+      "team": "Joblife GC",
+      "rating": 1490.88,
+      "matches_played": 24
+    },
+    {
+      "team": "Playing Ducks",
+      "rating": 1490.73,
+      "matches_played": 3
+    },
+    {
+      "team": "Teabaguette",
+      "rating": 1490.07,
+      "matches_played": 7
+    },
+    {
+      "team": "Maneaters",
+      "rating": 1489.59,
+      "matches_played": 21
+    },
+    {
+      "team": "WIP GC",
+      "rating": 1489.46,
+      "matches_played": 1
+    },
+    {
+      "team": "Valorando",
+      "rating": 1488.04,
+      "matches_played": 3
+    },
+    {
+      "team": "Beşiktaş Esports",
+      "rating": 1488.0,
+      "matches_played": 3
+    },
+    {
+      "team": "LXT ESPORTS",
+      "rating": 1487.98,
+      "matches_played": 3
+    },
+    {
+      "team": "2KZ3R",
+      "rating": 1487.84,
+      "matches_played": 3
+    },
+    {
+      "team": "OPX Valkyries",
+      "rating": 1487.55,
+      "matches_played": 7
+    },
+    {
+      "team": "BLAZE",
+      "rating": 1487.53,
+      "matches_played": 3
+    },
+    {
+      "team": "0xyde GC",
+      "rating": 1487.27,
+      "matches_played": 7
+    },
+    {
+      "team": "Heroic Hunters",
+      "rating": 1486.95,
+      "matches_played": 7
+    },
+    {
+      "team": "pew pew meow meow",
+      "rating": 1486.94,
+      "matches_played": 7
+    },
+    {
+      "team": "Ramboot Club",
+      "rating": 1486.92,
+      "matches_played": 3
+    },
+    {
+      "team": "Galakticos",
+      "rating": 1486.9,
+      "matches_played": 3
+    },
+    {
+      "team": "THE ONE GC",
+      "rating": 1486.58,
+      "matches_played": 7
+    },
+    {
+      "team": "NEANLATIYONBOLM",
+      "rating": 1486.14,
+      "matches_played": 3
+    },
+    {
+      "team": "team iLkaow",
+      "rating": 1485.99,
+      "matches_played": 1
+    },
+    {
+      "team": "Yugen Esports GC",
+      "rating": 1485.97,
+      "matches_played": 7
+    },
+    {
+      "team": "LEXIBLE",
+      "rating": 1485.44,
+      "matches_played": 3
+    },
+    {
+      "team": "NGU eSports",
+      "rating": 1485.4,
+      "matches_played": 1
+    },
+    {
+      "team": "Valkyries Esports",
+      "rating": 1485.36,
+      "matches_played": 7
+    },
+    {
+      "team": "Wildcards",
+      "rating": 1485.15,
+      "matches_played": 7
+    },
+    {
+      "team": "MDN Midnight",
+      "rating": 1485.01,
+      "matches_played": 7
+    },
+    {
+      "team": "Out of Fame GC",
+      "rating": 1484.99,
+      "matches_played": 7
+    },
+    {
+      "team": "Dortmund Esports Warriors",
+      "rating": 1484.74,
+      "matches_played": 3
+    },
+    {
+      "team": "Dreamers",
+      "rating": 1484.74,
+      "matches_played": 3
+    },
+    {
+      "team": "Burun Kiranlar",
+      "rating": 1484.74,
+      "matches_played": 1
+    },
+    {
+      "team": "Gaziosmanpaşa Belediyesi eSpor",
+      "rating": 1484.74,
+      "matches_played": 1
+    },
+    {
+      "team": "Chaos",
+      "rating": 1484.74,
+      "matches_played": 1
+    },
+    {
+      "team": "TEAM PARADOX",
+      "rating": 1484.74,
+      "matches_played": 7
+    },
+    {
+      "team": "Hurricane Of Feathers Kitsune",
+      "rating": 1484.7,
+      "matches_played": 3
+    },
+    {
+      "team": "Imperium Livia",
+      "rating": 1484.7,
+      "matches_played": 1
+    },
+    {
+      "team": "Late Night Crew GC",
+      "rating": 1484.48,
+      "matches_played": 7
+    },
+    {
+      "team": "Devil Esport GC",
+      "rating": 1484.41,
+      "matches_played": 7
+    },
+    {
+      "team": "SFAM GC",
+      "rating": 1484.31,
+      "matches_played": 7
+    },
+    {
+      "team": "HANAMI",
+      "rating": 1484.31,
+      "matches_played": 9
+    },
+    {
+      "team": "BOARS",
+      "rating": 1484.22,
+      "matches_played": 3
+    },
+    {
+      "team": "T2G Esports",
+      "rating": 1484.21,
+      "matches_played": 7
+    },
+    {
+      "team": "no fox given",
+      "rating": 1484.16,
+      "matches_played": 7
+    },
+    {
+      "team": "Noxy GC",
+      "rating": 1484.13,
+      "matches_played": 7
+    },
+    {
+      "team": "Ecofrag Divas",
+      "rating": 1484.1,
+      "matches_played": 7
+    },
+    {
+      "team": "Symbol GC",
+      "rating": 1484.09,
+      "matches_played": 7
+    },
+    {
+      "team": "Good Girls!",
+      "rating": 1484.07,
+      "matches_played": 7
+    },
+    {
+      "team": "ANT1MATTER",
+      "rating": 1484.07,
+      "matches_played": 7
+    },
+    {
+      "team": "gli asparagi",
+      "rating": 1484.06,
+      "matches_played": 1
+    },
+    {
+      "team": "EmpressX",
+      "rating": 1484.06,
+      "matches_played": 7
+    },
+    {
+      "team": "Colorful Radiation",
+      "rating": 1484.03,
+      "matches_played": 3
+    },
+    {
+      "team": "Neira Esports",
+      "rating": 1484.03,
+      "matches_played": 1
+    },
+    {
+      "team": "Team Valiant",
+      "rating": 1484.01,
+      "matches_played": 7
+    },
+    {
+      "team": "No Pecan!",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "OMNIA",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "Digity Esport",
+      "rating": 1484.0,
+      "matches_played": 3
+    },
+    {
+      "team": "Frags of Fire CO GC",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "Venenum GC",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "PSQ",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "Giga Liba",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "DuelsMix",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "Playbay X VISION SYNC",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "GoatFellas Tragos",
+      "rating": 1484.0,
+      "matches_played": 3
+    },
+    {
+      "team": "Imperial Eagles White",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "Alley Cats",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "RV Jushimori",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "OATMILK",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "Mulieres Vires",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "Cannes Esports",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "Nocturne Gale Lyra",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "Arcanum Esports",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "Polder Pushers",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "XPERION NXT",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "KRC Genk Esports",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "Team France",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "Tan´i eSports",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "Nex Mix",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "FAS MIX B",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "Boostgate Esports Academy",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "10SaatYeter",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "Team KAOS",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "karıncayiyenler",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "2.6 Hog Rider",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "Redaniaa",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "qqsoesman",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "VoxDei",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "manifestboys",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "BABA",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "Takım Adı",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "USTUNLUKURANLAR",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "VOLKANIC",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "Team Velaxis",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "RR Project",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "STARz-",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "haddini bilbao",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "G2STAR",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "0 GÜN YETER",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "Team eXcellence",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "babalarzinyo",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "MİXİZBEOLM",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "Excelled",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "Aestralis",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "team VASQUEZ",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "FULL BOX 200",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "BWBB",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "Goblins",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "GNR w Z",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "Million Flowerz",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "Team Selenis",
+      "rating": 1484.0,
+      "matches_played": 3
+    },
+    {
+      "team": "İstanbul Wildcats Female",
+      "rating": 1483.96,
+      "matches_played": 7
+    },
+    {
+      "team": "Lycus Fempire",
+      "rating": 1483.94,
+      "matches_played": 7
+    },
+    {
+      "team": "Royal Reapers GC",
+      "rating": 1483.92,
+      "matches_played": 7
+    },
+    {
+      "team": "last minute",
+      "rating": 1483.92,
+      "matches_played": 7
+    },
+    {
+      "team": "Entropy Coven",
+      "rating": 1483.91,
+      "matches_played": 7
+    },
+    {
+      "team": "Ingenious Esports",
+      "rating": 1483.88,
+      "matches_played": 3
+    },
+    {
+      "team": "FAE Lumeris",
+      "rating": 1483.84,
+      "matches_played": 7
+    },
+    {
+      "team": "GnG Esports",
+      "rating": 1483.78,
+      "matches_played": 3
+    },
+    {
+      "team": "Spartan Valkyries",
+      "rating": 1483.43,
+      "matches_played": 7
+    },
+    {
+      "team": "Team Monsters Inc",
+      "rating": 1483.33,
+      "matches_played": 7
+    },
+    {
+      "team": "Team PlayHard Glasterz",
+      "rating": 1483.26,
+      "matches_played": 3
+    },
+    {
+      "team": "Numinous",
+      "rating": 1483.26,
+      "matches_played": 1
+    },
+    {
+      "team": "Dragons Esports Women",
+      "rating": 1483.26,
+      "matches_played": 1
+    },
+    {
+      "team": "Cerberus",
+      "rating": 1483.26,
+      "matches_played": 1
+    },
+    {
+      "team": "Zyron Sadashi",
+      "rating": 1483.26,
+      "matches_played": 1
+    },
+    {
+      "team": "Team Genetix Queens",
+      "rating": 1483.26,
+      "matches_played": 1
+    },
+    {
+      "team": "Qpak",
+      "rating": 1483.26,
+      "matches_played": 1
+    },
+    {
+      "team": "3 Gün Yeter",
+      "rating": 1483.26,
+      "matches_played": 1
+    },
+    {
+      "team": "BAYER NEVERLOSEN",
+      "rating": 1483.26,
+      "matches_played": 1
+    },
+    {
+      "team": "Elemental Obscura",
+      "rating": 1483.22,
+      "matches_played": 11
+    },
+    {
+      "team": "Iron Fist",
+      "rating": 1483.03,
+      "matches_played": 7
+    },
+    {
+      "team": "Brest Esport",
+      "rating": 1482.98,
+      "matches_played": 7
+    },
+    {
+      "team": "Ultra Instinct Astrals",
+      "rating": 1482.76,
+      "matches_played": 7
+    },
+    {
+      "team": "Psyshock",
+      "rating": 1482.72,
+      "matches_played": 7
+    },
+    {
+      "team": "Fractious Esports GC",
+      "rating": 1482.65,
+      "matches_played": 10
+    },
+    {
+      "team": "TBD",
+      "rating": 1482.57,
+      "matches_played": 7
+    },
+    {
+      "team": "Insomniacs",
+      "rating": 1482.46,
+      "matches_played": 7
+    },
+    {
+      "team": "Trusted Rebels",
+      "rating": 1482.45,
+      "matches_played": 7
+    },
+    {
+      "team": "Kroown Esport GC",
+      "rating": 1482.31,
+      "matches_played": 7
+    },
+    {
+      "team": "Primora GC",
+      "rating": 1482.31,
+      "matches_played": 7
+    },
+    {
+      "team": "BBL Queens",
+      "rating": 1482.03,
+      "matches_played": 8
+    },
+    {
+      "team": "EKO Esports GC",
+      "rating": 1481.86,
+      "matches_played": 9
+    },
+    {
+      "team": "AKA Hero GC",
+      "rating": 1481.49,
+      "matches_played": 7
+    },
+    {
+      "team": "ALTERNATE aTTaX",
+      "rating": 1481.47,
+      "matches_played": 3
+    },
+    {
+      "team": "Guinea Pink Texel",
+      "rating": 1481.36,
+      "matches_played": 7
+    },
+    {
+      "team": "Kapro GC",
+      "rating": 1481.12,
+      "matches_played": 7
+    },
+    {
+      "team": "Nightfall",
+      "rating": 1481.05,
+      "matches_played": 7
+    },
+    {
+      "team": "DSQ Viola",
+      "rating": 1481.05,
+      "matches_played": 7
+    },
+    {
+      "team": "Olympique Mnihla GC",
+      "rating": 1480.73,
+      "matches_played": 7
+    },
+    {
+      "team": "Howlers Luna",
+      "rating": 1480.65,
+      "matches_played": 2
+    },
+    {
+      "team": "Insomniacs GC",
+      "rating": 1480.52,
+      "matches_played": 7
+    },
+    {
+      "team": "Arthea Queens",
+      "rating": 1480.08,
+      "matches_played": 14
+    },
+    {
+      "team": "Killties",
+      "rating": 1479.98,
+      "matches_played": 7
+    },
+    {
+      "team": "Lunar",
+      "rating": 1479.96,
+      "matches_played": 14
+    },
+    {
+      "team": "Fantastica",
+      "rating": 1479.71,
+      "matches_played": 7
+    },
+    {
+      "team": "Midnight Ember GC",
+      "rating": 1479.63,
+      "matches_played": 7
+    },
+    {
+      "team": "eSports Cologne Fireflies",
+      "rating": 1478.96,
+      "matches_played": 21
+    },
+    {
+      "team": "Divine Karma GC",
+      "rating": 1477.75,
+      "matches_played": 7
+    },
+    {
+      "team": "Hornets",
+      "rating": 1477.01,
+      "matches_played": 2
+    },
+    {
+      "team": "SillyPuff Girls",
+      "rating": 1475.6,
+      "matches_played": 18
+    },
+    {
+      "team": "NGU Roo",
+      "rating": 1475.58,
+      "matches_played": 18
+    },
+    {
+      "team": "Melilla Titans GC",
+      "rating": 1474.45,
+      "matches_played": 4
+    },
+    {
+      "team": "NorP GC",
+      "rating": 1474.44,
+      "matches_played": 4
+    },
+    {
+      "team": "miXora",
+      "rating": 1473.11,
+      "matches_played": 2
+    },
+    {
+      "team": "Dark Nebula",
+      "rating": 1472.8,
+      "matches_played": 2
+    },
+    {
+      "team": "HTG E-sports",
+      "rating": 1472.75,
+      "matches_played": 4
+    },
+    {
+      "team": "HEROIC Valkyries",
+      "rating": 1472.56,
+      "matches_played": 28
+    },
+    {
+      "team": "Reveal Multigaming Shinobu",
+      "rating": 1472.15,
+      "matches_played": 8
+    },
+    {
+      "team": "Fact Revolution",
+      "rating": 1471.8,
+      "matches_played": 14
+    },
+    {
+      "team": "Zephyr Otters",
+      "rating": 1471.67,
+      "matches_played": 2
+    },
+    {
+      "team": "Team Phoenix Female",
+      "rating": 1471.3,
+      "matches_played": 14
+    },
+    {
+      "team": "Sacrifice",
+      "rating": 1470.91,
+      "matches_played": 2
+    },
+    {
+      "team": "Otakar Esports",
+      "rating": 1470.8,
+      "matches_played": 2
+    },
+    {
+      "team": "Suzaku Esports",
+      "rating": 1470.67,
+      "matches_played": 2
+    },
+    {
+      "team": "Cat Lovers GC",
+      "rating": 1470.47,
+      "matches_played": 14
+    },
+    {
+      "team": "Luminaria",
+      "rating": 1470.1,
+      "matches_played": 2
+    },
+    {
+      "team": "Pirox Valkyries",
+      "rating": 1469.99,
+      "matches_played": 6
+    },
+    {
+      "team": "Skibidi",
+      "rating": 1469.62,
+      "matches_played": 6
+    },
+    {
+      "team": "Leftovers Crew",
+      "rating": 1469.44,
+      "matches_played": 2
+    },
+    {
+      "team": "Bitfix Gaming",
+      "rating": 1468.77,
+      "matches_played": 2
+    },
+    {
+      "team": "Stellarix GC",
+      "rating": 1468.77,
+      "matches_played": 6
+    },
+    {
+      "team": "Red Velvet",
+      "rating": 1468.74,
+      "matches_played": 2
+    },
+    {
+      "team": "TREMBLE",
+      "rating": 1468.74,
+      "matches_played": 2
+    },
+    {
+      "team": "PowerPuff GC",
+      "rating": 1468.74,
+      "matches_played": 2
+    },
+    {
+      "team": "SPICY",
+      "rating": 1468.74,
+      "matches_played": 2
+    },
+    {
+      "team": "PURE GC",
+      "rating": 1468.74,
+      "matches_played": 2
+    },
+    {
+      "team": "R8 Esports",
+      "rating": 1468.74,
+      "matches_played": 2
+    },
+    {
+      "team": "PPP",
+      "rating": 1468.74,
+      "matches_played": 2
+    },
+    {
+      "team": "OLD5",
+      "rating": 1468.74,
+      "matches_played": 2
+    },
+    {
+      "team": "Ghools Esports",
+      "rating": 1468.74,
+      "matches_played": 2
+    },
+    {
+      "team": "Metizport",
+      "rating": 1468.7,
+      "matches_played": 2
+    },
+    {
+      "team": "White Angels",
+      "rating": 1468.21,
+      "matches_played": 4
+    },
+    {
+      "team": "Team Coalesce Roses",
+      "rating": 1468.11,
+      "matches_played": 15
+    },
+    {
+      "team": "Genius",
+      "rating": 1468.07,
+      "matches_played": 4
+    },
+    {
+      "team": "ECO Akuma",
+      "rating": 1468.0,
+      "matches_played": 2
+    },
+    {
+      "team": "ALTERNATE aTTaX EVO",
+      "rating": 1468.0,
+      "matches_played": 2
+    },
+    {
+      "team": "Nade Venus Gaming",
+      "rating": 1467.91,
+      "matches_played": 6
+    },
+    {
+      "team": "Glacial Guardians",
+      "rating": 1467.87,
+      "matches_played": 2
+    },
+    {
+      "team": "All Good",
+      "rating": 1467.77,
+      "matches_played": 6
+    },
+    {
+      "team": "Zero Tenacity",
+      "rating": 1467.42,
+      "matches_played": 2
+    },
+    {
+      "team": "KOI Fénix",
+      "rating": 1467.25,
+      "matches_played": 8
+    },
+    {
+      "team": "HELLO KITTY",
+      "rating": 1467.23,
+      "matches_played": 8
+    },
+    {
+      "team": "DETECT QUEENS",
+      "rating": 1467.06,
+      "matches_played": 16
+    },
+    {
+      "team": "SweetNsour",
+      "rating": 1466.66,
+      "matches_played": 4
+    },
+    {
+      "team": "MIR",
+      "rating": 1466.42,
+      "matches_played": 6
+    },
+    {
+      "team": "TRAUM",
+      "rating": 1465.19,
+      "matches_played": 14
+    },
+    {
+      "team": "LNX Venus",
+      "rating": 1463.88,
+      "matches_played": 4
+    },
+    {
+      "team": "Munin Esports",
+      "rating": 1463.5,
+      "matches_played": 14
+    },
+    {
+      "team": "Galatasaray Esports",
+      "rating": 1463.35,
+      "matches_played": 5
+    },
+    {
+      "team": "SUPERNOVA",
+      "rating": 1462.49,
+      "matches_played": 6
+    },
+    {
+      "team": "Team to Glory Valkyries",
+      "rating": 1461.94,
+      "matches_played": 6
+    },
+    {
+      "team": "DayLight Lyra",
+      "rating": 1461.74,
+      "matches_played": 21
+    },
+    {
+      "team": "Voltage IKM",
+      "rating": 1461.43,
+      "matches_played": 11
+    },
+    {
+      "team": "HINODE TSUKI",
+      "rating": 1460.76,
+      "matches_played": 21
+    },
+    {
+      "team": "The Ultimates",
+      "rating": 1459.64,
+      "matches_played": 9
+    },
+    {
+      "team": "Bishop's Nix",
+      "rating": 1459.37,
+      "matches_played": 3
+    },
+    {
+      "team": "GULUGULU",
+      "rating": 1459.08,
+      "matches_played": 20
+    },
+    {
+      "team": "teamflashers",
+      "rating": 1458.6,
+      "matches_played": 3
+    },
+    {
+      "team": "RAFHA eSPORTS GC",
+      "rating": 1457.75,
+      "matches_played": 6
+    },
+    {
+      "team": "Natus Vincere",
+      "rating": 1457.44,
+      "matches_played": 32
+    },
+    {
+      "team": "WIP Esports GC",
+      "rating": 1457.09,
+      "matches_played": 3
+    },
+    {
+      "team": "Misa Esports",
+      "rating": 1456.19,
+      "matches_played": 8
+    },
+    {
+      "team": "Joblife",
+      "rating": 1455.98,
+      "matches_played": 18
+    },
+    {
+      "team": "NEXA",
+      "rating": 1455.91,
+      "matches_played": 3
+    },
+    {
+      "team": "Bazook GC",
+      "rating": 1455.09,
+      "matches_played": 7
+    },
+    {
+      "team": "Claw's Unity",
+      "rating": 1454.91,
+      "matches_played": 3
+    },
+    {
+      "team": "NOCTX FBL",
+      "rating": 1454.53,
+      "matches_played": 7
+    },
+    {
+      "team": "děti ulice",
+      "rating": 1454.4,
+      "matches_played": 3
+    },
+    {
+      "team": "Terreno Gioco GC",
+      "rating": 1453.91,
+      "matches_played": 7
+    },
+    {
+      "team": "Valkyrie Vixens",
+      "rating": 1453.51,
+      "matches_played": 15
+    },
+    {
+      "team": "EVE GC",
+      "rating": 1453.51,
+      "matches_played": 7
+    },
+    {
+      "team": "Gentle Mates",
+      "rating": 1453.35,
+      "matches_played": 24
+    },
+    {
+      "team": "After Dark",
+      "rating": 1453.34,
+      "matches_played": 14
+    },
+    {
+      "team": "everlasting",
+      "rating": 1453.12,
+      "matches_played": 6
+    },
+    {
+      "team": "Klutz Esports",
+      "rating": 1453.05,
+      "matches_played": 7
+    },
+    {
+      "team": "179 Sad Cat Firefighters",
+      "rating": 1452.62,
+      "matches_played": 7
+    },
+    {
+      "team": "MGA GC",
+      "rating": 1452.15,
+      "matches_played": 7
+    },
+    {
+      "team": "Eunoia GC",
+      "rating": 1452.12,
+      "matches_played": 7
+    },
+    {
+      "team": "Najin Esports GC",
+      "rating": 1452.1,
+      "matches_played": 7
+    },
+    {
+      "team": "DeMaCiAnS",
+      "rating": 1452.09,
+      "matches_played": 7
+    },
+    {
+      "team": "NewDawn Esport",
+      "rating": 1451.89,
+      "matches_played": 7
+    },
+    {
+      "team": "noxfae",
+      "rating": 1451.89,
+      "matches_played": 7
+    },
+    {
+      "team": "Las Cabras",
+      "rating": 1451.88,
+      "matches_played": 7
+    },
+    {
+      "team": "Aim Optional",
+      "rating": 1451.81,
+      "matches_played": 7
+    },
+    {
+      "team": "HatTrick Gaming",
+      "rating": 1451.66,
+      "matches_played": 7
+    },
+    {
+      "team": "PCS Aphrodite",
+      "rating": 1451.18,
+      "matches_played": 7
+    },
+    {
+      "team": "Valkyriant",
+      "rating": 1450.66,
+      "matches_played": 7
+    },
+    {
+      "team": "FACT GC",
+      "rating": 1450.48,
+      "matches_played": 7
+    },
+    {
+      "team": "21 Legacy GC",
+      "rating": 1450.21,
+      "matches_played": 7
+    },
+    {
+      "team": "Rotaryon GC",
+      "rating": 1449.32,
+      "matches_played": 14
+    },
+    {
+      "team": "VCGN Midnight",
+      "rating": 1449.29,
+      "matches_played": 14
+    },
+    {
+      "team": "WAYFINDERS",
+      "rating": 1448.92,
+      "matches_played": 7
+    },
+    {
+      "team": "DRK RIFT",
+      "rating": 1448.43,
+      "matches_played": 7
+    },
+    {
+      "team": "MLL Lotus",
+      "rating": 1448.0,
+      "matches_played": 7
+    },
+    {
+      "team": "ECLIPSE E-Sports",
+      "rating": 1447.84,
+      "matches_played": 4
+    },
+    {
+      "team": "Yokoso Kunoichi GC",
+      "rating": 1447.54,
+      "matches_played": 7
+    },
+    {
+      "team": "meowtiepies",
+      "rating": 1447.37,
+      "matches_played": 7
+    },
+    {
+      "team": "Odd 1 OUT",
+      "rating": 1447.35,
+      "matches_played": 6
+    },
+    {
+      "team": "Exceptional Gaming PYP",
+      "rating": 1447.2,
+      "matches_played": 7
+    },
+    {
+      "team": "VVX Vixens",
+      "rating": 1447.14,
+      "matches_played": 7
+    },
+    {
+      "team": "LPG",
+      "rating": 1447.13,
+      "matches_played": 7
+    },
+    {
+      "team": "Le Hive Cannes",
+      "rating": 1446.93,
+      "matches_played": 7
+    },
+    {
+      "team": "Nexra Girls",
+      "rating": 1446.65,
+      "matches_played": 7
+    },
+    {
+      "team": "Üsküdar E Spor",
+      "rating": 1446.14,
+      "matches_played": 4
+    },
+    {
+      "team": "Nyx Esports",
+      "rating": 1445.89,
+      "matches_played": 14
+    },
+    {
+      "team": "DELTAX SAFFRON",
+      "rating": 1445.8,
+      "matches_played": 5
+    },
+    {
+      "team": "VCGN Sakura",
+      "rating": 1445.26,
+      "matches_played": 14
+    },
+    {
+      "team": "Enisorail GC",
+      "rating": 1444.66,
+      "matches_played": 7
+    },
+    {
+      "team": "RAKUZAN",
+      "rating": 1441.87,
+      "matches_played": 15
+    },
+    {
+      "team": "SAW",
+      "rating": 1441.75,
+      "matches_played": 4
+    },
+    {
+      "team": "UltraViolet GC",
+      "rating": 1441.39,
+      "matches_played": 10
+    },
+    {
+      "team": "NASR Ignite",
+      "rating": 1441.32,
+      "matches_played": 24
+    },
+    {
+      "team": "Stallions Esports",
+      "rating": 1440.61,
+      "matches_played": 6
+    },
+    {
+      "team": "KØRE FOCUS",
+      "rating": 1438.7,
+      "matches_played": 4
+    },
+    {
+      "team": "SOS Coven",
+      "rating": 1438.36,
+      "matches_played": 10
+    },
+    {
+      "team": "K1 Kaisen",
+      "rating": 1436.45,
+      "matches_played": 14
+    },
+    {
+      "team": "Emergents GC",
+      "rating": 1436.34,
+      "matches_played": 14
+    },
+    {
+      "team": "BRUXA",
+      "rating": 1430.39,
+      "matches_played": 11
+    },
+    {
+      "team": "5M Kitsumi",
+      "rating": 1430.29,
+      "matches_played": 11
+    },
+    {
+      "team": "Outplayed GC",
+      "rating": 1429.74,
+      "matches_played": 9
+    },
+    {
+      "team": "Valkyriant Heldra",
+      "rating": 1427.91,
+      "matches_played": 9
+    },
+    {
+      "team": "Reveal Multigaming Shinsei",
+      "rating": 1427.05,
+      "matches_played": 13
+    },
+    {
+      "team": "BEE Queens",
+      "rating": 1426.46,
+      "matches_played": 24
+    },
+    {
+      "team": "Explore",
+      "rating": 1425.17,
+      "matches_played": 28
+    },
+    {
+      "team": "Southpaw",
+      "rating": 1424.6,
+      "matches_played": 21
+    },
+    {
+      "team": "UnKultured Queens",
+      "rating": 1423.0,
+      "matches_played": 14
+    },
+    {
+      "team": "chiikawa crew",
+      "rating": 1421.4,
+      "matches_played": 7
+    },
+    {
+      "team": "Red Royals GC",
+      "rating": 1420.92,
+      "matches_played": 7
+    },
+    {
+      "team": "THE RALS DEMURE",
+      "rating": 1420.64,
+      "matches_played": 5
+    },
+    {
+      "team": "DIVINE",
+      "rating": 1420.61,
+      "matches_played": 5
+    },
+    {
+      "team": "NO Offense Valkyries",
+      "rating": 1420.27,
+      "matches_played": 7
+    },
+    {
+      "team": "Ceuta Guardians GC",
+      "rating": 1419.97,
+      "matches_played": 7
+    },
+    {
+      "team": "Les Potineuz",
+      "rating": 1419.91,
+      "matches_played": 7
+    },
+    {
+      "team": "Siren",
+      "rating": 1419.27,
+      "matches_played": 7
+    },
+    {
+      "team": "Barça eSports",
+      "rating": 1419.18,
+      "matches_played": 6
+    },
+    {
+      "team": "LAKAMBINI",
+      "rating": 1416.48,
+      "matches_played": 7
+    },
+    {
+      "team": "Onyx",
+      "rating": 1416.44,
+      "matches_played": 7
+    },
+    {
+      "team": "Meliora E-Sport",
+      "rating": 1416.35,
+      "matches_played": 7
+    },
+    {
+      "team": "JK Protocol GC",
+      "rating": 1414.23,
+      "matches_played": 7
+    },
+    {
+      "team": "Lucidity",
+      "rating": 1413.89,
+      "matches_played": 14
+    },
+    {
+      "team": "Karmine Corp",
+      "rating": 1412.42,
+      "matches_played": 26
+    },
+    {
+      "team": "Ege University GC",
+      "rating": 1409.72,
+      "matches_played": 10
+    },
+    {
+      "team": "Apeks",
+      "rating": 1395.29,
+      "matches_played": 19
+    },
+    {
+      "team": "KOI",
+      "rating": 1394.72,
+      "matches_played": 17
+    },
+    {
+      "team": "RADX E-Sports",
+      "rating": 1391.36,
+      "matches_played": 14
+    },
+    {
+      "team": "Aura Farmers",
+      "rating": 1390.35,
+      "matches_played": 7
+    },
+    {
+      "team": "SiFT SiRENS",
+      "rating": 1389.75,
+      "matches_played": 7
+    },
+    {
+      "team": "UltraViolet",
+      "rating": 1387.11,
+      "matches_played": 21
+    },
+    {
+      "team": "Nyxie",
+      "rating": 1386.69,
+      "matches_played": 7
+    },
+    {
+      "team": "cute monsters",
+      "rating": 1383.02,
+      "matches_played": 10
+    },
+    {
+      "team": "ACID GC",
+      "rating": 1374.73,
+      "matches_played": 8
+    },
+    {
+      "team": "Aim For Khaos Noir",
+      "rating": 1373.19,
+      "matches_played": 18
+    },
+    {
+      "team": "Girls Girls",
+      "rating": 1359.57,
+      "matches_played": 14
+    },
+    {
+      "team": "Zena Kora",
+      "rating": 1354.33,
+      "matches_played": 16
+    },
+    {
+      "team": "SKÅL Lunaris",
+      "rating": 1344.09,
+      "matches_played": 19
+    },
+    {
+      "team": "Catnip Crew",
+      "rating": 1328.22,
+      "matches_played": 31
+    }
+  ]
+}

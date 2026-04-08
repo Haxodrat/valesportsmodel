@@ -1,0 +1,433 @@
+{
+  "region": "americas",
+  "season": 2026,
+  "last_updated": "2026-04-08T08:15:09.487749+00:00",
+  "training_match_count": 240,
+  "team_count": 46,
+  "elo_model": {
+    "config": {
+      "initial_rating": 1500.0,
+      "k_factor": 32.0,
+      "scale": 400.0,
+      "min_matches_for_confidence": 5
+    },
+    "ratings": {
+      "MIBR": {
+        "rating": 1513.6801001763513,
+        "matches_played": 30
+      },
+      "LEVIATÁN": {
+        "rating": 1491.3578126076295,
+        "matches_played": 30
+      },
+      "Sentinels": {
+        "rating": 1570.1007517382195,
+        "matches_played": 31
+      },
+      "NRG": {
+        "rating": 1572.1948270825346,
+        "matches_played": 29
+      },
+      "FURIA": {
+        "rating": 1470.458636267926,
+        "matches_played": 22
+      },
+      "100 Thieves": {
+        "rating": 1522.81431162935,
+        "matches_played": 35
+      },
+      "LOUD": {
+        "rating": 1350.117129868574,
+        "matches_played": 22
+      },
+      "Evil Geniuses": {
+        "rating": 1475.6875308167516,
+        "matches_played": 27
+      },
+      "G2 Esports": {
+        "rating": 1742.0629965936753,
+        "matches_played": 35
+      },
+      "Cloud9": {
+        "rating": 1512.13395843129,
+        "matches_played": 31
+      },
+      "KRÜ Esports": {
+        "rating": 1425.9487349559408,
+        "matches_played": 29
+      },
+      "RETA Esports": {
+        "rating": 1486.1971857383892,
+        "matches_played": 5
+      },
+      "2Game Esports": {
+        "rating": 1428.0289062891668,
+        "matches_played": 20
+      },
+      "Galorys": {
+        "rating": 1462.6531208828326,
+        "matches_played": 7
+      },
+      "TSM": {
+        "rating": 1503.037273603728,
+        "matches_played": 11
+      },
+      "M80": {
+        "rating": 1561.15430928811,
+        "matches_played": 9
+      },
+      "All Knights": {
+        "rating": 1497.8484053894208,
+        "matches_played": 8
+      },
+      "MIBR GC": {
+        "rating": 1520.0515449789525,
+        "matches_played": 7
+      },
+      "G2 Gozen": {
+        "rating": 1518.683533053269,
+        "matches_played": 5
+      },
+      "Cloud9 x Shopify Rebellion": {
+        "rating": 1510.6685972171135,
+        "matches_played": 5
+      },
+      "FlyQuest RED x LEVIATÁN": {
+        "rating": 1498.5304984710244,
+        "matches_played": 4
+      },
+      "5 BIG BOOMS": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "No Home": {
+        "rating": 1499.263693206478,
+        "matches_played": 2
+      },
+      "Maryville University": {
+        "rating": 1514.5950719527063,
+        "matches_played": 3
+      },
+      "Relaxed Reptilians": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "ENVY": {
+        "rating": 1547.1451291986393,
+        "matches_played": 13
+      },
+      "Burger Boyz": {
+        "rating": 1484.736306793522,
+        "matches_played": 1
+      },
+      "Team Alpha": {
+        "rating": 1516.0,
+        "matches_played": 1
+      },
+      "Team Omega": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "Wadadaa": {
+        "rating": 1484.540245140457,
+        "matches_played": 3
+      },
+      "RED Canids": {
+        "rating": 1469.5031170912061,
+        "matches_played": 2
+      },
+      "Six Karma": {
+        "rating": 1468.6042269044938,
+        "matches_played": 4
+      },
+      "Winthrop University": {
+        "rating": 1508.536959070506,
+        "matches_played": 7
+      },
+      "9z Team": {
+        "rating": 1486.7009142971124,
+        "matches_played": 3
+      },
+      "Team Solid": {
+        "rating": 1515.8820318971111,
+        "matches_played": 5
+      },
+      "ShindeN": {
+        "rating": 1468.0706258557502,
+        "matches_played": 2
+      },
+      "Stellae Gaming": {
+        "rating": 1483.4859323725848,
+        "matches_played": 3
+      },
+      "TOPOYIYOS": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "roblox 10": {
+        "rating": 1500.0,
+        "matches_played": 2
+      },
+      "Lillas Warriors": {
+        "rating": 1484.0,
+        "matches_played": 1
+      },
+      "FLOW TIM CHEESE": {
+        "rating": 1532.0,
+        "matches_played": 2
+      },
+      "Akave Esports GC": {
+        "rating": 1467.5255811391835,
+        "matches_played": 2
+      },
+      "100T Spotlight": {
+        "rating": 1495.8602962580783,
+        "matches_played": 4
+      },
+      "ENVY x FlyQuest Spotlight": {
+        "rating": 1485.5924664641736,
+        "matches_played": 5
+      },
+      "KRÜ x LYON Spotlight": {
+        "rating": 1498.5304984710244,
+        "matches_played": 4
+      },
+      "Winthrop x Shopify Rebellion Spotlight": {
+        "rating": 1520.0167388067237,
+        "matches_played": 5
+      }
+    }
+  },
+  "rankings": [
+    {
+      "team": "G2 Esports",
+      "rating": 1742.06,
+      "matches_played": 35
+    },
+    {
+      "team": "NRG",
+      "rating": 1572.19,
+      "matches_played": 29
+    },
+    {
+      "team": "Sentinels",
+      "rating": 1570.1,
+      "matches_played": 31
+    },
+    {
+      "team": "M80",
+      "rating": 1561.15,
+      "matches_played": 9
+    },
+    {
+      "team": "ENVY",
+      "rating": 1547.15,
+      "matches_played": 13
+    },
+    {
+      "team": "FLOW TIM CHEESE",
+      "rating": 1532.0,
+      "matches_played": 2
+    },
+    {
+      "team": "100 Thieves",
+      "rating": 1522.81,
+      "matches_played": 35
+    },
+    {
+      "team": "MIBR GC",
+      "rating": 1520.05,
+      "matches_played": 7
+    },
+    {
+      "team": "Winthrop x Shopify Rebellion Spotlight",
+      "rating": 1520.02,
+      "matches_played": 5
+    },
+    {
+      "team": "G2 Gozen",
+      "rating": 1518.68,
+      "matches_played": 5
+    },
+    {
+      "team": "Team Alpha",
+      "rating": 1516.0,
+      "matches_played": 1
+    },
+    {
+      "team": "Team Solid",
+      "rating": 1515.88,
+      "matches_played": 5
+    },
+    {
+      "team": "Maryville University",
+      "rating": 1514.6,
+      "matches_played": 3
+    },
+    {
+      "team": "MIBR",
+      "rating": 1513.68,
+      "matches_played": 30
+    },
+    {
+      "team": "Cloud9",
+      "rating": 1512.13,
+      "matches_played": 31
+    },
+    {
+      "team": "Cloud9 x Shopify Rebellion",
+      "rating": 1510.67,
+      "matches_played": 5
+    },
+    {
+      "team": "Winthrop University",
+      "rating": 1508.54,
+      "matches_played": 7
+    },
+    {
+      "team": "TSM",
+      "rating": 1503.04,
+      "matches_played": 11
+    },
+    {
+      "team": "roblox 10",
+      "rating": 1500.0,
+      "matches_played": 2
+    },
+    {
+      "team": "No Home",
+      "rating": 1499.26,
+      "matches_played": 2
+    },
+    {
+      "team": "FlyQuest RED x LEVIATÁN",
+      "rating": 1498.53,
+      "matches_played": 4
+    },
+    {
+      "team": "KRÜ x LYON Spotlight",
+      "rating": 1498.53,
+      "matches_played": 4
+    },
+    {
+      "team": "All Knights",
+      "rating": 1497.85,
+      "matches_played": 8
+    },
+    {
+      "team": "100T Spotlight",
+      "rating": 1495.86,
+      "matches_played": 4
+    },
+    {
+      "team": "LEVIATÁN",
+      "rating": 1491.36,
+      "matches_played": 30
+    },
+    {
+      "team": "9z Team",
+      "rating": 1486.7,
+      "matches_played": 3
+    },
+    {
+      "team": "RETA Esports",
+      "rating": 1486.2,
+      "matches_played": 5
+    },
+    {
+      "team": "ENVY x FlyQuest Spotlight",
+      "rating": 1485.59,
+      "matches_played": 5
+    },
+    {
+      "team": "Burger Boyz",
+      "rating": 1484.74,
+      "matches_played": 1
+    },
+    {
+      "team": "Wadadaa",
+      "rating": 1484.54,
+      "matches_played": 3
+    },
+    {
+      "team": "5 BIG BOOMS",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "Relaxed Reptilians",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "Team Omega",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "TOPOYIYOS",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "Lillas Warriors",
+      "rating": 1484.0,
+      "matches_played": 1
+    },
+    {
+      "team": "Stellae Gaming",
+      "rating": 1483.49,
+      "matches_played": 3
+    },
+    {
+      "team": "Evil Geniuses",
+      "rating": 1475.69,
+      "matches_played": 27
+    },
+    {
+      "team": "FURIA",
+      "rating": 1470.46,
+      "matches_played": 22
+    },
+    {
+      "team": "RED Canids",
+      "rating": 1469.5,
+      "matches_played": 2
+    },
+    {
+      "team": "Six Karma",
+      "rating": 1468.6,
+      "matches_played": 4
+    },
+    {
+      "team": "ShindeN",
+      "rating": 1468.07,
+      "matches_played": 2
+    },
+    {
+      "team": "Akave Esports GC",
+      "rating": 1467.53,
+      "matches_played": 2
+    },
+    {
+      "team": "Galorys",
+      "rating": 1462.65,
+      "matches_played": 7
+    },
+    {
+      "team": "2Game Esports",
+      "rating": 1428.03,
+      "matches_played": 20
+    },
+    {
+      "team": "KRÜ Esports",
+      "rating": 1425.95,
+      "matches_played": 29
+    },
+    {
+      "team": "LOUD",
+      "rating": 1350.12,
+      "matches_played": 22
+    }
+  ]
+}
