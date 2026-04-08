@@ -94,71 +94,58 @@ For two teams with ratings `R_A` and `R_B`, the expected score for team A is:
 E_A = 1 / (1 + 10^((R_B - R_A) / scale))
 ```
 
+The expected score for team B is:
+
+```text
+E_B = 1 - E_A
+```
+
+### Rating update rule
+
+After a match, ratings are updated using:
+
+```text
+R_new = R_old + K * (S - E)
+```
+
+where:
+- `K` = update strength
+- `S` = actual result (`1` for win, `0` for loss)
+- `E` = expected result from Elo
+
+### How predictions are generated
+
+For an upcoming match:
+1. the backend loads the regional Elo model
+2. it looks up both teams’ current ratings
+3. it computes win probabilities from the Elo gap
+4. it assigns a confidence tier
+5. it returns the predicted winner and probabilities to the frontend
+
+### Why Elo is used right now
+
+I use Elo as the current baseline because it is transparent and easy to validate. It gives a strong first version of the product while keeping the system understandable.
+
+The long-term direction is to add more predictive features, such as:
+- event context
+- roster or team metadata
+- recent form
+- stage performance
+- other structured features
+
+Those can later be used in a stronger supervised model such as LightGBM, with Elo retained as one of the input features rather than the full model itself.
 
 ## Tech Stack
 
 - **Programming Language:** Python  
   - Data processing: `pandas`, `numpy`
-  - Web scraping: `requests`, `BeautifulSoup`, `Selenium` (if needed)
-  - Machine Learning/Statistics: `scikit-learn`, potentially `TensorFlow` or `PyTorch`
-- **Backend Framework:** Flask or FastAPI for building RESTful APIs
-- **Frontend Framework:** React with visualization libraries like D3.js or Chart.js to render interactive brackets
-- **Database:** PostgreSQL (or alternatives like MongoDB/SQLite for initial prototypes)
-- **Version Control:** Git (hosted on GitHub, GitLab, or Bitbucket)
-- **Deployment:** Docker for containerization; Heroku, AWS, or DigitalOcean for hosting
-
-## Getting Started
-
-### Prerequisites
-
-- **Python 3.x** installed on your system
-- **Node.js & npm/yarn** for running the frontend (if building a web interface)
-- **Git** for version control
-
-### Setup Instructions
-
-1. **Clone the Repository:**
-
-   ```bash
-   git clone https://github.com/yourusername/valesportsmodel.git
-   cd valesportsmodel
-
-2. **Backend Setup:**
-
-   Create and activate a Python virtual environment.
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
-
-   Install backend dependencies.
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-   Create a .env file for configuration (e.g., API keys, database connection settings).
-
-   Run the Flask/FastAPI application:
-   ```bash
-   python3 app.py
-   ```
-3. **Frontend Setup:**
-
-   Create a react template using TypeScript.
-   ```bash
-   npx create-react-app frontend --template typescript
-   ```
-
-   Install frontend dependencies from package.json.
-   ```bash
-   cd frontend
-   npm install
-   ```
-
-   Run the server:
-   ```bash
-   npm start
-   ```
+  - Web scraping / API access: `requests`, `cloudscraper`
+  - Machine Learning / Statistics: Elo baseline now, with future plans for LightGBM
+- **Backend Framework:** Flask
+- **Frontend Framework:** React + TypeScript
+- **Routing:** React Router
+- **Data Source / API:** `vlrggapi`
+- **Version Control:** Git + GitHub
 
 ## Project Structure
 ```bash
@@ -202,10 +189,126 @@ valesportsmodel/
 
 ## API Endpoints
 
-GET / - healthcheck endpoint
+### `GET /`
+Healthcheck endpoint.
 
-GET /upcoming-matches - returns upcoming VCT matches enriched with:
+### `GET /upcoming-matches`
+Returns upcoming VCT matches enriched with:
+- predicted winner
+- win probabilities
+- Elo ratings
+- confidence level
+- team metadata (tag/logo when available)
 
+### `GET /rankings/<region>`
+Returns Elo rankings for a region such as:
+- `pacific`
+- `china`
+- `emea`
+- `americas`
+
+Each ranking row includes:
+- team
+- team metadata
+- rating
+- matches played
+
+## Getting Started
+
+### Prerequisites
+
+- **Python 3.x** installed on your system
+- **Node.js & npm/yarn** for running the frontend
+- **Git** for version control
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Haxodrat/valesportsmodel.git
+cd valesportsmodel
+```
+
+### 2. Backend Setup
+
+Create and activate a Python virtual environment.
+
+```bash
+cd backend
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+
+Install backend dependencies.
+
+```bash
+pip install -r requirements.txt
+```
+
+Create a `.env` file in `backend/` if needed:
+
+```env
+VLR_API_BASE_URL=http://localhost:3001
+DEBUG=true
+```
+
+Run the backend:
+
+```bash
+python app.py
+```
+
+### 3. Frontend Setup
+
+In a second terminal:
+
+```bash
+cd frontend
+npm install
+npm start
+```
+
+### 4. Local development flow
+
+The app typically expects:
+- React frontend on `localhost:3000`
+- Flask backend on `localhost:5000`
+- `vlrggapi` on `localhost:3001` or another configured base URL
+
+## Data Sources
+
+### `vlrggapi`
+Used for:
+- upcoming matches
+- team profile metadata
+- structured VLR-derived data
+
+### `vlr.gg`
+Used as the underlying match reference source and destination for user-facing links.
+
+### Regional Elo snapshots
+The project stores regional Elo model state as JSON in `backend/data/elo/`.
+
+These snapshots include:
+- current ratings
+- matches played
+- training match count
+- model configuration
+- final rankings
+
+## Roadmap
+
+- Add richer input features for prediction beyond Elo
+- Use Elo as an input feature in a stronger model such as LightGBM
+- Improve confidence calibration
+- Expand automatic team metadata syncing
+- Improve historical validation and evaluation
+- Continue refining rankings and match presentation
+- Extend tournament-oriented and bracket-oriented views over time
 
 ## Contact
-#### Linkedin: https://www.linkedin.com/in/ckim259/
+
+- **Author:** Christopher Kim
+- **LinkedIn:** https://www.linkedin.com/in/ckim259/
+- **GitHub:** https://github.com/Haxodrat
+- **Repository:** https://github.com/Haxodrat/valesportsmodel
+- **Email:** haxodrat@icloud.com
