@@ -15,7 +15,7 @@ export default function AppShell({ children }: AppShellProps) {
         <main>{children}</main>
 
         <footer className="site-footer">
-          Data powered by{' '}
+          © {new Date().getFullYear()} Christopher Kim. All rights reserved. Data powered by{' '}
           <a
             href="https://vlrggapi.vercel.app/"
             target="_blank"

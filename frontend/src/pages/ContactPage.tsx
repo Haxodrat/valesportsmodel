@@ -3,6 +3,7 @@ import { FormEvent, useState } from 'react';
 const CONTACT_EMAIL = 'haxodrat@icloud.com';
 const LINKEDIN_URL = 'https://www.linkedin.com/in/ckim259/';
 const GITHUB_URL = 'https://github.com/Haxodrat';
+const REPO_URL = 'https://github.com/Haxodrat/valesportsmodel';
 
 export default function ContactPage() {
   const [name, setName] = useState('');
@@ -45,6 +46,18 @@ export default function ContactPage() {
             Built to compare teams across Pacific, EMEA, China, and Americas
             using a streamlined Elo baseline before adding richer machine
             learning models.
+          </p>
+
+          <p className="muted">
+            Repository:{' '}
+            <a
+              href="https://github.com/Haxodrat/valesportsmodel"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="contact-link"
+            >
+              github.com/Haxodrat/valesportsmodel
+            </a>
           </p>
 
           <div className="contact-links">
