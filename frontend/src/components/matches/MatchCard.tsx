@@ -8,15 +8,35 @@ interface MatchCardProps {
   match: UpcomingMatchPrediction;
 }
 
+function toVlrUrl(path: string): string {
+  if (!path) {
+    return '#';
+  }
+
+  return path.startsWith('http') ? path : `https://www.vlr.gg/${path.replace(/^\/+/, '')}`;
+}
+
 export default function MatchCard({ match }: MatchCardProps) {
+  const matchUrl = toVlrUrl(match.match_page);
+
   return (
     <article className="card">
       <div className="card-top">
         <div>
           <p className="eyebrow">{labelRegion(match.region)}</p>
+
           <h3 className="card-title">
-            {match.team1} vs {match.team2}
+            <a
+              className="match-title-link"
+              href={matchUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              title={`Open ${match.team1} vs ${match.team2} on vlr.gg`}
+            >
+              {match.team1} vs {match.team2}
+            </a>
           </h3>
+
           <p className="muted">
             {match.match_event} · {match.match_series}
           </p>

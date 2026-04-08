@@ -13,6 +13,28 @@ export default function AppShell({ children }: AppShellProps) {
       <div className="app-main">
         <Header />
         <main>{children}</main>
+
+        <footer className="site-footer">
+          Data powered by{' '}
+          <a
+            href="https://vlrggapi.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer-link"
+          >
+            vlrggapi
+          </a>{' '}
+          and sourced from{' '}
+          <a
+            href="https://www.vlr.gg/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer-link"
+          >
+            vlr.gg
+          </a>
+          .
+        </footer>
       </div>
     </div>
   );
