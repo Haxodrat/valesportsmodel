@@ -51,7 +51,7 @@ export default function ContactPage() {
           <p className="muted">
             Repository:{' '}
             <a
-              href="https://github.com/Haxodrat/valesportsmodel"
+              href={REPO_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="contact-link"
