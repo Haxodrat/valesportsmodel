@@ -20,18 +20,23 @@ export default function RankingsPage() {
         <p className="muted">Compact VCT-focused Elo snapshots for the 2026 season.</p>
       </div>
 
-      <RegionTabs region={region} setRegion={setRegion} />
+      <div className="rankings-controls">
+        <RegionTabs region={region} setRegion={setRegion} />
+      </div>
 
       {loading && <LoadingState label="Loading rankings..." />}
       {error && <ErrorState message={error} />}
       {!loading && !error && payload && (
         <>
-          <div className="meta-row">
+          <div className="meta-row rankings-meta">
             <span>Matches: {payload.training_match_count}</span>
             <span>Teams: {payload.team_count}</span>
             <span>Updated: {formatLastUpdated(payload.last_updated)}</span>
           </div>
-          <RankingsTable rankings={payload.rankings} />
+
+          <div className="rankings-table-section">
+            <RankingsTable rankings={payload.rankings} />
+          </div>
         </>
       )}
     </section>

@@ -1,8 +1,10 @@
 import { formatPercent } from '../../utils/format';
+import { TeamInfo } from '../../types/api';
+import TeamIdentity from '../ui/TeamIdentity';
 
 interface PredictionBarProps {
-  team1: string;
-  team2: string;
+  team1: TeamInfo;
+  team2: TeamInfo;
   team1Prob: number;
   team2Prob: number;
 }
@@ -11,7 +13,7 @@ export default function PredictionBar({ team1, team2, team1Prob, team2Prob }: Pr
   return (
     <div className="prediction-block">
       <div className="prediction-labels">
-        <span>{team1}</span>
+        <TeamIdentity team={team1} compact />
         <span>{formatPercent(team1Prob)}</span>
       </div>
 
@@ -20,7 +22,7 @@ export default function PredictionBar({ team1, team2, team1Prob, team2Prob }: Pr
       </div>
 
       <div className="prediction-labels secondary">
-        <span>{team2}</span>
+        <TeamIdentity team={team2} compact />
         <span>{formatPercent(team2Prob)}</span>
       </div>
     </div>

@@ -7,12 +7,13 @@ from pathlib import Path
 
 from data_sources.vlr_client import VLRClient
 from ratings.elo import EloModel
+from services.team_metadata import get_team_metadata
 
 
 def load_region_elo_model(region: str, season: int = 2026, mode: str = "vct_only") -> EloModel:
-    path = Path("data/elo") / f"{region}_{season}_{mode}.json"    
+    path = Path("data/elo") / f"{region}_{season}_{mode}.json"
     if not path.exists():
-        raise FileNotFoundError(f"No saved Elo file found for {region} {season}")
+        raise FileNotFoundError(f"No saved Elo file found for {region} {season} {mode}")
 
     payload = json.loads(path.read_text(encoding="utf-8"))
     return EloModel.from_dict(payload["elo_model"])
@@ -38,6 +39,10 @@ def get_upcoming_predictions(season: int = 2026, mode: str = "vct_only") -> list
         team2 = match["team2"]
         pred = elo.predict_match(team1, team2)
 
+        team1_info = get_team_metadata(team1)
+        team2_info = get_team_metadata(team2)
+        predicted_winner_info = team1_info if pred["predicted_winner"] == team1 else team2_info
+
         enriched_matches.append({
             "match_id": match["match_id"],
             "match_event": match["event"],
@@ -46,10 +51,13 @@ def get_upcoming_predictions(season: int = 2026, mode: str = "vct_only") -> list
             "region": region,
             "team1": team1,
             "team2": team2,
+            "team1_info": team1_info,
+            "team2_info": team2_info,
             "teams": [team1, team2],
             "time_until_match": match["time_until_match"],
             "unix_timestamp": match["unix_timestamp"],
             "predicted_winner": pred["predicted_winner"],
+            "predicted_winner_info": predicted_winner_info,
             "team1_win_prob": pred["team1_win_prob"],
             "team2_win_prob": pred["team2_win_prob"],
             "team1_rating": pred["team1_rating"],

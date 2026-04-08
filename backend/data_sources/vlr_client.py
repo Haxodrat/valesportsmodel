@@ -263,3 +263,7 @@ class VLRClient:
             return "americas"
 
         return None
+    
+    def get_team_profile(self, team_id: int) -> dict:
+        raw = self._get("/v2/team", params={"id": team_id})
+        return raw.get("data", {})

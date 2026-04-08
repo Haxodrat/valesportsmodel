@@ -1,4 +1,5 @@
 import { EloRankingRow } from '../../types/api';
+import TeamIdentity from '../ui/TeamIdentity';
 
 interface RankingsTableProps {
   rankings?: EloRankingRow[];
@@ -20,7 +21,9 @@ export default function RankingsTable({ rankings = [] }: RankingsTableProps) {
           {rankings.map((row, index) => (
             <tr key={row.team}>
               <td>{index + 1}</td>
-              <td>{row.team}</td>
+              <td>
+                <TeamIdentity team={row.team_info} />
+              </td>
               <td>{row.rating}</td>
               <td>{row.matches_played}</td>
             </tr>

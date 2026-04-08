@@ -1,5 +1,6 @@
 import Badge from '../ui/Badge';
 import PredictionBar from './PredictionBar';
+import TeamIdentity from '../ui/TeamIdentity';
 import { UpcomingMatchPrediction } from '../../types/api';
 import { formatConfidence } from '../../utils/format';
 import { labelRegion } from '../../utils/regions';
@@ -49,16 +50,20 @@ export default function MatchCard({ match }: MatchCardProps) {
       </div>
 
       <PredictionBar
-        team1={match.team1}
-        team2={match.team2}
+        team1={match.team1_info}
+        team2={match.team2_info}
         team1Prob={match.team1_win_prob}
         team2Prob={match.team2_win_prob}
       />
 
       <div className="card-footer">
-        <span>
-          Predicted winner: <strong>{match.predicted_winner}</strong>
+        <span className="predicted-winner-row">
+          Predicted winner:
+          <strong className="predicted-winner-team">
+            <TeamIdentity team={match.predicted_winner_info} compact />
+          </strong>
         </span>
+
         <span className="muted">
           Elo: {match.team1_rating} / {match.team2_rating}
         </span>
