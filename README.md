@@ -15,6 +15,7 @@ The project currently uses an Elo rating system as a lightweight, interpretable 
 - [Tech Stack](#tech-stack)
 - [Project Structure](#project-structure)
 - [API Endpoints](#api-endpoints)
+- [Environment Variables](#environment-variables)
 - [Getting Started](#getting-started)
 - [Data Sources](#data-sources)
 - [Roadmap](#roadmap)
@@ -137,14 +138,16 @@ Those can later be used in a stronger supervised model such as LightGBM, with El
 
 ## Tech Stack
 
-- **Programming Language:** Python  
+- **Programming Language:** Python
   - Data processing: `pandas`, `numpy`
-  - Web scraping / API access: `requests`, `cloudscraper`
-  - Machine Learning / Statistics: Elo baseline now, with future plans for LightGBM
+  - API access / scraping support: `requests`, `cloudscraper`
+  - Statistics / modeling: Elo baseline now, with future plans for LightGBM
 - **Backend Framework:** Flask
 - **Frontend Framework:** React + TypeScript
 - **Routing:** React Router
-- **Data Source / API:** `vlrggapi`
+- **Frontend Hosting:** Vercel
+- **Backend Hosting:** Render
+- **Upstream Match Service:** self-hosted `vlrggapi`
 - **Version Control:** Git + GitHub
 
 ## Project Structure
@@ -192,6 +195,16 @@ valesportsmodel/
 ### `GET /`
 Healthcheck endpoint.
 
+Example response:
+
+```json
+{
+  "status": "ok",
+  "message": "Valorant Esports Model backend is running",
+  "vlr_api_base_url": "https://your-vlrggapi-service.onrender.com"
+}
+```
+
 ### `GET /upcoming-matches`
 Returns upcoming VCT matches enriched with:
 - predicted winner
@@ -213,13 +226,44 @@ Each ranking row includes:
 - rating
 - matches played
 
+## Environment Variables
+
+### Backend (`backend/.env` locally or Render env vars)
+
+```env
+DEBUG=true
+VLR_API_BASE_URL=http://127.0.0.1:3001
+FRONTEND_URL=http://localhost:3000
+```
+
+Production example:
+
+```env
+DEBUG=false
+VLR_API_BASE_URL=https://your-vlrggapi-service.onrender.com
+FRONTEND_URL=https://valesportsmodel.vercel.app
+```
+
+### Frontend (`frontend/.env` locally or Vercel env vars)
+
+```env
+REACT_APP_API_BASE_URL=http://localhost:5000
+```
+
+Production example:
+
+```env
+REACT_APP_API_BASE_URL=https://your-backend-service.onrender.com
+```
+
 ## Getting Started
 
 ### Prerequisites
 
-- **Python 3.x** installed on your system
-- **Node.js & npm/yarn** for running the frontend
-- **Git** for version control
+- **Python 3.x**
+- **Node.js and npm**
+- **Git**
+- a running `vlrggapi` instance locally or remotely
 
 ### 1. Clone the repository
 
@@ -228,27 +272,27 @@ git clone https://github.com/Haxodrat/valesportsmodel.git
 cd valesportsmodel
 ```
 
-### 2. Backend Setup
+### 2. Start `vlrggapi`
 
-Create and activate a Python virtual environment.
+ValeSportsModel depends on `vlrggapi` for live upcoming match and metadata fetches.
+
+If running locally, start `vlrggapi` first so it is available at `http://127.0.0.1:3001`.
+
+### 3. Backend setup
 
 ```bash
 cd backend
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
-
-Install backend dependencies.
-
-```bash
 pip install -r requirements.txt
 ```
 
-Create a `.env` file in `backend/` if needed:
+Create `backend/.env`:
 
 ```env
-VLR_API_BASE_URL=http://localhost:3001
 DEBUG=true
+VLR_API_BASE_URL=http://127.0.0.1:3001
+FRONTEND_URL=http://localhost:3000
 ```
 
 Run the backend:
@@ -257,7 +301,13 @@ Run the backend:
 python app.py
 ```
 
-### 3. Frontend Setup
+The backend will run at:
+
+```text
+http://localhost:5000
+```
+
+### 4. Frontend setup
 
 In a second terminal:
 
@@ -267,12 +317,83 @@ npm install
 npm start
 ```
 
-### 4. Local development flow
+Create `frontend/.env` if needed:
 
-The app typically expects:
+```env
+REACT_APP_API_BASE_URL=http://localhost:5000
+```
+
+The frontend will run at:
+
+```text
+http://localhost:3000
+```
+
+### 5. Local development flow
+
+The app expects:
 - React frontend on `localhost:3000`
 - Flask backend on `localhost:5000`
-- `vlrggapi` on `localhost:3001` or another configured base URL
+- `vlrggapi` on `127.0.0.1:3001` or another configured base URL
+
+## Deployment
+
+### Current deployment architecture
+
+For the current deployed demo:
+
+- **Frontend:** Vercel
+- **Backend:** Render
+- **Live match API:** self-hosted `vlrggapi` on Render
+
+### Frontend deployment
+
+The frontend is deployed on Vercel.
+
+Important:
+- `REACT_APP_API_BASE_URL` must point to the deployed backend
+- the value is read at build time, so changing the env var requires a frontend redeploy
+
+Example:
+
+```env
+REACT_APP_API_BASE_URL=https://your-backend-service.onrender.com
+```
+
+### Backend deployment
+
+The backend is deployed on Render and should use:
+
+- Root Directory: `backend`
+- Build Command:
+
+```bash
+pip install -r requirements.txt
+```
+
+- Start Command:
+
+```bash
+gunicorn app:app
+```
+
+Required environment variables:
+
+```env
+DEBUG=false
+VLR_API_BASE_URL=https://your-vlrggapi-service.onrender.com
+FRONTEND_URL=https://valesportsmodel.vercel.app
+```
+
+### `vlrggapi` deployment
+
+Because the public hosted `vlrggapi` service may be unavailable or rate-limited, ValeSportsModel is set up to use a self-hosted deployment.
+
+Recommended production variable:
+
+```env
+VLR_API_BASE_URL=https://your-vlrggapi-service.onrender.com
+```
 
 ## Data Sources
 
