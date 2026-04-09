@@ -30,7 +30,7 @@ class VLRClient:
         except requests.exceptions.ConnectionError as e:
             raise RuntimeError(
                 f"Could not connect to VLR API at {self.base_url}. "
-                "Make sure the API server is running or update VLR_API_BASE_URL in .env."
+                "Make sure your self-hosted vlrggapi service is running or update VLR_API_BASE_URL in .env."
             ) from e
 
     def get_upcoming_matches(self) -> list[dict]:
